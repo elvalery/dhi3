@@ -11,5 +11,20 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix
+  .scripts([
+    'resources/assets/js/main.js',
+    'resources/assets/js/optional.js',
+  ], 'public/js/all.js')
+  .scripts([
+    'resources/assets/js/slick/slick.min.js',
+  ], 'public/js/slick.js')
+  .styles([
+    'resources/assets/css/main.css',
+    'resources/assets/css/optional.css',
+  ], 'public/css/all.css')
+  .styles([
+    'resources/assets/js/slick/slick.css',
+  ], 'public/css/slick.css')
+  .copyDirectory('resources/assets/img', 'public/img')
+  .copyDirectory('resources/assets/fonts', 'public/fonts');
