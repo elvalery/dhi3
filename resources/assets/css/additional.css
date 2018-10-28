@@ -1,0 +1,10 @@
+.portfolio__tab_button{
+  display:flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio__item {
+  width: 33%;
+}

@@ -11727,7 +11727,7 @@ label.form_input::after {
 	position: relative;
 }
 .portfolio__item{
-	width: 24%;
+	width: 32%;
 	height: 49%;
 	background-size: cover;
 
@@ -12178,4 +12178,14 @@ label.form_input::after {
 	#guarantees h4{
 		height: 115px;
 	}
+}
+.portfolio__tab_button{
+  display:flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio__item {
+  width: 33%;
 }

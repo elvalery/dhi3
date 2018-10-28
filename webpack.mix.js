@@ -22,6 +22,7 @@ mix
   .styles([
     'resources/assets/css/main.css',
     'resources/assets/css/optional.css',
+    'resources/assets/css/additional.css',
   ], 'public/css/all.css')
   .styles([
     'resources/assets/js/slick/slick.css',
