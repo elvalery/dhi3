@@ -10,6 +10,8 @@ use Encore\Admin\Grid;
 use Encore\Admin\Layout\Content;
 use Encore\Admin\Show;
 
+use Illuminate\Support\Facades\Storage;
+
 class WorkController extends Controller {
   use HasResourceActions;
 
@@ -80,12 +82,17 @@ class WorkController extends Controller {
   {
     $grid = new Grid(new Work);
 
-    $grid->id('Id');
-    $grid->name(trans('Название'));
-    $grid->description(trans('Описание'));
-    $grid->order_id(trans('Порядок'));
-    $grid->created_at(trans('Создано'));
-    $grid->updated_at(trans('Обновлено'));
+    $grid->id('Id')->sortable();;
+    $grid->name(trans('Название'))->sortable();;
+    $grid->description(trans('Описание'))->sortable();;
+    $grid->order_id(trans('Порядок'))->sortable();;
+
+    $grid->paginate(20);
+
+    $grid->filter(function($filter){
+      $filter->disableIdFilter();
+      $filter->like('name', trans('Название'));
+    });
 
     return $grid;
   }
@@ -101,11 +108,28 @@ class WorkController extends Controller {
     $show = new Show(Work::findOrFail($id));
 
     $show->id('Id');
+    $show->order_id(trans('Порядок'));
     $show->name(trans('Название'));
     $show->description(trans('Описание'));
+    $show->categories(trans('Категория'))
+      ->as(function ($categories) {
+        return $categories->pluck('name');
+      })->label();
     $show->cover(trans('Маленькая картинка'))->image();
-    $show->image(trans('Большая картинка'))->image();
-    $show->order_id(trans('Порядок'));
+    $show->photos(trans('Большая картинка'))->as(function ($photos) {
+      $retVal = '';
+      foreach ($photos as $image) {
+        if (url()->isValidUrl($image->link)) {
+          $src = $image->link;
+        } else {
+          $src = Storage::disk(config('admin.upload.disk'))->url($image->link);
+        }
+
+        $retVal .= "<img src='$src' style='max-width:200px;max-height:200px;margin-right:10px ' class='img' />";
+      }
+      return $retVal;
+    });
+
     $show->created_at(trans('Создано'));
     $show->updated_at(trans('Обновлено'));
 
@@ -121,11 +145,26 @@ class WorkController extends Controller {
   {
     $form = new Form(new Work);
 
-    $form->text('name', trans('Название'));
-    $form->number('order_id', trans('Порядок'));
+    $form->number('order_id', trans('Порядок'))->rules('required|integer|max:32767');
+
+    $form
+      ->multipleSelect('categories', trans('Категория'))
+      ->options(\App\Category::all()->pluck('name', 'id'))
+      ->rules('required');
+
+    $form->text('name', trans('Название'))->rules('required|max:250');
     $form->editor('description', trans('Описание'))->default(null);
-    $form->image('cover', trans('Маленькая картинка'));
-    $form->image('image', trans('Большая картинка'));
+    $form->image('cover', trans('Маленькая картинка'))
+      ->rules('required')
+      ->uniqueName();
+
+    $form->hasMany('photos', function (Form\NestedForm $form) {
+      $form->number('order_id');
+      $form->image('link')
+        ->uniqueName()
+        ->removable();
+    });
+
 
     return $form;
   }
