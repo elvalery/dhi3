@@ -28,4 +28,5 @@ mix
     'resources/assets/js/slick/slick.css',
   ], 'public/css/slick.css')
   .copyDirectory('resources/assets/img', 'public/img')
-  .copyDirectory('resources/assets/fonts', 'public/fonts');
+  .copyDirectory('resources/assets/fonts', 'public/fonts')
+  .copyDirectory('resources/assets/html', 'public/html');

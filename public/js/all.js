@@ -1712,8 +1712,7 @@ function portfolioTabs() {
 		$("ul.tabs_buttons").on("click", "li:not(.bgc__active)", function() {
       $('.wall_tab.slick-initialized').slick('unslick');
       $('.wall_tab__active').slick({
-        infinite: false,
-        slidesToShow: 1,
+				slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         nextArrow: '<span class="slick-next">></span>',
@@ -1722,7 +1721,6 @@ function portfolioTabs() {
 		});
 
 		$('.wall_tab__active').slick({
-			infinite: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: true,
@@ -1758,7 +1756,6 @@ $(document).ready(function() {
 			},
 			complete: function() {
         $('#modal_page_content').slick({
-          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
@@ -1801,47 +1798,47 @@ portfolioMobile();
 
 $(document).ready(function(){
 	$('.worker__1').click(function() {
-	      $('.worker-description__wrapper').load('worker1.html');
+	      $('.worker-description__wrapper').load('/public/html/worker1.html');
 	      $('.active__worker').removeClass('active__worker');
 	      $(this).children().addClass('active__worker');
 	  });
 	$('.worker__2').click(function() {
-	      $('.worker-description__wrapper').load('worker2.html');
+	      $('.worker-description__wrapper').load('/public/html/worker2.html');
 	      $('.active__worker').removeClass('active__worker');
 	      $(this).children().addClass('active__worker');
 	  });
 	$('.worker__3').click(function() {
-	      $('.worker-description__wrapper').load('worker3.html');
+	      $('.worker-description__wrapper').load('/public/html/worker3.html');
 	      $('.active__worker').removeClass('active__worker');
 	      $(this).children().addClass('active__worker');
 	  });
 	$('.worker__4').click(function() {
-	      $('.worker-description__wrapper').load('worker4.html');
+	      $('.worker-description__wrapper').load('/public/html/worker4.html');
 	      $('.active__worker').removeClass('active__worker');
 	      $(this).children().addClass('active__worker');
 	  });
 	$('.worker__5').click(function() {
-	      $('.worker-description__wrapper').load('worker5.html');
+	      $('.worker-description__wrapper').load('/public/html/worker5.html');
 	      $('.active__worker').removeClass('active__worker');
 	      $(this).children().addClass('active__worker');
 	  });
 	$('.worker__6').click(function() {
-	      $('.worker-description__wrapper').load('worker6.html');
+	      $('.worker-description__wrapper').load('/public/html/worker6.html');
 	      $('.active__worker').removeClass('active__worker');
 	      $(this).children().addClass('active__worker');
 	  });
 	$('.worker__7').click(function() {
-	      $('.worker-description__wrapper').load('worker7.html');
+	      $('.worker-description__wrapper').load('/public/html/worker7.html');
 	      $('.active__worker').removeClass('active__worker');
 	      $(this).children().addClass('active__worker');
 	  });
 	$('.worker__8').click(function() {
-	      $('.worker-description__wrapper').load('worker8.html');
+	      $('.worker-description__wrapper').load('/public/html/worker8.html');
 	      $('.active__worker').removeClass('active__worker');
 	      $(this).children().addClass('active__worker');
 	  });
 	$('.worker__9').click(function() {
-	      $('.worker-description__wrapper').load('worker9.html');
+	      $('.worker-description__wrapper').load('/public/html/worker9.html');
 	      $('.active__worker').removeClass('active__worker');
 	      $(this).children().addClass('active__worker');
 	  });
