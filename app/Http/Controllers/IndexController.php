@@ -8,6 +8,7 @@ use App\Category;
 use App\Contact;
 use App\Work;
 use App\Http\Requests\StoreContacts;
+use App\Http\Requests\ContactRequest;
 
 
 class IndexController extends Controller {

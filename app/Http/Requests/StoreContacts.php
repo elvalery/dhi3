@@ -3,6 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
+use App\Contact;
+use App\Action;
 
 class StoreContacts extends FormRequest {
   /**
@@ -21,7 +24,15 @@ class StoreContacts extends FormRequest {
    */
   public function rules() {
     return [
-      //
+      'phone' => 'required',
+      'type' => [
+        'required',
+        Rule::in(Contact::getAllTypes()),
+      ],
+      'action' => [
+        Rule::in(Action::all('id')),
+      ],
+      'file' => 'max:10240'
     ];
   }
 }
