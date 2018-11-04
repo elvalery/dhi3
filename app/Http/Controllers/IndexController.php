@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Category;
 use App\Contact;
+use App\Work;
 use App\Http\Requests\StoreContacts;
 
 
@@ -22,5 +23,10 @@ class IndexController extends Controller {
     Mail::to(config('mail.to'))->send(new ContactRequest($contact));
 
     return response()->json($contact);
+  }
+
+  public function work(Work $work) {
+    return view('work-modal', compact('work'));
+    //return response()->json($work);
   }
 }

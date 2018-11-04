@@ -12189,3 +12189,9 @@ label.form_input::after {
 .portfolio__item {
   width: 33%;
 }
+
+@media (max-width: 540px){
+  .portfolio__item {
+    width: 100%;
+  }
+}

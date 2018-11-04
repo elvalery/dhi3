@@ -1,19 +1,16 @@
-function openModal() {
-		getElementById('modal_page').style.display='block';
-	}
 function portfolioTabs() {
-		$("ul.tabs_buttons").on("click", "li:not(.bgc__active)", function() { 
-			$(this).siblings().closest("div.wall-tabs").find("div.wall_tab").eq($(this).index()).slick({
-				infinite: false,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: true,
-				nextArrow: '<span class="slick-next">></span>',
-				prevArrow: '<span class="slick-prev"><</span>'
-			});
+		$("ul.tabs_buttons").on("click", "li:not(.bgc__active)", function() {
+      $('.wall_tab.slick-initialized').slick('unslick');
+      $('.wall_tab__active').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        nextArrow: '<span class="slick-next">></span>',
+        prevArrow: '<span class="slick-prev"><</span>'
+      });
 		});
 
-		
 		$('.wall_tab__active').slick({
 			infinite: false,
 			slidesToShow: 1,
@@ -32,32 +29,37 @@ $(document).ready(function() {
 		arrows: false,
 		fade: true
 	});
-
-	
+  
+  
+  $('.modal__page_close').click(function () {
+    $('#modal_page').hide();
+    $('#modal_page_content').slick('unslick');
+  });
+  
 	$('.modal__open_button').click(function () {
-		document.getElementById('modal_page').style.display='block'; 
-			$('.modal__slick').slick({
-			infinite: false,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: true,
-			nextArrow: '<span class="modal__slick-next">></span>',
-			prevArrow: '<span class="modal__slick-prev"><</span>'
-		});
-	});
-	$('.portfolio__tab_button').click(function () {
-		$('.wall_tab__active').slick({
-			infinite: false,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: true,
-			nextArrow: '<span class="slick-next">></span>',
-			prevArrow: '<span class="slick-prev"><</span>'
+		const id = $(this).data()['id'];
+		
+    $.ajax({
+      type: 'get',
+      url: '/works/' + id,
+      success: function(data) {
+        $('#modal_page').show();
+				$('#modal_page_content').html(data);
+			},
+			complete: function() {
+        $('#modal_page_content').slick({
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          nextArrow: '<span class="modal__slick-next">></span>',
+          prevArrow: '<span class="modal__slick-prev"><</span>'
+        });
+			}
 		});
 	});
 	
 	portfolioTabs();
-
 
 	$('.info-name li').click(function(){
 		var numb = $(this).data('slide');
