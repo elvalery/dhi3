@@ -14,8 +14,9 @@ use App\Http\Requests\ContactRequest;
 class IndexController extends Controller {
   public function index() {
     $categories = Category::orderBy('order_id')->get();
+    $works = Work::orderBy('order_id')->get();
 
-    return view('index', compact('categories'));
+    return view('index', compact('categories', 'works'));
   }
 
   public function contact(StoreContacts $request) {
