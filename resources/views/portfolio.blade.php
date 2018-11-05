@@ -20,7 +20,7 @@
     <div class="portfolio__slick_outer wall wall_tab wall_tab__active">
       <div class="portfolio__slide_container"><div class="portfolio__slide_wrapper">
           @foreach($works as $work)
-            @if(($loop->iteration + 1) % 6 == 0)</div></div><div class="portfolio__slide_container"><div class="portfolio__slide_wrapper">@endif
+            @if(($loop->iteration - 1) % 6 == 0)</div></div><div class="portfolio__slide_container"><div class="portfolio__slide_wrapper">@endif
           <div class="portfolio__item" style="background-image: url({{ asset('storage/' . $work->cover) }});">
             <div class="portfolio__item_inner">
               <h3 class="block_title open__semibold text_size__md text-center c__white w-100">{{ $work->name }}</h3>
@@ -36,7 +36,7 @@
     <div class="portfolio__slick_outer wall wall_tab">
       <div class="portfolio__slide_container"><div class="portfolio__slide_wrapper">
           @foreach($category->works as $work)
-            @if($loop->iteration % 6 == 0)
+            @if(($loop->iteration - 1) % 6 == 0)
         </div></div><div class="portfolio__slide_container"><div class="portfolio__slide_wrapper">
           @endif
           <div class="portfolio__item" style="background-image: url({{ asset('storage/' . $work->cover) }});">
