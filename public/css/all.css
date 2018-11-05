@@ -12190,6 +12190,15 @@ label.form_input::after {
   width: 33%;
 }
 
+.tabs_buttons {
+  flex-wrap: wrap;
+  justify-content: space-evenly!important;
+}
+
+.portfolio__tab_button {
+  height: 42px;
+}
+
 @media (max-width: 540px){
   .portfolio__item {
     width: 100%;
