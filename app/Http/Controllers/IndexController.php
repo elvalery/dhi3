@@ -8,8 +8,8 @@ use App\Category;
 use App\Contact;
 use App\Work;
 use App\Http\Requests\StoreContacts;
-use App\Http\Requests\ContactRequest;
-
+use App\Mail\ContactRequest;
+use Illuminate\Support\Facades\Mail;
 
 class IndexController extends Controller {
   public function index() {
