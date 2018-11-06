@@ -13,3 +13,5 @@
 
 Route::get('/', 'IndexController@index');
 Route::get('/works/{work}', 'IndexController@work');
+Route::get('/html/{file}', 'IndexController@html');
+
