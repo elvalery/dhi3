@@ -54,10 +54,15 @@
 
 <div class="container portfolio__mobile">
   <div class="col-12 pb-0 pb-lg-5 wow fadeInUp">
-    <h1 class="montserrat__bold title_size__xl text-center">@lang('Работы мирового уровня')</h1>
+    <h1 class="montserrat__bold title_size__xl text-center">Portfolio</h1>
   </div>
   <div class="wall-tabs col-12 wow fadeInUp">
     <ul class="tabs_buttons d-flex flex-column flex-sm-row justify-content-between px-0" style="list-style-type: none;">@php($first = true)
+      @if ($works->count())
+        <li class="button portfolio__tab_button border-0 open__semibold text_size__md c__black bgc_h__yellow px-2 px-md-3 px-lg-5 py-2 my-2 my-sm-0 bgc__active">
+          <span>All</span>
+        </li>
+      @endif
       @foreach($categories as $category) @continue(!$category->works->count())
         <li class="button portfolio__tab_button border-0 open__semibold text_size__md c__black bgc_h__yellow px-2 px-md-3 px-lg-5 py-2 my-2 my-sm-0
                         @if ($first)bgc__active @php($first = false)@endif"><span>{{ $category->name }}</span></li>
