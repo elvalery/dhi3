@@ -29,6 +29,11 @@
   right: -31px;
 }
 
+.modal_page_content {
+  max-height: 95vh;
+  height: 80vh;
+}
+
 @media (max-width: 540px){
   .portfolio__item {
     width: 100%;
