@@ -18,6 +18,17 @@
   height: 42px;
 }
 
+.modal__page_close {
+  width:62px;
+  height: 62px;
+  background: url('../img/close.png');
+}
+
+.modal__page_close {
+  top: -31px;
+  right: -31px;
+}
+
 @media (max-width: 540px){
   .portfolio__item {
     width: 100%;
