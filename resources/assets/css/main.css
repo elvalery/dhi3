@@ -3796,7 +3796,8 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    margin-bottom: .5rem
+    margin-bottom: .5rem;
+    text-transform: capitalize;
 }
 
 p {
@@ -10578,42 +10579,42 @@ a.button:hover {
     transition: 0.5s;
 }
 .service_1{
-    background-image: url('../img/service_6.png');
+    background-image: url('../img/service_1.jpg');
     background-size: cover;
     background-position: center center;
 }
 .service_2{
-    background-image: url('../img/service_7.png');
+    background-image: url('../img/service_2.jpg');
     background-size: cover;
     background-position: center center;
 }
 .service_3{
-    background-image: url('../img/service_8.png');
+    background-image: url('../img/service_3.jpg');
     background-size: cover;
     background-position: center center;
 }
 .service_4{
-    background-image: url('../img/service_9.png');
+    background-image: url('../img/service_4.jpg');
     background-size: cover;
     background-position: center center;
 }
 .service_5{
-    background-image: url('../img/service_6.png');
+    background-image: url('../img/service_5.jpg');
     background-size: cover;
     background-position: center center;
 }
 .service_6{
-    background-image: url('../img/service_7.png');
+    background-image: url('../img/service_6.jpg');
     background-size: cover;
     background-position: center center;
 }
 .service_7{
-    background-image: url('../img/service_8.png');
+    background-image: url('../img/service_7.jpg');
     background-size: cover;
     background-position: center center;
 }
 .service_8{
-    background-image: url('../img/service_9.png');
+    background-image: url('../img/service_8.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -10626,14 +10627,37 @@ a.button:hover {
 .service__avatar{
     width: 30%;
     height: auto;
-    background-image: url(../img/service_ava_1.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
+}
+.service__avatar_1{
+    background-image: url('../img/service_1.jpg');
+}
+.service__avatar_2{
+    background-image: url('../img/service_2.jpg');
+}
+.service__avatar_3{
+    background-image: url('../img/service_3.jpg');
+}
+.service__avatar_4{
+    background-image: url('../img/service_4.jpg');
+}
+.service__avatar_5{
+    background-image: url('../img/service_5.jpg');
+}
+.service__avatar_6{
+    background-image: url('../img/service_6.jpg');
+}
+.service__avatar_7{
+    background-image: url('../img/service_7.jpg');
+}
+.service__avatar_8{
+    background-image: url('../img/service_8.jpg');
 }
 .service__content{
     width: 68%;
@@ -10651,7 +10675,7 @@ a.button:hover {
 }
 .service__portfolio{
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 .service__portfolio_item{
@@ -10957,8 +10981,8 @@ a.button:hover {
 }
 #software {
     background-image: url(../img/callback_bg.png);
-    background-repeat: no-repeat;
-    background-size: 100% 625px;
+    background-repeat: repeat-x;
+    background-size: auto 625px;
     background-position: 0 100%;
 }
 @media screen and (max-width:768px) {
@@ -11415,5 +11439,7 @@ label.form_input::after {
     width: 100%;
     height: 420px
 }
-
+.display-no{
+    display: none;
+}
 /*# sourceMappingURL=main.css.map */

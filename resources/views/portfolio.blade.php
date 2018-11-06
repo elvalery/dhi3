@@ -1,6 +1,6 @@
 <div class="container portfolio__lg">
   <div class="col-12 pb-0 pb-lg-5 wow fadeInUp">
-    <h1 class="montserrat__bold title_size__xl text-center">@lang('Работы мирового уровня')</h1>
+    <h1 class="montserrat__bold title_size__xl text-center">Portfolio</h1>
   </div>
   <div class="wall-tabs col-12 wow fadeInUp">
     <ul class="tabs_buttons d-flex flex-column flex-sm-row justify-content-between px-0" style="list-style-type: none;">
