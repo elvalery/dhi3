@@ -14,6 +14,8 @@
     <meta http-equiv="Cache-Control" content="public">
     <meta http-equiv="Expires" content="Wed, 22 Mar 3205 00:20:05 GMT">
     
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    
     <link rel="stylesheet" href="{{ mix('css/slick.css') }}">
     <link href="{{ mix('css/all.css') }}" rel="stylesheet" />
     <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -652,29 +654,30 @@
     <div class="container wow fadeInUp">
         <div class="col-12">
             <div class="d-flex justify-content-center border brc__black">
-                <form id="calculation_form" class="form_calculation px-5 py-4">
+                <form id="calculation_form" class="form_calculation px-5 py-4" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
                     <h2 class="montserrat__semibold title_size__md text-center">Calculate the cost</h2>
                     <p class="open__light text_size__md text-center c__black">
                         Leave your contacts <br /> and we will orient you at the price of our services <br /> within 25 minutes
                     </p>
                     <div class="text-center my-2">
                         <label for="calculation_user_name" class="form_label open__semibold c__metal text_size__md text-left mb-0">Enter name</label><br />
-                        <input type="text" id="calculation_user_name" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1">
+                        <input required type="text" name="name" id="calculation_user_name" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1">
                     </div>
                     <div class="text-center my-2">
                         <label for="calculation_user_email" class="form_label open__semibold text_size__md c__metal text-left mb-0">E-mail</label><br />
-                        <input type="email" id="calculation_user_email" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1">
+                        <input type="email" name="email" id="calculation_user_email" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1">
                     </div>
                     <div class="text-center mt-3 mb-0">
-                        <input type="file" id="calculation_user_file">
+                        <input type="file" id="calculation_user_file" name="file">
                         <label for="calculation_user_file" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1 text-left">upload test assignment</label>
                     </div>
                     <div class="text-center mt-0 mb-3">
                         <label for="calculation_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number for clarification of details</label><br />
-                        <input type="text" id="calculation_user_phone" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1" name="phone-number" placeholder="38 (___) ___ __ __">
+                        <input required type="text" name="phone" id="calculation_user_phone" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="38 (___) ___ __ __">
                     </div>
                     <div class="text-center my-3">
-                        <button type="button" onclick="getElementById('modal_ty_page').style.display='block';" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-3 px-sm-5 py-2">Submit</button>
+                        <input type="hidden" name="type" value="{{ App\Contact::TYPE_QUOTE }}" />
+                        <button type="submit" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-3 px-sm-5 py-2">Submit</button>
                     </div>
                 </form>
             </div>

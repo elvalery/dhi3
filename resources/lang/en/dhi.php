@@ -3,8 +3,9 @@ return [
   "Работы мирового уровня" => 'Portfolio',
   'Подробнее' => 'Details',
   'contact-type' => [
-    'test' => 'Perform a test task',
-    'quote' => 'Get Quote',
-    'order' => 'Order'
+    'test_assignment' => 'Test Assignment',
+    'quote' => 'Calculate the cost',
+    'request_offer' => 'Request Offer',
+    'request_a_call' => 'Request Call'
   ],
 ];

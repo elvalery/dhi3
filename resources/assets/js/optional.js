@@ -25,6 +25,12 @@ function portfolioTabs() {
 	}
 
 $(document).ready(function() {
+  $.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+  });
+  
 	$('.inforgraphic-slider').slick({
 		infinite: true,
 		slidesToShow: 1,
@@ -32,7 +38,7 @@ $(document).ready(function() {
 		arrows: false,
 		fade: true
 	});
-  
+ 
   
   $('.modal__page_close').click(function () {
     $('#modal_page').hide();
@@ -68,6 +74,22 @@ $(document).ready(function() {
     $('.inforgraphic-slider').slick('slickGoTo', numb);
     $(this).addClass('active').siblings().removeClass('active');
   });
+  
+  $('#calculation_form').submit(function (e) {
+  	e.preventDefault();
+   
+  	$.ajax({
+      type: 'post',
+      url: '/contacts',
+      data:new FormData($("#calculation_form")[0]),
+      cache: false,
+			processData: false,
+      contentType: false,
+			complete: function () {
+        $('#modal_ty_page').show();
+      }
+		});
+	});
 });
 
 
@@ -193,3 +215,4 @@ $(document).ready(function(){
 $(".bim__video_wrapper").click(function(){
     $(".bim__video").css("pointer-events","auto");
 });
+

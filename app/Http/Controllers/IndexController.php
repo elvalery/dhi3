@@ -19,9 +19,15 @@ class IndexController extends Controller {
     return view('index', compact('categories', 'works'));
   }
 
-  public function contact(StoreContacts $request) {
+  public function contacts(StoreContacts $request) {
     $contact = Contact::create($request->validated());
 
+    if ($request->hasFile('file') && $request->file('file')->isValid()) {
+      $path = $request->file->store('form', 'public');
+      $contact->file = url('storage/'. $path);
+      $contact->path = storage_path($path);
+      $contact->save();
+    }
     Mail::to(config('mail.to'))->send(new ContactRequest($contact));
 
     return response()->json($contact);
@@ -29,7 +35,6 @@ class IndexController extends Controller {
 
   public function work(Work $work) {
     return view('work-modal', compact('work'));
-    //return response()->json($work);
   }
 
   public function html($file) {
