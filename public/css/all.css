@@ -12349,6 +12349,10 @@ label.form_input::after {
   height: 80vh;
 }
 
+.bim__video_wrapper {
+  width: calc(100vw - 18px);
+}
+
 @media (max-width: 540px){
   .portfolio__item {
     width: 100%;
