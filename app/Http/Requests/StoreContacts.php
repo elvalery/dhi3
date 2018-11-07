@@ -24,18 +24,19 @@ class StoreContacts extends FormRequest {
    */
   public function rules() {
     return [
-      'name' => 'max:255',
+      'name' => 'sometimes|nullable|max:255',
       'phone' => 'required',
-      'email' => 'email',
-      'description' => 'string',
+      'email' => 'sometimes|nullable|email',
+      'description' => 'sometimes|nullable|string',
       'type' => [
      //   'required',
         Rule::in(Contact::getAllTypes()),
       ],
       'action' => [
+        'sometimes|nullable',
         Rule::in(Action::all('id')),
       ],
-      'file' => 'max:20480'
+      'file' => 'sometimes|nullable|max:20480'
     ];
   }
 }
