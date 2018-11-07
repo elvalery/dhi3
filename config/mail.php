@@ -120,4 +120,5 @@ return [
         ],
     ],
 
+  'to' => env('MAIL_TO')
 ];
