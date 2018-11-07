@@ -36,4 +36,8 @@ class Contact extends Model {
       Storage::disk('public')->delete($contact->path);
     });
   }
+
+  public function actions() {
+    return $this->belongsToMany(Action::class, 'contact_action');
+  }
 }
