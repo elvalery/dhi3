@@ -62,24 +62,9 @@
 
 <section id="modal_page" class="container-fluid modal_page">
     <div class="container">
-        <a href="#" onclick="return false" id="close_page" class="modal__page_close" style="outline:none;">close</a>
-        <div class="modal_page_content animated fadeInUp modal__slick">
-            <div class="modal__slick_item">
-                <img src="img/service_1.jpg" alt="">
-                <div class="modal__slick_text">When the services and needs of a neighborhood evolve, the architecture that defines it must progress in tandem. As the world becomes more connected and cities more dynamic, a global approach to development, design, and construction must be employed to tether buildings and residents to local life. For ODA and the West Half Street site in Washington, DC, this meant an opportunity to create a cohesive architectural vision that links people, places, and events.</div>
-            </div>
-            <div class="modal__slick_item">
-                <img src="img/service_2.jpg" alt="">
-                <div class="modal__slick_text">When the services and needs of a neighborhood evolve, the architecture that defines it must progress in tandem. As the world becomes more connected and cities more dynamic, a global approach to development, design, and construction must be employed to tether buildings and residents to local life. For ODA and the West Half Street site in Washington, DC, this meant an opportunity to create a cohesive architectural vision that links people, places, and events.</div>
-            </div>
-            <div class="modal__slick_item">
-                <img src="img/service_1.jpg" alt="">
-                <div class="modal__slick_text">When the services and needs of a neighborhood evolve, the architecture that defines it must progress in tandem. As the world becomes more connected and cities more dynamic, a global approach to development, design, and construction must be employed to tether buildings and residents to local life. For ODA and the West Half Street site in Washington, DC, this meant an opportunity to create a cohesive architectural vision that links people, places, and events.</div>
-            </div>
-            <div class="modal__slick_item">
-                <img src="img/service_2.jpg" alt="">
-                <div class="modal__slick_text">When the services and needs of a neighborhood evolve, the architecture that defines it must progress in tandem. As the world becomes more connected and cities more dynamic, a global approach to development, design, and construction must be employed to tether buildings and residents to local life. For ODA and the West Half Street site in Washington, DC, this meant an opportunity to create a cohesive architectural vision that links people, places, and events.</div>
-            </div>
+        <div class="modal_page_content animated fadeInUp" >
+            <a href="#" onclick="return false" id="close_page" class="modal__page_close" style="outline:none;"></a>
+            <div class="modal__slick" id="modal_page_content"></div>
         </div>
     </div>
 </section>
@@ -466,7 +451,7 @@
         </div>
         <div class="col-12 wow fadeInUp">
             <div class="d-flex justify-content-center border brc__black">
-                <form id="bid_form" class="form_bid px-5 py-4">
+                <form id="bid_form" class="form_bid px-5 py-4" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
                     <h2 class="montserrat__semibold title_size__md text-center">leave a request</h2>
                     <p class="open__light text_size__md text-center c__black">and we will perform your<br />test assignment</p>
                     <div class="text-center my-3">
