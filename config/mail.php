@@ -7,7 +7,8 @@ return [
     | Mail Driver
     |--------------------------------------------------------------------------
     |
-    | Laravel supports both SMTP and PHP's "mail" function as drivers for the
+    | Laravel supports both
+    SMTP and PHP's "mail" function as drivers for the
     | sending of e-mail. You may specify which one you're using throughout
     | your application here. By default, Laravel is setup for SMTP mail.
     |
@@ -120,5 +121,6 @@ return [
         ],
     ],
 
-  'to' => env('MAIL_TO')
+  'to' => env('MAIL_TO'),
+  'cc' => env('MAIL_CC')
 ];

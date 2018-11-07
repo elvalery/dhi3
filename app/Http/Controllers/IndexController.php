@@ -28,7 +28,9 @@ class IndexController extends Controller {
       $contact->path = storage_path($path);
       $contact->save();
     }
-    Mail::to(config('mail.to'))->send(new ContactRequest($contact));
+    Mail::to(config('mail.to'))
+      ->cc(config('mail.cc'))
+      ->send(new ContactRequest($contact));
 
     return response()->json($contact);
   }
