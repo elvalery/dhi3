@@ -121,6 +121,6 @@ return [
         ],
     ],
 
-  'to' => env('MAIL_TO'),
-  'cc' => env('MAIL_CC')
+  'to' => env('MAIL_TO', ''),
+  'cc' => env('MAIL_CC', '')
 ];

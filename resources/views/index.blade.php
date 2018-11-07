@@ -464,23 +464,23 @@
                     
                     <div class="text-center my-0 service-choice-wrapper">
                         <div class="service-choice">
-                            <input type="checkbox" name="action" value="1" id="callback_user_service_bim-model">
+                            <input type="checkbox" name="action[]" value="1" id="callback_user_service_bim-model">
                             <label for="callback_user_service_bim-model" class="open__light">request BIM model</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="action" value="4" id="callback_user_service_portfolio">
+                            <input type="checkbox" name="action[]" value="4" id="callback_user_service_portfolio">
                             <label for="callback_user_service_portfolio" class="open__light">request drawing sample</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="action"  value="2" id="callback_user_service_email">
+                            <input type="checkbox" name="action[]"  value="2" id="callback_user_service_email">
                             <label for="callback_user_service_email" class="open__light">write me</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="action"  value="5" id="callback_user_service_call">
+                            <input type="checkbox" name="action[]"  value="5" id="callback_user_service_call">
                             <label for="callback_user_service_call" class="open__light">call me</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="action"  value="3" id="callback_user_service_quot">
+                            <input type="checkbox" name="action[]"  value="3" id="callback_user_service_quot">
                             <label for="callback_user_service_quot" class="open__light">get quote</label>
                         </div>
                     </div>
@@ -815,23 +815,23 @@
                     
                     <div class="text-center my-0 service-choice-wrapper">
                         <div class="service-choice">
-                            <input type="checkbox" name="action" value="1" id="callback_user_service_bim-model">
+                            <input type="checkbox" name="action[]" value="1" id="callback_user_service_bim-model">
                             <label for="callback_user_service_bim-model" class="open__light">request BIM model</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="action" value="4" id="callback_user_service_portfolio">
+                            <input type="checkbox" name="action[]" value="4" id="callback_user_service_portfolio">
                             <label for="callback_user_service_portfolio" class="open__light">request drawing sample</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="action" value="2" id="callback_user_service_email">
+                            <input type="checkbox" name="action[]" value="2" id="callback_user_service_email">
                             <label for="callback_user_service_email" class="open__light">write me</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="action" value="5" id="callback_user_service_call">
+                            <input type="checkbox" name="action[]" value="5" id="callback_user_service_call">
                             <label for="callback_user_service_call" class="open__light">call me</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="action" value="3" id="callback_user_service_quot">
+                            <input type="checkbox" name="action[]" value="3" id="callback_user_service_quot">
                             <label for="callback_user_service_quot" class="open__light">get quote</label>
                         </div>
                     </div>

@@ -28,6 +28,14 @@ class IndexController extends Controller {
       $contact->path = storage_path($path);
       $contact->save();
     }
+
+    if ($request->has("action")) {
+      foreach ($request->get('action') as $action) {
+        $contact->actions()->attach(\App\Action::find($action));
+      }
+      $contact->save();
+    }
+
     Mail::to(config('mail.to'))
       ->cc(config('mail.cc'))
       ->send(new ContactRequest($contact));
