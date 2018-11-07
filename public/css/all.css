@@ -12350,7 +12350,7 @@ label.form_input::after {
 }
 
 .bim__video_wrapper {
-  width: calc(100vw - 18px);
+  width: calc(100vw - 17px);
 }
 
 @media (max-width: 540px){
