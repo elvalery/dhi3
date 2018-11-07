@@ -90,6 +90,8 @@ $(document).ready(function() {
       }
 		});
 	});
+  
+  $('input[name="phone"]').mask("00 (000) 000 00 00")
 });
 
 
