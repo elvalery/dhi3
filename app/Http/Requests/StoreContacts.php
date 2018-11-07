@@ -32,8 +32,9 @@ class StoreContacts extends FormRequest {
         'required',
         Rule::in(Contact::getAllTypes()),
       ],
-      'action' => [
-        'sometimes|nullable',
+      'action[]' => [
+        'sometimes',
+        'nullable',
         Rule::in(Action::all('id')),
       ],
       'file' => 'sometimes|nullable|max:20480'

@@ -81,7 +81,7 @@ $(document).ready(function() {
   	$.ajax({
       type: 'post',
       url: '/contacts',
-      data:new FormData($("#calculation_form")[0]),
+      data:new FormData($(this)[0]),
       cache: false,
 			processData: false,
       contentType: false,
