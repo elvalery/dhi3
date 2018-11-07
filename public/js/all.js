@@ -78,7 +78,7 @@ $(document).ready(function() {
     $(this).addClass('active').siblings().removeClass('active');
   });
   
-  $('#calculation_form').submit(function (e) {
+  $('#calculation_form, #callback_form, #bid_form, #modal_callback_form').submit(function (e) {
   	e.preventDefault();
    
   	$.ajax({

@@ -29,7 +29,7 @@ class StoreContacts extends FormRequest {
       'email' => 'sometimes|nullable|email',
       'description' => 'sometimes|nullable|string',
       'type' => [
-     //   'required',
+        'required',
         Rule::in(Contact::getAllTypes()),
       ],
       'action' => [

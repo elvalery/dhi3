@@ -33,24 +33,25 @@
             </div>
             <div class="col-12 pb-3">
                 <div class="d-flex justify-content-center">
-                    <form id="modal_callback_form" class="form_modal_callback px-0 py-0">
+                    <form id="modal_callback_form" class="form_modal_callback px-0 py-0" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
                         <h2 class="fira__regular title_size__md text-center">Make an order</h2>
                         <p class="fira__light text_size__md text-center c__black">Leave your contacts and we will orient you at the price of our services within 25 minutes</p>
                         <div class="text-center my-2">
                             <label for="modal_callback_user_choise" class="form_label fira__regular text_size__md text-left mx-0" >Call me</label>
-                            <select name="modal_callback_user_choise" id="modal_callback_user_choise" class="form_select fira__light text_size__md border brc__metal brc_h__yellow mx-0 py-1 px-2">
-                                <option class="form_option text_size__md" value="as soon as possible">as soon as possible</option>
-                                <option class="form_option text_size__md" value="tomorrow">tomorrow</option>
+                            <select name="description" id="modal_callback_user_choise" class="form_select fira__light text_size__md border brc__metal brc_h__yellow mx-0 py-1 px-2">
+                                <option class="form_option text_size__md" value="Call me as soon as possible">as soon as possible</option>
+                                <option class="form_option text_size__md" value="Call me tomorrow">tomorrow</option>
                             </select>
                             <!--<input type="text" id="modal_callback_user_choise" class="form_input border brc__black px-3 py-1" value="+38 " placeholder="()" style="width: 45%;">-->
                         </div>
                         <div class="text-center my-2">
-                            <input type="text" class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="Your name">
+                            <input type="text" name="name" class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="Your name">
                         </div>
                         <div class="text-center my-2">
-                            <input type="text" id="modal_callback_user_phone" name="phone-number" class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="38 (___) ___ __ __">
+                            <input type="text" id="modal_callback_user_phone" name="phone" required class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="38 (___) ___ __ __">
                         </div>
                         <div class="text-center my-3">
+                            <input type="hidden" name="type" value="{{ App\Contact::TYPE_CALL }}" />
                             <button type="submit" class="button border-0 fira__medium text_size__md c__black bgc__yellow bgc_h__yellow px-5 py-2">Request a call</button>
                         </div>
                     </form>
@@ -455,7 +456,7 @@
                     <h2 class="montserrat__semibold title_size__md text-center">leave a request</h2>
                     <p class="open__light text_size__md text-center c__black">and we will perform your<br />test assignment</p>
                     <div class="text-center my-3">
-                        <input type="text" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="Your name">
+                        <input type="text" name="name" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="Your name">
                     </div>
                     <div class="text-center my-0">
                         <div class="service-choice__button open__bold c__black text_size__md border brc__metal brc_h__black px-3 py-1">Choose a service<span>></span></div>
@@ -463,36 +464,37 @@
                     
                     <div class="text-center my-0 service-choice-wrapper">
                         <div class="service-choice">
-                            <input type="checkbox" name="bim_model_choice" value="request BIM model" id="callback_user_service_bim-model">
+                            <input type="checkbox" name="action" value="1" id="callback_user_service_bim-model">
                             <label for="callback_user_service_bim-model" class="open__light">request BIM model</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="bim_portfolio_choice" value="request drawing sample" id="callback_user_service_portfolio">
+                            <input type="checkbox" name="action" value="4" id="callback_user_service_portfolio">
                             <label for="callback_user_service_portfolio" class="open__light">request drawing sample</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="bim_email_choice" value="email me" id="callback_user_service_email">
+                            <input type="checkbox" name="action"  value="2" id="callback_user_service_email">
                             <label for="callback_user_service_email" class="open__light">write me</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="bim_call_choice" value="call me" id="callback_user_service_call">
+                            <input type="checkbox" name="action"  value="5" id="callback_user_service_call">
                             <label for="callback_user_service_call" class="open__light">call me</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="bim_quot_choice" value="get quote" id="callback_user_service_quot">
+                            <input type="checkbox" name="action"  value="3" id="callback_user_service_quot">
                             <label for="callback_user_service_quot" class="open__light">get quote</label>
                         </div>
                     </div>
                     <div class="text-center mt-2 mb-0">
-                        <input type="file" id="bid_user_file">
+                        <input type="file" id="bid_user_file" name="file">
                         <label for="bid_user_file" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1 text-left">upload test assignment</label>
                     </div>
                     <div class="text-center mt-0">
                         <label for="bid_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number</label><br />
-                        <input type="text" id="bid_user_phone" name="phone-number" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="38 (___) ___ __ __">
+                        <input type="text" id="bid_user_phone" name="phone" required class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="38 (___) ___ __ __">
                     </div>
                     <div class="text-center my-3">
-                        <button type="button" onclick="getElementById('modal_ty_page').style.display='block';" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-3 px-sm-5 py-2">Submit</button>
+                        <input type="hidden" name="type" value="{{ App\Contact::TYPE_TEST }}" />
+                        <button type="submit" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-3 px-sm-5 py-2">Submit</button>
                     </div>
                 </form>
             </div>
@@ -802,7 +804,7 @@
         
         <div id="contacts" class="col-12 wow fadeInUp">
             <div class="d-flex justify-content-center">
-                <form id="callback_form" class="form_callback px-0 px-sm-5 py-4">
+                <form id="callback_form" class="form_callback px-0 px-sm-5 py-4" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
                     <h2 class="montserrat__bold title_size__md text-center">Leave a request</h2>
                     <p class="open__light text_size__lg text-center c__black" style="font-weight: bold;">
                         and get your personal offer
@@ -813,37 +815,37 @@
                     
                     <div class="text-center my-0 service-choice-wrapper">
                         <div class="service-choice">
-                            <input type="checkbox" name="bim_model_choice" value="request BIM model" id="callback_user_service_bim-model">
+                            <input type="checkbox" name="action" value="1" id="callback_user_service_bim-model">
                             <label for="callback_user_service_bim-model" class="open__light">request BIM model</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="bim_portfolio_choice" value="request drawing sample" id="callback_user_service_portfolio">
+                            <input type="checkbox" name="action" value="4" id="callback_user_service_portfolio">
                             <label for="callback_user_service_portfolio" class="open__light">request drawing sample</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="bim_email_choice" value="email me" id="callback_user_service_email">
+                            <input type="checkbox" name="action" value="2" id="callback_user_service_email">
                             <label for="callback_user_service_email" class="open__light">write me</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="bim_call_choice" value="call me" id="callback_user_service_call">
+                            <input type="checkbox" name="action" value="5" id="callback_user_service_call">
                             <label for="callback_user_service_call" class="open__light">call me</label>
                         </div>
                         <div class="service-choice">
-                            <input type="checkbox" name="bim_quot_choice" value="get quote" id="callback_user_service_quot">
+                            <input type="checkbox" name="action" value="3" id="callback_user_service_quot">
                             <label for="callback_user_service_quot" class="open__light">get quote</label>
                         </div>
                     </div>
                     
                     <div class="text-center my-0">
-                        <input type="file" id="callback_user_file">
+                        <input type="file" id="callback_user_file" name="file">
                         <label for="callback_user_file" class="form_input open__light c__black border brc__metal brc_h__yellow text_size__md  bgc__transparent px-3 py-1 mt-2 text-left" style="max-width:100%">upload test assignment</label>
                     </div>
                     <div class="text-center mt-0 mb-3">
                         <label for="callback_user_phone" class="form_label open__semibold c__black text_size__md text-left mb-0">Contact phone number<br />
-                            <input type="phone" id="callback_user_phone" class="form_input open__light c__black border brc__metal brc_h__yellow bgc__transparent px-3 py-1" name="phone-number" placeholder="38 (___) ___ __ __">
+                            <input type="phone" required id="callback_user_phone" class="form_input open__light c__black border brc__metal brc_h__yellow bgc__transparent px-3 py-1" name="phone" placeholder="38 (___) ___ __ __">
                         </label>
                         <label for="callback_user_email" class="form_label open__semibold c__black text_size__md text-left mt-2 mb-0">E-mail<br />
-                            <input type="email" id="callback_user_email" class="form_input open__light c__black text_size__md border brc__metal brc_h__yellow bgc__transparent px-3 py-1" placeholder="Enter your E-mail">
+                            <input type="email" name="email" id="callback_user_email" class="form_input open__light c__black text_size__md border brc__metal brc_h__yellow bgc__transparent px-3 py-1" placeholder="Enter your E-mail">
                         </label>
                     </div>
                     <div class="text-center my-2">
@@ -851,7 +853,8 @@
                     </div>
                     <div class="text-right d-flex justify-content-center my-3">
                         <div class="form_textarea">
-                            <button type="button" onclick="getElementById('modal_ty_page').style.display='block';" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-3 px-sm-5 py-3" style="text-transform: uppercase; font-weight: bold;">get offer</button>
+                            <input type="hidden" name="type" value="{{ App\Contact::TYPE_ORDER }}" />
+                            <button type="submit" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-3 px-sm-5 py-3" style="text-transform: uppercase; font-weight: bold;">get offer</button>
                         </div>
                     </div>
                 </form>
