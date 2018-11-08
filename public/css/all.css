@@ -12123,6 +12123,15 @@ label.form_input::after {
 	.modal_page_content{
 		max-height: 55%;
 	}
+	#contacts{
+		height: 620px;
+	}
+	#callback_form{
+		padding-top: 0!important;
+	}
+	.task__field{
+		height: 75px;
+	}
 	.modal__page_close{
 		top: 20%;
 	}
