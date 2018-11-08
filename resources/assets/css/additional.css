@@ -7,6 +7,7 @@
 
 .portfolio__item {
   width: 33%;
+  cursor: pointer;
 }
 
 .tabs_buttons {
