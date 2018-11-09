@@ -860,6 +860,7 @@
                 </form>
             </div>
         </div>
+        <div style="font-size: 12px; text-align: right">Photograph by <a href="https://www.bloomberg.com/company/london/" target="_blank">Bloomberg</a></div>
     </div>
 </section>
 
