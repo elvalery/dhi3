@@ -48,7 +48,7 @@
                             <input type="text" name="name" class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="Your name">
                         </div>
                         <div class="text-center my-2">
-                            <input type="text" id="modal_callback_user_phone" name="phone" required class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="38 (___) ___ __ __">
+                            <input type="text" id="modal_callback_user_phone" name="phone" required class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="__ (___) ___ __ __">
                         </div>
                         <div class="text-center my-3">
                             <input type="hidden" name="type" value="{{ App\Contact::TYPE_CALL }}" />
@@ -490,7 +490,7 @@
                     </div>
                     <div class="text-center mt-0">
                         <label for="bid_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number</label><br />
-                        <input type="text" id="bid_user_phone" name="phone" required class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="38 (___) ___ __ __">
+                        <input type="text" id="bid_user_phone" name="phone" required class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="__ (___) ___ __ __">
                     </div>
                     <div class="text-center my-3">
                         <input type="hidden" name="type" value="{{ App\Contact::TYPE_TEST }}" />
@@ -660,7 +660,7 @@
                     </div>
                     <div class="text-center mt-0 mb-3">
                         <label for="calculation_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number for clarification of details</label><br />
-                        <input required type="text" name="phone" id="calculation_user_phone" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="38 (___) ___ __ __">
+                        <input required type="text" name="phone" id="calculation_user_phone" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="__ (___) ___ __ __">
                     </div>
                     <div class="text-center my-3">
                         <input type="hidden" name="type" value="{{ App\Contact::TYPE_QUOTE }}" />
