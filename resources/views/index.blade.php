@@ -849,7 +849,7 @@
                         </label>
                     </div>
                     <div class="text-center my-2">
-                        <textarea name="description" class="form_textarea border open__light text_size__md c__black brc__metal brc_h__yellow bgc__transparent px-3 py-1" rows="8" cols="80" placeholder="Describe the task"></textarea>
+                        <textarea name="description" class="form_textarea task__field border open__light text_size__md c__black brc__metal brc_h__yellow bgc__transparent px-3 py-1" rows="8" cols="80" placeholder="Describe the task"></textarea>
                     </div>
                     <div class="text-right d-flex justify-content-center my-3">
                         <div class="form_textarea">
