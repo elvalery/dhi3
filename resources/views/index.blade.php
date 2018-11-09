@@ -842,7 +842,7 @@
                     </div>
                     <div class="text-center mt-0 mb-3">
                         <label for="callback_user_phone" class="form_label open__semibold c__black text_size__md text-left mb-0">Contact phone number<br />
-                            <input type="phone" required id="callback_user_phone" class="form_input open__light c__black border brc__metal brc_h__yellow bgc__transparent px-3 py-1" name="phone" placeholder="38 (___) ___ __ __">
+                            <input type="phone" required id="callback_user_phone" class="form_input open__light c__black border brc__metal brc_h__yellow bgc__transparent px-3 py-1" name="phone" placeholder="__ (___) ___ __ __">
                         </label>
                         <label for="callback_user_email" class="form_label open__semibold c__black text_size__md text-left mt-2 mb-0">E-mail<br />
                             <input type="email" name="email" id="callback_user_email" class="form_input open__light c__black text_size__md border brc__metal brc_h__yellow bgc__transparent px-3 py-1" placeholder="Enter your E-mail">
@@ -872,7 +872,7 @@
         <div class="col-12 wow fadeInUp">
             <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-between adress-wrapper">
                 <div class="contact_block pb-0 pb-md-3 pb-md-0">
-                    <p class="txt open__light text_size__md">Kiyv, Pushkinska street, 19, office 6</p>
+                    <p class="txt open__light text_size__md">Kiyv, 18V Mykhailvska St., office 106</p>
                     <p class="txt open__light text_size__md">+38 (097) 908 26 78 </p>
                     <p class="txt open__light text_size__md">info@dhi-outsource.com</p>
                     <p class="txt open__light text_size__md">Mon-Fri: 9.00 - 18.00</p>
@@ -894,7 +894,7 @@
         </div>
     </div>
     <div class="py-0 my-0 text-center wow fadeInUp maps-wrapper">
-        <div class="map map_1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.589698305447!2d30.5151422533948!3d50.44400735006834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5624704451%3A0xc8507a3f0735da3a!2sPushkinska+St%2C+19%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1541445715016" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        <div class="map map_1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.0845197721952!2d30.521768729264345!3d50.453428852605576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5aaa189adb%3A0x67b80543cf6115fc!2z0YPQuy4g0JzQuNGF0LDQudC70L7QstGB0LrQsNGPLCAxONCSLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1541804903159" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></iframe></div>
         <div class="map map_2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4921.310950747094!2d4.4659286473339215!3d51.92199659221616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a49876d879%3A0x1d76a2817f4b838c!2sDrievriendenstraat+4B%2C+3014+JR+Rotterdam%2C+Netherlands!5e0!3m2!1sen!2sua!4v1541445846765" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
     </div>
     <div class="bgc__graphite py-4" style="margin-top: 3rem;">
@@ -936,7 +936,6 @@
 </footer>
 
 <script src="{{ mix('js/all.js') }}"></script>
-<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCq-YyosZPzamYukHmjw2e8ForECU4D4p0&callback=initMap" async defer></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 <script src="{{ mix('js/slick.js') }}"></script>
 </body>
