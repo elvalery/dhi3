@@ -1067,7 +1067,7 @@ svg:not(:root).svg-inline--fa {
     from,
     to {
         -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
-        a ki     ki                    p^i            @\i    ˆki            @ki     @      @ki            transform: scale3d(.3, .3, .3)
+        a ki     ki                    p^i            @\i    ï¿½ki            @ki     @      @ki            transform: scale3d(.3, .3, .3)
     }
     20% {
         -webkit-transform: scale3d(1.1, 1.1, 1.1);
@@ -2154,7 +2154,7 @@ svg:not(:root).svg-inline--fa {
         -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
         transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
         -webkit-animation-timing-function: ease-out;
-        animation-timing ki     ki                    p^i            @\i    ˆki            @ki     @      @ki            g);
+        animation-timing ki     ki                    p^i            @\i    ï¿½ki            @ki     @      @ki            g);
         transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out
@@ -3010,7 +3010,7 @@ svg:not(:root).svg-inline--fa {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-        transform: sc ki     ki                    p^i            @\i    ˆki            @ki     @      @ki            9);
+        transform: sc ki     ki                    p^i            @\i    ï¿½ki            @ki     @      @ki            9);
         animation-timing-function: cubic-bezier(.55, .055, .675, .19)
     }
     60% {
@@ -3958,7 +3958,7 @@ button {
 
 button:focus {
     outline: 1px dotted;
-    outline: 5px a ki     ki                    p^i            @\i    ˆki            @ki     @      @ki            e: inherit;
+    outline: 5px a ki     ki                    p^i            @\i    ï¿½ki            @ki     @      @ki            e: inherit;
     line-height: inherit
 }
 
@@ -5442,7 +5442,7 @@ select.form-control-lg:not([size]):not([multiple]) {
     margin-right: .75rem
 }
 
-.form-check-inline ki     ki                    p^i            @\i    ˆki            @ki     @      @ki            lay: none;
+.form-check-inline ki     ki                    p^i            @\i    ï¿½ki            @ki     @      @ki            lay: none;
 width:100%;
 margin-top:.25rem;
 font-size:80%;
@@ -6115,7 +6115,7 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 .2rem rgba(23, 162, 184, .5)
 }
 .btn-outline-info.disabled,
-.btn-outline-info:di ki     ki                    p^i            @\i    ˆki            @ki     @      @ki            ,
+.btn-outline-info:di ki     ki                    p^i            @\i    ï¿½ki            @ki     @      @ki            ,
 .btn-outline-info:not(:disabled):not(.disabled):active,
 .show>.btn-outline-info.dropdown-toggle {
     color: #fff;
@@ -6945,7 +6945,7 @@ tbody.collapse.show {
 }
 .navbar-expand>.container,
 .navbar-expand>.container-fluid {
-    -ms-flex-wrap: now ki     ki                    p^i            @\i    ˆki            @ki     @      @ki            t;
+    -ms-flex-wrap: now ki     ki                    p^i            @\i    ï¿½ki            @ki     @      @ki            t;
     -ms-flex-preferred-size: auto;
     flex-basis: auto
 }
@@ -7833,7 +7833,7 @@ button.bg-dark:hover {
 .embed-responsive-16by9::before {
     padding-top: 56.25%
 }
-ki     ki                    p^i            @\i    ˆki            @ki     @      @ki             {
+ki     ki                    p^i            @\i    ï¿½ki            @ki     @      @ki             {
     -ms-flex-direction: row!important;
     flex-direction: row!important
 }
@@ -8838,7 +8838,7 @@ ki     ki                    p^i            @\i    ˆki            @ki     
     padding-left: .25rem!important
 }
 .p-2 {
-    padding: .5rem!i ki     ki                    p^i            @\i    ˆki            @ki     @      @ki            adding-bottom: .5rem!important
+    padding: .5rem!i ki     ki                    p^i            @\i    ï¿½ki            @ki     @      @ki            adding-bottom: .5rem!important
 }
 .pl-2,
 .px-2 {
@@ -10632,7 +10632,7 @@ a.button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: rgba(0, 0, 0, 0.7);*/
     background-blend-mode: overlay;
 }
 .service__avatar_1{
@@ -10675,7 +10675,7 @@ a.button:hover {
 }
 .service__portfolio{
     width: 100%;
-    display: none;
+    display: flex;
     justify-content: space-between;
 }
 .service__portfolio_item{
