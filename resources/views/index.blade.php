@@ -292,7 +292,7 @@
                 <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_1.jpg);">
                     <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
                         <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting / Design Package development under supervision of your Project Architect (software to comply with the one used in the head office)</h3>
+                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting</h3>
                         </div>
                     </div>
                 </div>
@@ -301,7 +301,7 @@
                 <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_2.jpg);">
                     <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
                         <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">3D & BIM Modeling / Advanced parametric modeling / 3D modeling of MEP services</h3>
+                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">3D Modeling & BIM</h3>
                         </div>
                     </div>
                 </div>
@@ -310,7 +310,7 @@
                 <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_3.jpg);">
                     <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
                         <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">High quality CGI’s production, 3D animation and presentation reels production</h3>
+                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CGI's & 3D Animation</h3>
                         </div>
                     </div>
                 </div>
@@ -319,7 +319,7 @@
                 <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_4.jpg);">
                     <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
                         <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Graphic Design / Brand identity & Graphic Communication</h3>
+                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Graphic Design</h3>
                         </div>
                     </div>
                 </div>
@@ -328,7 +328,7 @@
                 <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_5.jpg);">
                     <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
                         <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Remote desktop (with all necessary software installed)</h3>
+                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Remote Desktop</h3>
                         </div>
                     </div>
                 </div>
@@ -337,7 +337,7 @@
                 <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_6.jpg);">
                     <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
                         <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Hand sketch</h3>
+                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Hand Sketch</h3>
                         </div>
                     </div>
                 </div>
@@ -346,7 +346,7 @@
                 <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_7.jpg);">
                     <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
                         <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Adaptation of design package In Accordance To [in accordance with] local building codes, regulations and graphic standards / Development of dual language documentation</h3>
+                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Design Adaptation</h3>
                         </div>
                     </div>
                 </div>
@@ -355,7 +355,7 @@
                 <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_8.jpg);">
                     <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
                         <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Design delivery supervision on behalf of the head office locally in order to ensure compliance with the original design concept and intent</h3>
+                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">On-Site Supervision</h3>
                         </div>
                     </div>
                 </div>
@@ -364,7 +364,7 @@
         <div class="wall wall_services">
             <div class="service-description-wrapper">
                 <div class="service__avatar service__avatar_1">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting / Design Package development under supervision of your Project Architect (software to comply with the one used in the head office)</h3>
+                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting</h3>
                 </div>
                 <div class="service__content">
                     <p>Highly Experienced and educated CAD drafter that suit your needs. The architect will develop drawings on your assignments and will introduce changes following remarks. You will have opportunities to closely follow the process of work and introduce changes directly with the architect.</p>
@@ -390,28 +390,28 @@
             </div>
             <div class="services">
                 <div class="service service_1">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting / Design Package development under supervision of your Project Architect (software to comply with the one used in the head office)</h3>
+                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting</h3>
                 </div>
                 <div class="service service_2">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">3D & BIM Modeling / Advanced parametric modeling / 3D modeling of MEP services</h3>
+                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">3D Modeling & BIM</h3>
                 </div>
                 <div class="service service_3">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">High quality CGI’s production, 3D animation and presentation reels production</h3>
+                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CGI's & 3D Animation</h3>
                 </div>
                 <div class="service service_4">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Graphic Design / Brand identity & Graphic Communication</h3>
+                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Graphic Design</h3>
                 </div>
                 <div class="service service_5">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Remote desktop (with all necessary software installed)</h3>
+                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Remote Desktop</h3>
                 </div>
                 <div class="service service_6">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Hand sketch</h3>
+                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Hand Sketch</h3>
                 </div>
                 <div class="service service_7">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Adaptation of design package In Accordance To [in accordance with] local building codes, regulations and graphic standards / Development of dual language documentation</h3>
+                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Design Adaptation</h3>
                 </div>
                 <div class="service service_8">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Design delivery supervision on behalf of the head office locally in order to ensure compliance with the original design concept and intent</h3>
+                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">On-Site Supervision</h3>
                 </div>
             </div>
         </div>
