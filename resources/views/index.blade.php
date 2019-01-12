@@ -453,7 +453,7 @@
         <div class="col-12 wow fadeInUp">
             <div class="d-flex justify-content-center border brc__black">
                 <form id="bid_form" class="form_bid px-5 py-4" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
-                    <h2 class="montserrat__semibold title_size__md text-center">leave a request</h2>
+                    <h2 class="montserrat__semibold title_size__md text-center no-capitalize">Leave a Request</h2>
                     <p class="open__light text_size__md text-center c__black">and we will perform your<br />test assignment</p>
                     <div class="text-center my-3">
                         <input type="text" name="name" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="Your name">
@@ -805,7 +805,7 @@
         <div id="contacts" class="col-12 wow fadeInUp">
             <div class="d-flex justify-content-center">
                 <form id="callback_form" class="form_callback px-0 px-sm-5 py-4" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
-                    <h2 class="montserrat__bold title_size__md text-center">Leave a request</h2>
+                    <h2 class="montserrat__bold title_size__md text-center no-capitalize">Leave a Request</h2>
                     <p class="open__light text_size__lg text-center c__black" style="font-weight: bold;">
                         and get your personal offer
                     </p>
