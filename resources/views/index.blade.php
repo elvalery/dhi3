@@ -119,7 +119,7 @@
                 <li class="nav-item"><a href="#guarantees" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Guarantees</a></li>
                 <li class="nav-item"><a href="#product_cart" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Team</a></li>
                 <li class="nav-item"><a href="#software" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Downloads</a></li>
-                <li class="nav-item"><a href="#contacts" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">BIM & Technologies.</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">BIM & Technologies</a></li>
             </ul>
         </div>
         <div class="col-2 d-lg-none">
