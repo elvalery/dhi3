@@ -252,7 +252,7 @@
                 <div class="benefits-item">
                     <h3>02</h3>
                     <h4>Less operational expenses</h4>
-                    <p>Less number of needed office space, desktops, equipment, software & hardware, less HR and Finance departments workload</p>
+                    <p>Less number of needed office space, desktops, equipment, software & hardware, less HR and Finance departments workload.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-5">
