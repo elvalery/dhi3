@@ -176,7 +176,7 @@
 <section id="inforgraphic" class="container-fluid py-5">
     <div class="container wow fadeInUp">
         <div class="col-12 pb-3">
-            <h1 class="montserrat__bold title_size__xl text-center">Just Compare <br/> The Staff And Operating Costs</h1>
+            <h1 class="montserrat__bold title_size__xl text-center">Just Compare <br/> The Staff and Operating Costs</h1>
         </div>
         <!-- <img src="img/infographic.png" alt="" class="img-fluid"> -->
         <ul class="info-name">
