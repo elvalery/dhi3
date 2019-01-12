@@ -867,7 +867,7 @@
 <footer id="footer" class="container-fluid px-0 mx-0">
     <div class="container py-5">
         <div class="col-12 pb-0 pb-md-5 wow fadeInUp">
-            <h1 class="h1 montserrat__bold title_size__xl text-center">our office</h1>
+            <h1 class="h1 montserrat__bold title_size__xl text-center">Contacts</h1>
         </div>
         <div class="col-12 wow fadeInUp">
             <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-between adress-wrapper">
