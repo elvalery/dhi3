@@ -181,7 +181,7 @@
         <!-- <img src="img/infographic.png" alt="" class="img-fluid"> -->
         <ul class="info-name">
             <div class="info-name__wrap">
-                <li class="active" data-slide="0">Netherlands</li>
+                <li class="active" data-slide="0">The Netherlands</li>
                 <li data-slide="1">United Kingdom</li>
                 <li data-slide="2">United States</li>
                 <li data-slide="3">Germany</li>
@@ -448,7 +448,7 @@
 <section id="bid" class="container-fluid py-5">
     <div class="container">
         <div class="col-12 pb-0 pb-lg-5 wow fadeInUp">
-            <h1 class="montserrat__bold title_size__xl text-center">We will make a free test assignment for you</h1>
+            <h1 class="montserrat__bold title_size__xl text-center no-capitalize">We Will Make a Free Test Assignment For You</h1>
         </div>
         <div class="col-12 wow fadeInUp">
             <div class="d-flex justify-content-center border brc__black">
@@ -872,26 +872,28 @@
         <div class="col-12 wow fadeInUp">
             <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-between adress-wrapper">
                 <div class="contact_block pb-0 pb-md-3 pb-md-0">
-                    <p class="txt open__light text_size__md">Kiyv, 18V Mykhailvska St., office 106</p>
-                    <p class="txt open__light text_size__md">+38 (097) 908 26 78 </p>
-                    <p class="txt open__light text_size__md">info@dhi-outsource.com</p>
-                    <p class="txt open__light text_size__md">Mon-Fri: 9.00 - 18.00</p>
-                    <p class="txt open__light text_size__md">Sat-Sun: by agreement</p>
+                    <p class="txt open__light text_size__lg font-weight-bold">Ukraine</p>
+                    <p class="txt open__light text_size__md">18V Mykhailvska St., office 106, Kyiv</p>
+                    <p class="txt open__light text_size__md">+38 (097) 908 26 78</p>
                 </div>
                 <div class="contact_block pb-0 pb-md-3 pb-md-0">
-                    <p class="txt open__light text_size__md">Rotterdam | 3014 JR | Drievriendenstraat 4b</p>
+                    <p class="txt open__light text_size__lg font-weight-bold">The Netherlands</p>
+                    <p class="txt open__light text_size__md">Drievriendenstraat 4b, Rotterdam, 3014 JR</p>
                     <p class="txt open__light text_size__md">+31 616 91 89 88</p>
-                    <p class="txt open__light text_size__md"> info@dhi-architecture.com</p>
-                    <p class="txt open__light text_size__md">
-                        <a href="https://www.facebook.com/Design-Hub-International-941115632665039/" class="soc-link mr-1"><img src="img/facebook.png" alt=""></a>
-                        <a href="https://www.instagram.com/dhi_architecture/" class="soc-link mx-1"><img src="img/instagram.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCeDErzD8cwVhCSSLNZIKoSA" target="_blank" class="soc-link mx-1"><img src="img/youtube.png" alt=""></a>
-                        <a href="#" class="soc-link mx-1"><img src="img/linkedin.png" alt=""></a>
-                        <a href="https://www.behance.net/dhi-architecture" target="_blank" class="soc-link mx-1"><img src="img/behance.png" alt=""></a>
-                    </p>
                 </div>
             </div>
         </div>
+        <div class="col-12 wow fadeInUp text-center">
+            <p class="txt open__light text_size__md">info@dhi-outsource.com</p>
+            <p class="txt open__light text_size__md">
+                <a href="https://www.facebook.com/Design-Hub-International-941115632665039/" class="soc-link mr-1"><img src="img/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/dhi_architecture/" class="soc-link mx-1"><img src="img/instagram.png" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCeDErzD8cwVhCSSLNZIKoSA" target="_blank" class="soc-link mx-1"><img src="img/youtube.png" alt=""></a>
+                <a href="#" class="soc-link mx-1"><img src="img/linkedin.png" alt=""></a>
+                <a href="https://www.behance.net/dhi-architecture" target="_blank" class="soc-link mx-1"><img src="img/behance.png" alt=""></a>
+            </p>
+        </div>
+    
     </div>
     <div class="py-0 my-0 text-center wow fadeInUp maps-wrapper">
         <div class="map map_1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.0845197721952!2d30.521768729264345!3d50.453428852605576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5aaa189adb%3A0x67b80543cf6115fc!2z0YPQuy4g0JzQuNGF0LDQudC70L7QstGB0LrQsNGPLCAxONCSLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1541804903159" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></iframe></div>
