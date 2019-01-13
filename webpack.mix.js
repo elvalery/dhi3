@@ -27,6 +27,7 @@ mix
   .styles([
     'resources/assets/js/slick/slick.css',
   ], 'public/css/slick.css')
+  .version()
   .copyDirectory('resources/assets/img', 'public/img')
   .copyDirectory('resources/assets/fonts', 'public/fonts')
   .copyDirectory('resources/assets/html', 'public/html');
