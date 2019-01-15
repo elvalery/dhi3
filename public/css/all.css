@@ -12385,3 +12385,13 @@ label.form_input::after {
   width: 132px;
   text-align: center;
 }
+
+.portfolio__slick_outer .slick-prev {
+  width: 45px;
+  left: -45px;
+}
+
+.portfolio__slick_outer .slick-next {
+  width: 45px;
+  right: -45px;
+}
