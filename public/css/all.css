@@ -12072,10 +12072,6 @@ label.form_input::after {
 	    left: 73%;
 	}
 }
-
-.no-capitalize {
-	text-transform: none;
-}
 @media (max-width: 991px){
 	#bid_form .service-choice__button{
 		max-width: 384px;
@@ -12371,4 +12367,21 @@ label.form_input::after {
   .portfolio__item {
     width: 100%;
   }
+}
+
+.no-capitalize {
+  text-transform: none;
+}
+
+.service-choice-wrapper{
+  display: flex;
+}
+
+.param__modeling p{
+  padding-right: 24px!important;
+}
+
+.contact-button {
+  width: 132px;
+  text-align: center;
 }

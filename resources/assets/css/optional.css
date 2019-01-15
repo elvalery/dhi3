@@ -627,10 +627,6 @@
 	    left: 73%;
 	}
 }
-
-.no-capitalize {
-	text-transform: none;
-}
 @media (max-width: 991px){
 	#bid_form .service-choice__button{
 		max-width: 384px;

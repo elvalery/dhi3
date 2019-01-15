@@ -44,3 +44,20 @@
     width: 100%;
   }
 }
+
+.no-capitalize {
+  text-transform: none;
+}
+
+.service-choice-wrapper{
+  display: flex;
+}
+
+.param__modeling p{
+  padding-right: 24px!important;
+}
+
+.contact-button {
+  width: 132px;
+  text-align: center;
+}

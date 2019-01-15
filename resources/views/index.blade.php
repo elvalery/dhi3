@@ -48,7 +48,7 @@
                             <input type="text" name="name" class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="Your name">
                         </div>
                         <div class="text-center my-2">
-                            <input type="text" id="modal_callback_user_phone" name="phone" required class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="__ (___) ___ __ __">
+                            <input type="text" id="modal_callback_user_phone" name="phone" required class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="+__ (___) ___ __ __">
                         </div>
                         <div class="text-center my-3">
                             <input type="hidden" name="type" value="{{ App\Contact::TYPE_CALL }}" />
@@ -61,7 +61,7 @@
     </div>
 </section>
 
-<section id="modal_page" class="container-fluid modal_page">
+<section id="modal_page" class="container-fluid modal_page modal__page_close_area">
     <div class="container">
         <div class="modal_page_content animated fadeInUp" >
             <a href="#" onclick="return false" id="close_page" class="modal__page_close" style="outline:none;"></a>
@@ -133,8 +133,8 @@
                     <a href="#" id="language_top" class="nav-link open__regular text_size__md c__white c_h__white pl-0 top_lang">En</a>
                 </div>
                 <div class="top_contacts">
-                    <a href="#" onclick="return false" id="callback_top" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-1">Request Call</a>
-                    <a href="#contacts" class="button border-0 open__semibold text_size__md px-4 py-1 contact-top">Contact Us</a>
+                    <a href="#" onclick="return false" id="callback_top" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-1 contact-button ">Request Call</a>
+                    <a href="#contacts" class="button border-0 open__semibold text_size__md px-4 py-1 contact-top contact-button ">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -490,7 +490,7 @@
                     </div>
                     <div class="text-center mt-0">
                         <label for="bid_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number</label><br />
-                        <input type="text" id="bid_user_phone" name="phone" required class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="__ (___) ___ __ __">
+                        <input type="text" id="bid_user_phone" name="phone" required class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="+__ (___) ___ __ __">
                     </div>
                     <div class="text-center my-3">
                         <input type="hidden" name="type" value="{{ App\Contact::TYPE_TEST }}" />
@@ -642,7 +642,7 @@
         <div class="col-12">
             <div class="d-flex justify-content-center border brc__black">
                 <form id="calculation_form" class="form_calculation px-5 py-4" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
-                    <h2 class="montserrat__semibold title_size__md text-center">Calculate the cost</h2>
+                    <h2 class="montserrat__semibold title_size__md text-center no-capitalize">Cost Calculation</h2>
                     <p class="open__light text_size__md text-center c__black">
                         Leave your contacts <br /> and we will orient you at the price of our services <br /> within 25 minutes
                     </p>
@@ -660,7 +660,7 @@
                     </div>
                     <div class="text-center mt-0 mb-3">
                         <label for="calculation_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number for clarification of details</label><br />
-                        <input required type="text" name="phone" id="calculation_user_phone" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="__ (___) ___ __ __">
+                        <input required type="text" name="phone" id="calculation_user_phone" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="+__ (___) ___ __ __">
                     </div>
                     <div class="text-center my-3">
                         <input type="hidden" name="type" value="{{ App\Contact::TYPE_QUOTE }}" />
@@ -766,11 +766,11 @@
                 <div class="mx-4 order-2 order-md-1 param__modeling">
                     <h4 class="h4 open__bold title_size__sm param__modeling_h">Parametric Modeling</h4>
                     <img src="img/param_modeling.jpg" alt="" class="param__modeling_img" />
-                    <p class="txt open__light text_size__md">Creation of complex surfaces, patterns, forms for interior and architecture design</p>
-                    <p class="txt open__light text_size__md">Analysis and automatic modelling of the illumination cone, automatic illustrative calculation of insolation for any area and real estate development</p>
-                    <p class="txt open__light text_size__md">Automatic change of room layouts and furniture placement due to the changing the contour of external walls, the shift of communication lines</p>
-                    <p class="txt open__light text_size__md">Analysis of the territory, vehicular flow and foot traffic, restrictions on insolation and automated obtainment of the maximum possible building volume</p>
-                    <p class="txt open__light text_size__md">Flexibility in design, ability to make changes</p>
+                    <p class="txt text_size__md">Creation of complex surfaces, patterns, forms for interior and architecture design.</p>
+                    <p class="txt text_size__md">Analysis and automatic modelling of the illumination cone, automatic illustrative calculation of insolation for any area and real estate development.</p>
+                    <p class="txt text_size__md">Automatic change of room layouts and furniture placement due to the changing the contour of external walls, the shift of communication lines.</p>
+                    <p class="txt text_size__md">Analysis of the territory, vehicular flow and foot traffic, restrictions on insolation and automated obtainment of the maximum possible building volume.</p>
+                    <p class="txt text_size__md">Flexibility in design, ability to make changes.</p>
                 </div>
             </div>
             <div class="d-flex flex-column align-items-center align-items-md-start mt-4">
@@ -842,7 +842,7 @@
                     </div>
                     <div class="text-center mt-0 mb-3">
                         <label for="callback_user_phone" class="form_label open__semibold c__black text_size__md text-left mb-0">Contact phone number<br />
-                            <input type="phone" required id="callback_user_phone" class="form_input open__light c__black border brc__metal brc_h__yellow bgc__transparent px-3 py-1" name="phone" placeholder="__ (___) ___ __ __">
+                            <input type="phone" required id="callback_user_phone" class="form_input open__light c__black border brc__metal brc_h__yellow bgc__transparent px-3 py-1" name="phone" placeholder="+__ (___) ___ __ __">
                         </label>
                         <label for="callback_user_email" class="form_label open__semibold c__black text_size__md text-left mt-2 mb-0">E-mail<br />
                             <input type="email" name="email" id="callback_user_email" class="form_input open__light c__black text_size__md border brc__metal brc_h__yellow bgc__transparent px-3 py-1" placeholder="Enter your E-mail">
@@ -895,11 +895,8 @@
         </div>
     
     </div>
-    <div class="py-0 my-0 text-center wow fadeInUp maps-wrapper">
-        <div class="map map_1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.0845197721952!2d30.521768729264345!3d50.453428852605576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5aaa189adb%3A0x67b80543cf6115fc!2z0YPQuy4g0JzQuNGF0LDQudC70L7QstGB0LrQsNGPLCAxONCSLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1541804903159" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></iframe></div>
-        <div class="map map_2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4921.310950747094!2d4.4659286473339215!3d51.92199659221616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a49876d879%3A0x1d76a2817f4b838c!2sDrievriendenstraat+4B%2C+3014+JR+Rotterdam%2C+Netherlands!5e0!3m2!1sen!2sua!4v1541445846765" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-    </div>
-    <div class="bgc__graphite py-4" style="margin-top: 3rem;">
+    
+    <div class="bgc__graphite py-4">
         <div class="row d-flex justify-content-center mx-0 wow fadeInUp">
             <div class="col-12 col-lg-auto">
                 <div class="d-flex justify-content-center justify-content-lg-start align-items-center" style="height: 100px;">
@@ -922,14 +919,14 @@
             <div class="col-12 col-lg-auto">
                 <div class="d-flex justify-content-center justify-content-lg-start align-items-center" style="height: 100px;">
                     <div class="top_contacts">
-                        <a href="#" onclick="return false" id="callback_bottom" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-1">Request Call</a>
-                        <a href="#contacts" class="button border-0 open__semibold text_size__md px-4 py-1 contact-top">Contact Us</a>
+                        <a href="#" onclick="return false" id="callback_bottom" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-1 contact-button">Request Call</a>
+                        <a href="#contacts" class="button border-0 open__semibold text_size__md px-4 py-1 contact-top contact-button">Contact Us</a>
                     </div>
                 </div>
             </div>
             <div class="col-12">
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <p class="open__regular text_size__sm c__white py-1 my-0">Copyright © 2017 Business life. All rights reserved</p>
+                    <p class="open__regular text_size__sm c__white py-1 my-0">Copyright © 2017 DHI-Outsource. All rights reserved</p>
                     <p class="open__regular py-1 my-0"><a href="#" class="nav-link open__regular text_size__sm c__white c_h__yellow my-0 py-0" style="text-decoration: underline;">privacy policy</a></p>
                 </div>
             </div>

@@ -40,9 +40,11 @@ $(document).ready(function() {
 	});
 	
 	
-	$('.modal__page_close').click(function () {
-		$('#modal_page').hide();
-		$('#modal_page_content').slick('unslick');
+	$('.modal__page_close, .modal__page_close_area').click(function (e) {
+		if ($(e.target).hasClass('modal__page_close') || $(e.target).hasClass('modal__page_close_area')) {
+			$('#modal_page').hide();
+			$('#modal_page_content').slick('unslick');
+		}
 	});
 	
 	$('.modal__open_button').click(function () {
@@ -91,7 +93,7 @@ $(document).ready(function() {
 		});
 	});
 	
-	$('input[name="phone"]').mask("00 (000) 000 00 00")
+	$('input[name="phone"]').mask("+00 (000) 000 00 00")
 });
 
 
@@ -218,3 +220,4 @@ $(".bim__video_wrapper").click(function(){
 	$(".bim__video").css("pointer-events","auto");
 });
 
+$('div').click(function(e) { console.log($(e.target))});
