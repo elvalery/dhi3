@@ -25,7 +25,7 @@ class StoreContacts extends FormRequest {
   public function rules() {
     return [
       'name' => 'sometimes|nullable|max:255',
-      'phone' => 'required',
+      'phone' => 'sometimes|nullable',
       'email' => 'sometimes|nullable|email',
       'description' => 'sometimes|nullable|string',
       'type' => [
