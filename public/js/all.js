@@ -97,6 +97,12 @@ $(document).ready(function() {
 	});
 	
 	$('input[name="phone"]').mask("+00 (000) 000 00 00")
+	
+	$("#modal_menu").click(function(e){
+		if ($(e.target).hasClass('modal_menu')) {
+			$("#modal_menu").hide();
+		}
+	});
 });
 
 
@@ -221,10 +227,4 @@ $(document).ready(function(){
 
 $(".bim__video_wrapper").click(function(){
 	$(".bim__video").css("pointer-events","auto");
-});
-
-$("#modal_menu").click(function(e){
-	if ($(e.target).hasClass('modal_menu')) {
-		$("#modal_menu").hide();
-	}
 });

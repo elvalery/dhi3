@@ -146,8 +146,8 @@
 
 <section id="banner" class="jumbotron jumbotron-fluid banner mb-0 " style="height: 600px; margin-top: 100px;">
     <div id="video-bg">
-        <video width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop">
-            <source src="img/banner-video.mp4" type="video/mp4"></source>
+        <video width="100%" height="auto" preload="auto" autoplay loop muted>
+            <source src="img/banner-video.mp4" type="video/mp4" />
         </video>
         <div class="container d-flex align-items-center" style="height: 100%;">
             <div class="col-12 text-left text-lg-center wow fadeInUp">
