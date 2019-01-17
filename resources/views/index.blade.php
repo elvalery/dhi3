@@ -515,7 +515,7 @@
 
 <section id="testimonials" class="container-fluid py-5">
     <div class="container">
-        <div class="col-12 pb-0 pb-lg-5 wow fadeInUp">
+        <div class="col-12 pb-5 wow fadeInUp">
             <h1 class="montserrat__bold title_size__xl text-center">Companies We Are Already Working With</h1>
         </div>
         <div class="row wow fadeInUp">
@@ -685,17 +685,17 @@
             <h1 class="montserrat__bold title_size__xl text-center">All necessary specialists and software in one office</h1>
         </div>
         <div class="team__titles">
-            <div class="worker__title worker__1">CAD drafter</div>
-            <div class="worker__title worker__2">modeler</div>
+            <div class="worker__title worker__1">CAD Drafter</div>
+            <div class="worker__title worker__2">Modeler</div>
             <div class="worker__title worker__3">Architectural Designer</div>
             <div class="worker__title worker__4">Graduate Architect</div>
             <div class="worker__title worker__5">Visualizer</div>
             <div class="worker__title worker__6">BIM Manager</div>
             <div class="worker__title worker__7">Account/Project Manager</div>
-            <div class="worker__title worker__8">parametric designer</div>
+            <div class="worker__title worker__8">Parametric Designer</div>
             <div class="worker__title worker__9">Graphic Designer</div>
         </div>
-        <div class="col-12 wow fadeInUp team">
+        <div class="col-12 wow fadeInUp team team__mobile_col">
             <div class="team_foto">
                 <div class="worker worker__1">
                     <div class="worker-point worker-point__1"></div>
@@ -726,15 +726,15 @@
                 </div>
             </div>
             <div class="team__mobile">
-                <div class="worker__mobile worker__1">CAD drafter</div>
-                <div class="worker__mobile worker__2">modeler</div>
-                <div class="worker__mobile worker__3">Architectural Designer</div>
-                <div class="worker__mobile worker__4">Graduate Architect</div>
-                <div class="worker__mobile worker__5">Visualizer</div>
-                <div class="worker__mobile worker__6">BIM Manager</div>
-                <div class="worker__mobile worker__7">Account/Project Manager</div>
-                <div class="worker__mobile worker__8">parametric designer</div>
-                <div class="worker__mobile worker__9">Graphic Designer</div>
+                <div class="worker__mobile worker__1 worker__mobile_mr">CAD Drafter</div>
+                <div class="worker__mobile worker__2 worker__mobile_ml">Modeler</div>
+                <div class="worker__mobile worker__3 worker__mobile_mr">Architectural Designer</div>
+                <div class="worker__mobile worker__4 worker__mobile_ml">Graduate Architect</div>
+                <div class="worker__mobile worker__5 worker__mobile_mr">Visualizer</div>
+                <div class="worker__mobile worker__6 worker__mobile_ml">BIM Manager</div>
+                <div class="worker__mobile worker__7 worker__mobile_mr">Account/Project Manager</div>
+                <div class="worker__mobile worker__8 worker__mobile_ml">Parametric Designer</div>
+                <div class="worker__mobile worker__9 worker__mobile_mr">Graphic Designer</div>
             </div>
             <div class="worker-description__wrapper">
                 <div class="worker-description">
