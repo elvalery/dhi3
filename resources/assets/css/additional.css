@@ -84,6 +84,10 @@
   align-items: center;
 }
 
+.service__avatar {
+  cursor: pointer;
+}
+
 @media (max-width: 540px){
   .portfolio__item {
     width: 100%;

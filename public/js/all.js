@@ -181,6 +181,10 @@ $(document).ready(function(){
 		$('.wall_pre-services').slideToggle();
 		$('.wall_services').slideToggle();
 	});
+	$('.service__avatar').click(function(){
+		$('.wall_pre-services').slideToggle();
+		$('.wall_services').slideToggle();
+	});
 	$('.service_1').click(function() {
 		$('.service-description-wrapper').load('html/service1.html');
 		$('.service_active').removeClass('service_active');
