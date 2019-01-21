@@ -79,6 +79,11 @@
   border-radius: 5px ;
 }
 
+.service {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 540px){
   .portfolio__item {
     width: 100%;

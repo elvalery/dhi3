@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Category;
 use App\Contact;
 use App\Work;
+use App\DHIService;
 use App\Http\Requests\StoreContacts;
 use App\Mail\ContactRequest;
 use Illuminate\Support\Facades\Mail;
@@ -15,8 +16,9 @@ class IndexController extends Controller {
   public function index() {
     $categories = Category::orderBy('order_id')->get();
     $works = Work::orderBy('order_id')->get();
+    $services = DHIService::orderBy('order_id')->get();
 
-    return view('index', compact('categories', 'works'));
+    return view('index', compact('categories', 'works', 'services'));
   }
 
   public function contacts(StoreContacts $request) {

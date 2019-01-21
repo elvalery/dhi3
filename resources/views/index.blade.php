@@ -291,78 +291,17 @@
     </div>
     <div class="container wow fadeInUp">
         <div class="wall wall_pre-services">
-            <div class="brick brick-lg">
-                <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_1.jpg);">
+            @foreach($services as $service)
+            <div class="brick brick-{{ $service->pre_style }}">
+                <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url({{ $service->small_image }});">
                     <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
                         <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting</h3>
+                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">{{ $service->title }}</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="brick brick-lg">
-                <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_2.jpg);">
-                    <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
-                        <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">3D Modeling & BIM</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="brick brick-md">
-                <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_3.jpg);">
-                    <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
-                        <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CGI's & 3D Animation</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="brick brick-md">
-                <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_4.jpg);">
-                    <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
-                        <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Graphic Design</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="brick brick-md">
-                <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_5.jpg);">
-                    <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
-                        <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Remote Desktop</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="brick brick-md">
-                <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_6.jpg);">
-                    <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
-                        <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Hand Sketch</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="brick brick-md">
-                <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_7.jpg);">
-                    <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
-                        <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Design Adaptation</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="brick brick-md">
-                <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url(img/service_8.jpg);">
-                    <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
-                        <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">On-Site Supervision</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <div class="wall wall_services">
             <div class="service-description-wrapper">
@@ -370,6 +309,8 @@
                     <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting</h3>
                 </div>
                 <div class="service__content">
+                    <div class="pb-sm-2 font-weight-bold">Design Package development under supervision of your Project Architect
+                        (software to comply with the one used in the head office)</div>
                     <p>Highly Experienced and educated CAD drafter that suit your needs. The architect will develop drawings on your assignments and will introduce changes following remarks. You will have opportunities to closely follow the process of work and introduce changes directly with the architect.</p>
                     <h4 class="open__semibold title_size__md">Software:</h4>
                     <ul>
@@ -392,30 +333,11 @@
                 </div>
             </div>
             <div class="services">
-                <div class="service service_1">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting</h3>
+                @foreach($services as $service)
+                <div class="service service_{{$service->id}}">
+                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">{{ $service->title }}</h3>
                 </div>
-                <div class="service service_2">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">3D Modeling & BIM</h3>
-                </div>
-                <div class="service service_3">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CGI's & 3D Animation</h3>
-                </div>
-                <div class="service service_4">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Graphic Design</h3>
-                </div>
-                <div class="service service_5">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Remote Desktop</h3>
-                </div>
-                <div class="service service_6">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Hand Sketch</h3>
-                </div>
-                <div class="service service_7">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">Design Adaptation</h3>
-                </div>
-                <div class="service service_8">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">On-Site Supervision</h3>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -861,7 +783,7 @@
                     <div class="text-right d-flex justify-content-center my-3">
                         <div class="form_textarea">
                             <input type="hidden" name="type" value="{{ App\Contact::TYPE_ORDER }}" />
-                            <button type="submit" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-3 px-sm-5 py-3" style="text-transform: uppercase; font-weight: bold;">get offer</button>
+                            <button type="submit" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-3 px-sm-5 py-3" style="text-transform: uppercase; font-weight: bold;">GET QUOTE</button>
                         </div>
                     </div>
                 </form>
