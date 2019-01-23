@@ -198,7 +198,7 @@
             </div>
         </ul>
         <div class="inforgraphic-slider">
-            <div>
+            {{--<div>
                 <img src="img/graphics/Netherland.jpg" alt="" class="img-fluid">
             </div>
             <div>
@@ -230,7 +230,41 @@
             </div>
             <div>
                 <img src="img/graphics/Italy.jpg" alt="" class="img-fluid">
+            </div>--}}
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
             </div>
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
+            </div>
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
+            </div>
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
+            </div>
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
+            </div>
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
+            </div>
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
+            </div>
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
+            </div>
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
+            </div>
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
+            </div>
+            <div>
+                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
+            </div>
+
         </div>
     </div>
 </section>
@@ -773,8 +807,8 @@
                         <label for="callback_user_phone" class="form_label open__semibold c__black text_size__md text-left mb-0">Contact phone number<br />
                             <input type="phone" required id="callback_user_phone" class="form_input open__light c__black border brc__metal brc_h__yellow bgc__transparent px-3 py-1 border-radius-5" name="phone" placeholder="+__ (___) ___ __ __">
                         </label>
-                        <label for="callback_user_email" class="form_label open__semibold c__black text_size__md text-left mt-2 mb-0">E-mail<br />
-                            <input type="email" name="email" required id="callback_user_email" class="form_input open__light c__black text_size__md border brc__metal brc_h__yellow bgc__transparent px-3 py-1 border-radius-5" placeholder="* Enter your E-mail">
+                        <label for="callback_user_email" class="form_label open__semibold c__black text_size__md text-left mt-2 mb-0">* E-mail<br />
+                            <input type="email" name="email" required id="callback_user_email" class="form_input open__light c__black text_size__md border brc__metal brc_h__yellow bgc__transparent px-3 py-1 border-radius-5" placeholder="Enter your E-mail">
                         </label>
                     </div>
                     <div class="text-center my-2">

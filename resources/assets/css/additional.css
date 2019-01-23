@@ -88,6 +88,10 @@
   cursor: pointer;
 }
 
+#software {
+  background-image: url(../img/callback_bg.png?240119);
+}
+
 @media (max-width: 540px){
   .portfolio__item {
     width: 100%;
