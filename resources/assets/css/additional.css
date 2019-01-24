@@ -92,9 +92,9 @@
   background-image: url(../img/callback_bg.png?240119);
 }
 
-.portfolio__item {
+/*.portfolio__item {
   background-size: auto auto;
-}
+}*/
 
 @media (max-width: 540px){
   .portfolio__item {
