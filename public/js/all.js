@@ -96,12 +96,20 @@ $(document).ready(function() {
 		});
 	});
 	
-	$('input[name="phone"]').mask("+00 (000) 000 00 00")
+	$('input[name="phone"]').mask("+00 (000) 000 00 00");
 	
 	$("#modal_menu").click(function(e){
-		if ($(e.target).hasClass('modal_menu')) {
+		if ($(e.target).hasClass('modal_menu')
+			|| $(e.target).hasClass('nav-link')) {
 			$("#modal_menu").hide();
 		}
+	});
+	
+	$('.modal_menu_content .nav-link').click(function (e) {
+		e.preventDefault();
+		
+		self.location.href = $(this).attr('href');
+		$("#modal_menu").hide();
 	});
 });
 
@@ -255,6 +263,7 @@ $(".bim__video_wrapper").click(function(){
 	$(".bim__video").css("pointer-events","auto");
 });
 
+/* no time to make it right, sorry */
 function uploadFile(target) {
 	document.getElementById("file-name").innerHTML = target.files[0].name;
 }
