@@ -254,3 +254,7 @@ $(document).ready(function(){
 $(".bim__video_wrapper").click(function(){
 	$(".bim__video").css("pointer-events","auto");
 });
+
+function uploadFile(target) {
+	document.getElementById("file-name").innerHTML = target.files[0].name;
+}

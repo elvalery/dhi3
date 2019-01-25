@@ -11234,7 +11234,12 @@ label.form_input::after {
     float: right;
     margin-top: 3px;
     width: 13px;
-    height: 15px
+    height: 15px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 .guarantee {
     position: relative;

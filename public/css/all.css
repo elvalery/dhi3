@@ -11234,7 +11234,12 @@ label.form_input::after {
     float: right;
     margin-top: 3px;
     width: 13px;
-    height: 15px
+    height: 15px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 .guarantee {
     position: relative;
@@ -12390,7 +12395,7 @@ label.form_input::after {
   right: -45px;
 }
 
-.benefits-item h3 {
+.benefits-item h3, .benefits-item h4 {
   padding-left: 30px;
 }
 
@@ -12408,9 +12413,11 @@ label.form_input::after {
   align-items: center;
 }
 
+/*
 .service__avatar {
-  cursor: pointer;
+  background-color: linear-gradient(to bottom, rgba(0,0,0, 0.0), rgba(0,0,0, 0.7));
 }
+*/
 
 #software {
   background-image: url(../img/callback_bg.png?240119);

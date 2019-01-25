@@ -350,9 +350,9 @@
         </div>
         <div class="wall wall_services">
             <div class="service-description-wrapper">
-                <divqwq class="service__avatar service__avatar_1">
+                <div class="service__avatar service__avatar_1">
                     <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting</h3>
-                </divqwq>
+                </div>
                 <div class="service__content">
                     <div class="pb-sm-2 font-weight-bold">Design Package development under supervision of your Project Architect
                         (software to comply with the one used in the head office)</div>
@@ -374,7 +374,7 @@
                             <p>Public Place</p>
                         </a>
                     </div>
-                    <a href="#contacts" class="service_button">get quote</a>
+                    <div class="service__back_button open__bold c__black text_size__md border brc__metal brc_h__black px-3 py-1">Back</div>
                 </div>
             </div>
             <div class="services">
@@ -456,8 +456,8 @@
                         </div>
                     </div>
                     <div class="text-center mt-2 mb-0">
-                        <input type="file" id="bid_user_file" name="file">
-                        <label for="bid_user_file" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1 text-left">upload test assignment</label>
+                        <input type="file" id="bid_user_file" name="file" onchange='uploadFile(this)'>
+                        <label for="bid_user_file" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1 text-left" id="file-name">upload test assignment</label>
                     </div>
                     <div class="text-center mt-0">
                         <label for="bid_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number</label><br />
