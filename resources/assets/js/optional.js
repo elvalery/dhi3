@@ -255,3 +255,7 @@ $(".bim__video_wrapper").click(function(){
 function uploadFile(target) {
 	document.getElementById("file-name").innerHTML = target.files[0].name;
 }
+
+function uploadFile2(target) {
+	document.getElementById("file-name2").innerHTML = target.files[0].name;
+}

@@ -630,8 +630,8 @@
                         <input type="email" name="email" id="calculation_user_email" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1">
                     </div>
                     <div class="text-center mt-3 mb-0">
-                        <input type="file" id="calculation_user_file" name="file">
-                        <label for="calculation_user_file" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1 text-left">upload test assignment</label>
+                        <input type="file" id="calculation_user_file" name="file" onchange="uploadFile2(this)">
+                        <label for="calculation_user_file" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1 text-left" id="file-name2">upload test assignment</label>
                     </div>
                     <div class="text-center mt-0 mb-3">
                         <label for="calculation_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number for clarification of details</label><br />
