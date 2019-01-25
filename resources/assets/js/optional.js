@@ -179,47 +179,54 @@ $(document).ready(function(){
 		$('.wall_services').slideToggle();
 		$('.service_' + $(this).data('service')).click();
 	});
-	$('.service__avatar').click(function(){
-		$('.services__all').slideToggle();
-		$('.wall_services').slideToggle();
-	});
+
+	function service_back() {
+		$('.service__back_button').on('click', function(e){
+			e.preventDefault();
+			$('.services__all').slideToggle();
+			$('.wall_services').slideToggle();
+		});
+	}
+
 	$('.service_1').click(function() {
-		$('.service-description-wrapper').load('html/service1.html');
+		$('.service-description-wrapper').load('html/service1.html?1', function (){
+			service_back();
+		});
 		$('.service_active').removeClass('service_active');
 		$(this).addClass('service_active');
 	});
 	$('.service_2').click(function() {
-		$('.service-description-wrapper').load('html/service2.html');
+		$('.service-description-wrapper').load('html/service2.html?1');
 		$('.service_active').removeClass('service_active');
 		$(this).addClass('service_active');
 	});
 	$('.service_3').click(function() {
-		$('.service-description-wrapper').load('html/service3.html');
+		$('.service-description-wrapper').load('html/service3.html?1');
 		$('.service_active').removeClass('service_active');
 		$(this).addClass('service_active');
 	});
 	$('.service_4').click(function() {
-		$('.service-description-wrapper').load('html/service4.html');
+		$('.service-description-wrapper').load('html/service4.html?1');
 		$('.service_active').removeClass('service_active');
 		$(this).addClass('service_active');
 	});
 	$('.service_5').click(function() {
-		$('.service-description-wrapper').load('html/service5.html');
+		$('.service-description-wrapper').load('html/service5.html?1');
 		$('.service_active').removeClass('service_active');
 		$(this).addClass('service_active');
 	});
 	$('.service_6').click(function() {
-		$('.service-description-wrapper').load('html/service6.html');
+		$('.service-description-wrapper').load('html/service6.html?1');
 		$('.service_active').removeClass('service_active');
 		$(this).addClass('service_active');
 	});
 	$('.service_7').click(function() {
-		$('.service-description-wrapper').load('html/service7.html');
+		$('.service-description-wrapper').load('html/service7.html?1');
 		$('.service_active').removeClass('service_active');
 		$(this).addClass('service_active');
 	});
 	$('.service_8').click(function() {
-		$('.service-description-wrapper').load('html/service8.html');
+		$('.service-description-wrapper').load('html/service8.html?1');
 		$('.service_active').removeClass('service_active');
 		$(this).addClass('service_active');
 	});
