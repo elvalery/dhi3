@@ -174,12 +174,13 @@ $(document).ready(function(){
 // service choice
 
 $(document).ready(function(){
-	$('.pre-service__block').click(function(){
-		$('.wall_pre-services').slideToggle();
+	$('.service__block').click(function(){
+		$('.services__all').slideToggle();
 		$('.wall_services').slideToggle();
+		$('.service_' + $(this).data('service')).click();
 	});
 	$('.service__avatar').click(function(){
-		$('.wall_pre-services').slideToggle();
+		$('.services__all').slideToggle();
 		$('.wall_services').slideToggle();
 	});
 	$('.service_1').click(function() {
