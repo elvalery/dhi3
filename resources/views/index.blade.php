@@ -182,21 +182,19 @@
             <h1 class="montserrat__bold title_size__xl text-center no-capitalize">Just Compare <br/> The Staff and Operating Costs</h1>
         </div>
         <!-- <img src="img/infographic.png" alt="" class="img-fluid"> -->
-        <ul class="info-name">
-            <div class="info-name__wrap">
-                <li class="active" data-slide="0">The Netherlands</li>
-                <li data-slide="1">United Kingdom</li>
-                <li data-slide="2">United States</li>
-                <li data-slide="3">Germany</li>
-                <li data-slide="4">Switzerland</li>
-                <li data-slide="5">Denmark</li>
-                <li data-slide="6">Austria</li>
-                <li data-slide="7">HongKong</li>
-                <li data-slide="8">Singapore</li>
-                <li data-slide="9">Israel</li>
-                <li data-slide="10">Italy</li>
-            </div>
-        </ul>
+        <div class="tabs-name">
+            <div class="active" data-slide="0">The Netherlands</div>
+            <div data-slide="1">United Kingdom</div>
+            <div data-slide="2">United States</div>
+            <div data-slide="3">Germany</div>
+            <div data-slide="4">Switzerland</div>
+            <div data-slide="5">Denmark</div>
+            <div data-slide="6">Austria</div>
+            <div data-slide="7">HongKong</div>
+            <div data-slide="8">Singapore</div>
+            <div data-slide="9">Israel</div>
+            <div data-slide="10">Italy</div>
+        </div>
         <div class="inforgraphic-slider">
             {{--<div>
                 <img src="img/graphics/Netherland.jpg" alt="" class="img-fluid">
