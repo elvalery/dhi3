@@ -196,6 +196,7 @@ $(document).ready(function(){
 			e.preventDefault();
 			$('.services__all').slideToggle();
 			$('.wall_services').slideToggle();
+			window.location.href = "#services";
 		});
 	}
 
