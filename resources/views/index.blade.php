@@ -730,7 +730,7 @@
         </div>
         <div class="col-12 wow fadeInUp">
             <div class="d-flex flex-column align-items-center justify-content-center mb-4">
-                <h4 class="h4 open__bold title_size__sm pb-lg-3">BIM</h4>
+                <h4 class="h4 open__bold title_size__md pb-lg-3 text_size__md">BIM</h4>
                 <div class="bim__video_wrapper">
                     <iframe class="bim__video" width="60%" height="100%" src="https://www.youtube.com/embed/M5pm50IZsDc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen">
                     </iframe>
@@ -738,7 +738,7 @@
             </div>
             <div class="d-flex flex-column align-items-center justify-content-center my-4">
                 <div class="mx-4 order-2 order-md-1 param__modeling">
-                    <h4 class="h4 open__bold title_size__sm param__modeling_h">Parametric Modeling</h4>
+                    <h4 class="h4 open__bold title_size__md param__modeling_h">Parametric Modeling</h4>
                     <img src="img/param_modeling.jpg" alt="" class="param__modeling_img" />
                     <p class="txt text_size__md">Creation of complex surfaces, patterns, forms for interior and architecture design.</p>
                     <p class="txt text_size__md">Analysis and automatic modelling of the illumination cone, automatic illustrative calculation of insolation for any area and real estate development.</p>
@@ -749,7 +749,7 @@
             </div>
             <div class="d-flex flex-column align-items-center align-items-md-start mt-4">
                 <div class="mx-4 software__container">
-                    <h4 class="h4 open__bold title_size__sm text-center">Software</h4>
+                    <h4 class="h4 open__bold title_size__md text-center">Software</h4>
                     <div class="software__wrapper">
                         <div class="software">
                             <h5 class="software__h open__bold">BIM & CAD</h5>
