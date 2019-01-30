@@ -71,9 +71,8 @@ $(document).ready(function() {
 	
 	portfolioTabs();
 	
-	$('.info-name li').click(function(){
-		var numb = $(this).data('slide');
-		$('.inforgraphic-slider').slick('slickGoTo', numb);
+	$('.tabs-name > div').click(function(){
+		$('.inforgraphic-slider').slick('slickGoTo', $(this).data('slide'));
 		$(this).addClass('active').siblings().removeClass('active');
 	});
 	
