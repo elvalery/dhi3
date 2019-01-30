@@ -650,7 +650,7 @@
 <section id="product_cart" class="container-fluid py-5">
     <div class="container">
         <div class="col-12 pb-0 pb-lg-5 wow fadeInUp">
-            <h1 class="montserrat__bold title_size__xl text-center">All necessary specialists and software in one office</h1>
+            <h1 class="montserrat__bold title_size__xl text-center no-capitalize">All Necessary Specialists and Software in One Office</h1>
         </div>
         <div class="team__titles">
             <div class="worker__title worker__1">CAD Drafter</div>
@@ -709,6 +709,7 @@
                     <h4 class="open__bold text_size__xl">Architectural Designer</h4>
                     <p class="open__bold text_size__lg">(5+ years experience)</p>
                     <ul class="worker__tech-list">
+                        <li class="worker__tech-list_header">Software: </li>
                         <li class="worker__tech-list_item open__bold text_size__md">Autodesk Revit</li>
                         <li class="worker__tech-list_item open__bold text_size__md">Autodesk AutoCAD (AutoCAD Architecture)</li>
                         <li class="worker__tech-list_item open__bold text_size__md">Graphisoft Archicad + Graphisoft BIMx</li>
