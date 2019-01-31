@@ -640,56 +640,56 @@
             <h1 class="montserrat__bold title_size__xl text-center no-capitalize">All Necessary Specialists and Software in One Office</h1>
         </div>
         <div class="team__titles">
-            <div class="worker__title worker__1">CAD Drafter</div>
-            <div class="worker__title worker__2">Modeler</div>
-            <div class="worker__title worker__3">Architectural Designer</div>
-            <div class="worker__title worker__4">Graduate Architect</div>
-            <div class="worker__title worker__5">Visualizer</div>
-            <div class="worker__title worker__6">BIM Manager</div>
-            <div class="worker__title worker__7">Account/Project Manager</div>
-            <div class="worker__title worker__8">Parametric Designer</div>
-            <div class="worker__title worker__9">Graphic Designer</div>
+            <div class="worker__title worker__1 worker_btn" data-id="1">CAD Drafter</div>
+            <div class="worker__title worker__2 worker_btn" data-id="2">Modeler</div>
+            <div class="worker__title worker__3 worker_btn" data-id="3">Architectural Designer</div>
+            <div class="worker__title worker__4 worker_btn" data-id="4">Graduate Architect</div>
+            <div class="worker__title worker__5 worker_btn" data-id="5">Visualizer</div>
+            <div class="worker__title worker__6 worker_btn" data-id="6">BIM Manager</div>
+            <div class="worker__title worker__7 worker_btn" data-id="7">Account/Project Manager</div>
+            <div class="worker__title worker__8 worker_btn" data-id="8">Parametric Designer</div>
+            <div class="worker__title worker__9 worker_btn" data-id="9">Graphic Designer</div>
         </div>
         <div class="col-12 wow fadeInUp team team__mobile_col">
             <div class="team_foto">
-                <div class="worker worker__1">
+                <div class="worker worker__1 worker_btn" data-id="1">
                     <div class="worker-point worker-point__1"></div>
                 </div>
-                <div class="worker worker__2">
+                <div class="worker worker__2 worker_btn" data-id="2">
                     <div class="worker-point worker-point__2"></div>
                 </div>
-                <div class="worker worker__3">
+                <div class="worker worker__3 worker_btn" data-id="3">
                     <div class="worker-point worker-point__3 active__worker"></div>
                 </div>
-                <div class="worker worker__4">
+                <div class="worker worker__4 worker_btn" data-id="4">
                     <div class="worker-point worker-point__4"></div>
                 </div>
-                <div class="worker worker__5">
+                <div class="worker worker__5 worker_btn" data-id="5">
                     <div class="worker-point worker-point__5"></div>
                 </div>
-                <div class="worker worker__6">
+                <div class="worker worker__6 worker_btn" data-id="6">
                     <div class="worker-point worker-point__6"></div>
                 </div>
-                <div class="worker worker__7">
+                <div class="worker worker__7 worker_btn" data-id="7">
                     <div class="worker-point worker-point__7"></div>
                 </div>
-                <div class="worker worker__8">
+                <div class="worker worker__8 worker_btn" data-id="8">
                     <div class="worker-point worker-point__8"></div>
                 </div>
-                <div class="worker worker__9">
+                <div class="worker worker__9 worker_btn" data-id="9">
                     <div class="worker-point worker-point__9"></div>
                 </div>
             </div>
             <div class="team__mobile">
-                <div class="worker__mobile worker__1 worker__mobile_mr">CAD Drafter</div>
-                <div class="worker__mobile worker__2 worker__mobile_ml">Modeler</div>
-                <div class="worker__mobile worker__3 worker__mobile_mr">Architectural Designer</div>
-                <div class="worker__mobile worker__4 worker__mobile_ml">Graduate Architect</div>
-                <div class="worker__mobile worker__5 worker__mobile_mr">Visualizer</div>
-                <div class="worker__mobile worker__6 worker__mobile_ml">BIM Manager</div>
-                <div class="worker__mobile worker__7 worker__mobile_mr">Account/Project Manager</div>
-                <div class="worker__mobile worker__8 worker__mobile_ml">Parametric Designer</div>
-                <div class="worker__mobile worker__9 worker__mobile_mr">Graphic Designer</div>
+                <div class="worker__mobile worker__1 worker__mobile_mr worker_btn" data-id="1">CAD Drafter</div>
+                <div class="worker__mobile worker__2 worker__mobile_ml worker_btn" data-id="2">Modeler</div>
+                <div class="worker__mobile worker__3 worker__mobile_mr worker_btn" data-id="3">Architectural Designer</div>
+                <div class="worker__mobile worker__4 worker__mobile_ml worker_btn" data-id="4">Graduate Architect</div>
+                <div class="worker__mobile worker__5 worker__mobile_mr worker_btn" data-id="5">Visualizer</div>
+                <div class="worker__mobile worker__6 worker__mobile_ml worker_btn" data-id="6">BIM Manager</div>
+                <div class="worker__mobile worker__7 worker__mobile_mr worker_btn" data-id="7">Account/Project Manager</div>
+                <div class="worker__mobile worker__8 worker__mobile_ml worker_btn" data-id="8">Parametric Designer</div>
+                <div class="worker__mobile worker__9 worker__mobile_mr worker_btn" data-id="9">Graphic Designer</div>
             </div>
             <div class="worker-description__wrapper">
                 <div class="worker-description">

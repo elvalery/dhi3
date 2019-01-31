@@ -131,48 +131,8 @@ portfolioMobile();
 // team choice
 
 $(document).ready(function(){
-	$('.worker__1').click(function() {
-		$('.worker-description__wrapper').load('html/worker1.html');
-		$('.active__worker').removeClass('active__worker');
-		$(this).children().addClass('active__worker');
-	});
-	$('.worker__2').click(function() {
-		$('.worker-description__wrapper').load('html/worker2.html');
-		$('.active__worker').removeClass('active__worker');
-		$(this).children().addClass('active__worker');
-	});
-	$('.worker__3').click(function() {
-		$('.worker-description__wrapper').load('html/worker3.html');
-		$('.active__worker').removeClass('active__worker');
-		$(this).children().addClass('active__worker');
-	});
-	$('.worker__4').click(function() {
-		$('.worker-description__wrapper').load('html/worker4.html');
-		$('.active__worker').removeClass('active__worker');
-		$(this).children().addClass('active__worker');
-	});
-	$('.worker__5').click(function() {
-		$('.worker-description__wrapper').load('html/worker5.html');
-		$('.active__worker').removeClass('active__worker');
-		$(this).children().addClass('active__worker');
-	});
-	$('.worker__6').click(function() {
-		$('.worker-description__wrapper').load('html/worker6.html');
-		$('.active__worker').removeClass('active__worker');
-		$(this).children().addClass('active__worker');
-	});
-	$('.worker__7').click(function() {
-		$('.worker-description__wrapper').load('html/worker7.html');
-		$('.active__worker').removeClass('active__worker');
-		$(this).children().addClass('active__worker');
-	});
-	$('.worker__8').click(function() {
-		$('.worker-description__wrapper').load('html/worker8.html');
-		$('.active__worker').removeClass('active__worker');
-		$(this).children().addClass('active__worker');
-	});
-	$('.worker__9').click(function() {
-		$('.worker-description__wrapper').load('html/worker9.html');
+	$('.worker_btn').click(function() {
+		$('.worker-description__wrapper').load('html/worker' + $(this).attr('data-id') + '.html?' + Date.now());
 		$('.active__worker').removeClass('active__worker');
 		$(this).children().addClass('active__worker');
 	});
