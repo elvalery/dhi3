@@ -660,15 +660,15 @@
             <div class="worker-description__wrapper">
                 <div class="worker-description">
                     <h4 class="open__bold text_size__xl">Architectural Designer</h4>
-                    <p class="open__bold text_size__lg">(5+ years experience)</p>
+                    <p class="open__bold text_size__lg">5+ years experience</p>
                     <ul class="worker__tech-list">
                         <li class="worker__tech-list_header">Software: </li>
-                        <li class="worker__tech-list_item open__bold text_size__md">Autodesk Revit</li>
-                        <li class="worker__tech-list_item open__bold text_size__md">Autodesk AutoCAD (AutoCAD Architecture)</li>
-                        <li class="worker__tech-list_item open__bold text_size__md">Graphisoft Archicad + Graphisoft BIMx</li>
-                        <li class="worker__tech-list_item open__bold text_size__md">VectorWorks</li>
-                        <li class="worker__tech-list_item open__bold text_size__md">3Ds max</li>
-                        <li class="worker__tech-list_item open__bold text_size__md">Adobe Photoshop</li>
+                        <li class="worker__tech-list_item text_size__md">Autodesk Revit</li>
+                        <li class="worker__tech-list_item text_size__md">Autodesk AutoCAD (AutoCAD Architecture)</li>
+                        <li class="worker__tech-list_item text_size__md">Graphisoft Archicad + Graphisoft BIMx</li>
+                        <li class="worker__tech-list_item text_size__md">VectorWorks</li>
+                        <li class="worker__tech-list_item text_size__md">3Ds max</li>
+                        <li class="worker__tech-list_item text_size__md">Adobe Photoshop</li>
                     </ul>
                     <p class="description_text">In compliance with your requirements the architectural designer will take part in the development of the project or its part under the guidance of your Project Architect both during the stage of concept and during the stage of working drawings.</p>
                     <a href="#" class="worker-description__link open__bold text_size__md">View examples of work</a>

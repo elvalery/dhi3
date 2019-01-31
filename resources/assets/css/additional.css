@@ -265,6 +265,10 @@
   transition: 1s;
 }
 
+.worker-description .description_text {
+
+}
+
 @media only screen and (max-width: 600px) {
   .worker__tech-list_header {
     margin-left: 0;
@@ -304,6 +308,12 @@
 @media screen and (min-width:1200px) {
   .service__block {
     height: 240px;
+  }
+  .worker__tech-list_item {
+    padding-right: 35px;
+  }
+  .worker-description__wrapper .description_text {
+    padding-right: 35px;
   }
 }
 
