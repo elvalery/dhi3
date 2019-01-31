@@ -65,8 +65,8 @@ $(document).ready(function() {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					arrows: true,
-					nextArrow: '<span class="modal__slick-next">></span>',
-					prevArrow: '<span class="modal__slick-prev"><</span>'
+					nextArrow: '<span class="modal__slick-next-optimized">></span>',
+					prevArrow: '<span class="modal__slick-prev-optimized"><</span>'
 				});
 			}
 		});
