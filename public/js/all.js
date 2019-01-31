@@ -199,59 +199,12 @@ $(document).ready(function(){
 		});
 	}
 
-	$('.service_1').click(function() {
-		$('.service-description-wrapper').load('html/service1.html?1', function (){
-			service_back();
-		});
-		$('.service_active').removeClass('service_active');
-		$(this).addClass('service_active');
-	});
-	$('.service_2').click(function() {
-		$('.service-description-wrapper').load('html/service2.html?1', function (){
-			service_back();
-		});
-		$('.service_active').removeClass('service_active');
-		$(this).addClass('service_active');
-	});
-	$('.service_3').click(function() {
-		$('.service-description-wrapper').load('html/service3.html?1', function (){
-			service_back();
-		});
-		$('.service_active').removeClass('service_active');
-		$(this).addClass('service_active');
-	});
-	$('.service_4').click(function() {
-		$('.service-description-wrapper').load('html/service4.html?1', function (){
-			service_back();
-		});
-		$('.service_active').removeClass('service_active');
-		$(this).addClass('service_active');
-	});
-	$('.service_5').click(function() {
-		$('.service-description-wrapper').load('html/service5.html?1', function (){
-			service_back();
-		});
-		$('.service_active').removeClass('service_active');
-		$(this).addClass('service_active');
-	});
-	$('.service_6').click(function() {
-		$('.service-description-wrapper').load('html/service6.html?1', function (){
-			service_back();
-		});
-		$('.service_active').removeClass('service_active');
-		$(this).addClass('service_active');
-	});
-	$('.service_7').click(function() {
-		$('.service-description-wrapper').load('html/service7.html?1', function (){
-			service_back();
-		});
-		$('.service_active').removeClass('service_active');
-		$(this).addClass('service_active');
-	});
-	$('.service_8').click(function() {
-		$('.service-description-wrapper').load('html/service8.html?1', function (){
-			service_back();
-		});
+	$('.service_btn').click(function() {
+		$('.service-description-wrapper')
+			.load('html/service' + $(this).attr('data-service') + '.html?' + Date.now(),
+				function (){
+					service_back();
+				});
 		$('.service_active').removeClass('service_active');
 		$(this).addClass('service_active');
 	});

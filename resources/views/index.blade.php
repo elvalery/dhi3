@@ -322,24 +322,11 @@
         </div>
     </div>
     <div class="container wow fadeInUp">
-        {{--<div class="wall wall_pre-services">--}}
-            {{--@foreach($services as $service)
-            <div class="brick brick-{{ $service->pre_style }}">
-                <div class="pre-service__block block position-relative" style="width: 100%; height: 100%; background-image: url({{ $service->small_image }});">
-                    <div style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
-                        <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 100%; height: 100%;">
-                            <h3 class="block_title open__semibold text_size__md text-center c__white w-100">{{ $service->title }}</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach--}}
-    {{--    </div>--}}
         <div class="row services__all">
             @foreach($services as $service)
-                <div class="@if($service->pre_style == 'lg') col-lg-6 @else col-lg-4 @endif service__block" data-service="{{ $service->id }}">
-                    <div class="service__bg" style="width: 100%; height: 100%; position: relative; background-image: url({{ $service->small_image }});" >
-                        <div class="block_title d-flex flex-wrap justify-content-center align-items-center" style="position: absolute; width: 90%; height: 80%; margin: auto; left:0;top:0;right:0;bottom:0;">
+                <div class="@if($service->pre_style == 'lg') col-lg-6 @else col-lg-4 @endif service__block service_btn" data-service="{{ $service->id }}">
+                    <div class="service__bg" style="background-image: url({{ $service->small_image }});" >
+                        <div class="block_title service__floating_text">
                             <h3 class="open__semibold text_size__md text-center c__white w-100 ">{{ $service->title }}</h3>
                         </div>
                     </div>
@@ -349,7 +336,9 @@
         <div class="wall wall_services">
             <div class="service-description-wrapper">
                 <div class="service__avatar service__avatar_1">
-                    <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting</h3>
+                    <div class="service__floating_text">
+                        <h3 class="block_title open__semibold text_size__md text-center c__white w-100">CAD Drafting</h3>
+                    </div>
                 </div>
                 <div class="service__content">
                     <div class="pb-sm-2 font-weight-bold">Design Package development under supervision of your Project Architect
@@ -377,7 +366,7 @@
             </div>
             <div class="services">
                 @foreach($services as $service)
-                <div class="service service_{{$service->id}}">
+                <div class="service service_{{$service->id}} service_btn" data-service="{{ $service->id }}">
                     <h3 class="block_title open__semibold text_size__md text-center c__white w-100">{{ $service->title }}</h3>
                 </div>
                 @endforeach
