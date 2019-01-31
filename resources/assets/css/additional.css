@@ -214,11 +214,11 @@
   margin: 2px;
 }
 .tabs-name > div:hover{
-  background-color: #000;
+  background-color: #454545;
   color: #fff;
 }
 .tabs-name > div.active {
-  background-color: #000;
+  background-color: #454545;
   color: #fff;
 }
 
@@ -289,6 +289,7 @@
   }
 }
 
+.worke
 
 @media screen and (min-width:280px) {
   .service__block  {
