@@ -196,73 +196,39 @@
             <div data-slide="10">Italy</div>
         </div>
         <div class="inforgraphic-slider">
-            {{--<div>
+            <div>
                 <img src="img/graphics/Netherland.jpg" alt="" class="img-fluid">
             </div>
-            <div>
+            <div style="width: 930px; position: relative; left: -1860px; top: 0px; ">
                 <img src="img/graphics/UK.jpg" alt="" class="img-fluid">
             </div>
-            <div>
+            <div style="width: 930px; position: relative; left: -1860px; top: 0px; ">
                 <img src="img/graphics/USA.jpg" alt="" class="img-fluid">
             </div>
-            <div>
+            <div style="width: 930px; position: relative; left: -1860px; top: 0px; ">
                 <img src="img/graphics/Germany.jpg" alt="" class="img-fluid">
             </div>
-            <div>
+            <div style="width: 930px; position: relative; left: -1860px; top: 0px; ">
                 <img src="img/graphics/Switzerland.jpg" alt="" class="img-fluid">
             </div>
-            <div>
+            <div style="width: 930px; position: relative; left: -1860px; top: 0px; ">
                 <img src="img/graphics/Denmark.jpg" alt="" class="img-fluid">
             </div>
-            <div>
+            <div style="width: 930px; position: relative; left: -1860px; top: 0px; ">
                 <img src="img/graphics/Austria.jpg" alt="" class="img-fluid">
             </div>
-            <div>
+            <div style="width: 930px; position: relative; left: -1860px; top: 0px; ">
                 <img src="img/graphics/HongKong.jpg" alt="" class="img-fluid">
             </div>
-            <div>
+            <div style="width: 930px; position: relative; left: -1860px; top: 0px; ">
                 <img src="img/graphics/Singapore.jpg" alt="" class="img-fluid">
             </div>
-            <div>
+            <div style="width: 930px; position: relative; left: -1860px; top: 0px; ">
                 <img src="img/graphics/Israel.jpg" alt="" class="img-fluid">
             </div>
-            <div>
+            <div style="width: 930px; position: relative; left: -1860px; top: 0px; ">
                 <img src="img/graphics/Italy.jpg" alt="" class="img-fluid">
-            </div>--}}
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
             </div>
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="img/graphics/bar.jpg" alt="" class="img-fluid">
-            </div>
-
         </div>
     </div>
 </section>
