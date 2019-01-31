@@ -8,7 +8,7 @@ function portfolioTabs() {
 	$("ul.tabs_buttons").on("click", "li:not(.bgc__active)", function() {
 		$('.wall_tab.slick-initialized').slick('unslick');
 		$('.wall_tab__active').slick({
-			infinite: false,
+			infinite: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: true,
@@ -18,7 +18,7 @@ function portfolioTabs() {
 	});
 	
 	$('.wall_tab__active').slick({
-		infinite: false,
+		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
