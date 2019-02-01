@@ -164,6 +164,7 @@ $(document).ready(function(){
 				});
 		$('.service_active').removeClass('service_active');
 		$(this).addClass('service_active');
+		window.location.href = "#services";
 	});
 });
 
