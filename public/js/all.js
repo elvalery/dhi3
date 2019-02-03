@@ -169,6 +169,8 @@ $(document).ready(function(){
 		$(this).addClass('service_active');
 		window.location.href = "#services";
 	});
+	
+	$(".callback_modal_btn").click(function(){$("#modal_callback").show()})
 });
 
 /* video playing */
