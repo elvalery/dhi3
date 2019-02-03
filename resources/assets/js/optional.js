@@ -43,7 +43,7 @@ $(document).ready(function() {
 	$('.modal__page_close, .modal__page_close_area').click(function (e) {
 		if ($(e.target).hasClass('modal__page_close') || $(e.target).hasClass('modal__page_close_area')) {
 			$('#modal_page').hide();
-			$('#modal_page_content').slick('unslick');
+			$('#modal_page_content_slick').slick('unslick');
 		}
 	});
 	
@@ -58,7 +58,7 @@ $(document).ready(function() {
 				$('#modal_page_content').html(data);
 			},
 			complete: function() {
-				$('#modal_page_content').slick({
+				$('#modal_page_content_slick').slick({
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					arrows: true,

@@ -222,6 +222,10 @@
   color: #fff;
 }
 
+.modal__slick {
+  border-radius: 10px;
+}
+
 .modal__slick.slick-slider {
   height: 100%;
 }
@@ -229,10 +233,8 @@
 .modal__slick-prev-optimized{
   height: 100%;
   width: 45px;
-  left: -45px;
+  left: 0;
   top: 0;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
   position: absolute;
   font-family: monospace;
   font-size: 44px;
@@ -240,16 +242,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #454545;
+  /*background-color: #454545;*/
+  background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  z-index: 998;
 }
 .modal__slick-next-optimized{
   height: 100%;
   width: 45px;
-  right: -45px;
+  right: 0;
   top: 0;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   position: absolute;
   font-family: monospace;
   font-size: 44px;
@@ -257,20 +259,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #454545;
+  background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  z-index: 998;
 }
 .modal__slick-next-optimized:hover, .modal__slick-prev-optimized:hover{
-  background-color: #232323;
+  /*background-color: #232323;*/
+  background-color: rgba(0, 0, 0, 0.8);
   transition: 1s;
 }
 
-.modal__slick_item img {
-  max-height: 70vh;
+.modal__slick_item > div {
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .modal__slick_text p{
   margin-bottom: 8px;
+}
+
+.modal__page_close {
+  z-index: 999;
 }
 
 @media only screen and (max-width: 600px) {

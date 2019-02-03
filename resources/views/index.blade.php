@@ -68,7 +68,7 @@
     <div class="container">
         <div class="modal_page_content animated fadeInUp" >
             <a href="#" onclick="return false" id="close_page" class="modal__page_close" style="outline:none;"></a>
-            <div class="modal__slick" id="modal_page_content"></div>
+            <div id="modal_page_content"></div>
         </div>
     </div>
 </section>
