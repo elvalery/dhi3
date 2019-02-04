@@ -12555,6 +12555,11 @@ label.form_input::after {
   border-radius: 10px;
 }
 
+.modal__slick .slick-list {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 .modal__slick.slick-slider {
   height: 100%;
 }
@@ -12575,6 +12580,7 @@ label.form_input::after {
   background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
   z-index: 998;
+  border-top-left-radius: 10px;
 }
 .modal__slick-next-optimized{
   height: 100%;
@@ -12591,6 +12597,7 @@ label.form_input::after {
   background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
   z-index: 998;
+  border-top-right-radius: 10px;
 }
 .modal__slick-next-optimized:hover, .modal__slick-prev-optimized:hover{
   /*background-color: #232323;*/
@@ -12611,6 +12618,10 @@ label.form_input::after {
 
 .modal__page_close {
   z-index: 999;
+}
+
+.modal_page_content {
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
