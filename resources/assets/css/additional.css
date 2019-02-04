@@ -17,7 +17,6 @@
 
 .portfolio__tab_button {
   height: 42px;
-  width: 19%;
 }
 
 .modal__page_close {
@@ -232,6 +231,7 @@
   margin: 5px 2px;
   padding: 5px 2px;
   font-weight:bold ;
+  white-space: normal;
 }
 
 .tabs-name.portfolio > div:hover, .tabs-name.portfolio > div.active {
@@ -360,6 +360,19 @@
   }
 }
 
+@media (max-width: 992px) {
+  .tabs-name.portfolio > div {
+    width: 25%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .tabs-name.portfolio > div {
+    width: 30%;
+  }
+}
+
 @media (max-width: 540px){
   .portfolio__item {
     width: 100%;
@@ -394,5 +407,9 @@
     min-height: 55px;
     margin-bottom: 5px;
     margin-top: 5px;
+  }
+  
+  .tabs-name.portfolio > div {
+    width: 46%;
   }
 }
