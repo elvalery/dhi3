@@ -12346,6 +12346,7 @@ label.form_input::after {
 
 .portfolio__tab_button {
   height: 42px;
+  width: 19%;
 }
 
 .modal__page_close {
@@ -12528,6 +12529,7 @@ label.form_input::after {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
   margin: 0 auto;
   width: 100%;
 }
@@ -12550,6 +12552,22 @@ label.form_input::after {
   background-color: #454545;
   color: #fff;
 }
+
+.tabs-name.portfolio {
+  margin: 10px 0;
+}
+.tabs-name.portfolio > div {
+  width: 19%;
+  margin: 5px 2px;
+  padding: 5px 2px;
+  font-weight:bold ;
+}
+
+.tabs-name.portfolio > div:hover, .tabs-name.portfolio > div.active {
+  background-color: #d0a903;;
+  color: #000;
+}
+
 
 .modal__slick {
   border-radius: 10px;

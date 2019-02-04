@@ -186,7 +186,7 @@
             <h1 class="montserrat__bold title_size__xl text-center no-capitalize">Just Compare <br/> The Staff and Operating Costs</h1>
         </div>
         <!-- <img src="img/infographic.png" alt="" class="img-fluid"> -->
-        <div class="tabs-name">
+        <div class="tabs-name infographic">
             <div class="active" data-slide="0">The Netherlands</div>
             <div data-slide="1">United Kingdom</div>
             <div data-slide="2">United States</div>
@@ -463,65 +463,6 @@
                 <img src="img/company_6_grey.png" class="company_6 img-fluid" alt="">
             </div>
         </div>
-        <!-- <div class="row mt-5 wow fadeInUp">
-          <div class="col-sm-4 col-lg-2 text-center">
-            <img src="img/company_7_grey.png" class="company_7 img-fluid" alt="">
-          </div>
-          <div class="col-sm-4 col-lg-2 text-center mt-5 mt-sm-0">
-            <img src="img/company_8_grey.png" class="company_8 img-fluid" alt="">
-          </div>
-          <div class="col-sm-4 col-lg-2 text-center mt-5 mt-sm-0">
-            <img src="img/company_9_grey.png" class="company_9 img-fluid" alt="">
-          </div>
-          <div class="col-sm-4 col-lg-2 text-center mt-5 mt-lg-0">
-            <img src="img/company_10_grey.png" class="company_10 img-fluid" alt="">
-          </div>
-          <div class="col-sm-4 col-lg-2 text-center mt-5 mt-lg-0">
-            <img src="img/company_11_grey.png" class="company_11 img-fluid" alt="">
-          </div>
-          <div class="col-sm-4 col-lg-2 text-center mt-5 mt-lg-0">
-            <img src="img/company_12_grey.png" class="company_12 img-fluid" alt="">
-          </div>
-        </div> -->
-        <!-- <div class="col-12 d-none d-sm-block wow fadeInUp">
-          <div id="carousel_testimonials" class="carousel slide my-5" data-ride="carousel">
-            <div class="carousel-inner" >
-                <div class="carousel-item">
-                  <div class="carousel_block d-block mx-auto w-50" >
-                    <h5 class="h5 open__extrabold title_size__xs">Microsoft</h5>
-                    <p class="txt open__regular text_size__md">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item active">
-                  <div class="carousel_block d-block mx-auto w-50" >
-                    <h5 class="h5 open__extrabold title_size__xs">Coca-Cola</h5>
-                    <p class="txt open__regular text_size__md">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                    </p>
-                  </div>
-                </div>
-            
-                <div class="carousel-item">
-                  <div class="carousel_block d-block mx-auto w-50" >
-                    <h5 class="h5 open__extrabold title_size__xs">Google</h5>
-                    <p class="txt open__regular text_size__md">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                    </p>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel_testimonials" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"><img src="img/arrow_left.png" alt=""></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel_testimonials" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"><img src="img/arrow_right.png" alt=""></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div>
-          </div>
-        </div> -->
     </div>
 </section>
 
@@ -607,7 +548,7 @@
 <section id="product_cart" class="container-fluid py-5">
     <div class="container">
         <div class="col-12 pb-0 pb-lg-5 wow fadeInUp">
-            <h1 class="montserrat__bold title_size__xl text-center no-capitalize">All Necessary Specialists and Software in One Office</h1>
+            <h1 class="montserrat__bold title_size__xl text-center no-capitalize">All Nefcessary Specialists and Software in One Office</h1>
         </div>
         <div class="team__titles">
             <div class="worker__title worker__1 worker_btn" data-id="1">CAD Drafter</div>
