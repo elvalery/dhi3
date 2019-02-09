@@ -25,6 +25,8 @@ function portfolioTabs() {
 }
 
 $(document).ready(function() {
+	let workid = null;
+	
 	$.ajaxSetup({
 		headers: {
 			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -44,18 +46,21 @@ $(document).ready(function() {
 		if ($(e.target).hasClass('modal__page_close') || $(e.target).hasClass('modal__page_close_area')) {
 			$('#modal_page').hide();
 			$('#modal_page_content_slick').slick('unslick');
+			workid = null;
 		}
 	});
 	
 	$('.modal__open_button').click(function () {
 		const id = $(this).data()['id'];
+		workid = id;
 		
 		$.ajax({
 			type: 'get',
 			url: '/works/' + id,
 			success: function(data) {
 				$('#modal_page').show();
-				$('#modal_page_content').html(data);
+				$('#modal_page_content').html(data.html);
+				history.pushState({profile: id}, data.name, '#works-' + id);
 			},
 			complete: function() {
 				$('#modal_page_content_slick').slick({
@@ -68,6 +73,19 @@ $(document).ready(function() {
 			}
 		});
 	});
+	
+	if(window.location.hash) {
+		const hash = window.location.hash.match(/#works-([0-9]+)/);
+		if (hash.length > 1 && parseInt(hash[1]) > 0) {
+			const top = $('#works').offset().top;
+			window.scrollTo({
+				top, // scroll so that the element is at the top of the view
+				behavior: 'smooth' // smooth scroll
+			});
+
+			$('.modal__open_button[data-id=' + hash[1] + ']')[0].click();
+		}
+	}
 	
 	portfolioTabs();
 	

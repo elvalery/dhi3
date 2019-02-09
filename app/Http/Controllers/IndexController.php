@@ -46,7 +46,10 @@ class IndexController extends Controller {
   }
 
   public function work(Work $work) {
-    return view('work-modal', compact('work'));
+    return response()->json([
+      'title' => $work->name,
+      'html' => view('work-modal', compact('work')),
+    ]);
   }
 
   public function html($file) {
