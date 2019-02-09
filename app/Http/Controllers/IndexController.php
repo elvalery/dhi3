@@ -11,6 +11,7 @@ use App\DHIService;
 use App\Http\Requests\StoreContacts;
 use App\Mail\ContactRequest;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\View;
 
 class IndexController extends Controller {
   public function index() {
@@ -48,7 +49,7 @@ class IndexController extends Controller {
   public function work(Work $work) {
     return response()->json([
       'title' => $work->name,
-      'html' => view('work-modal', compact('work')),
+      'html' => (View::make('work-modal', compact('work')))->render(),
     ]);
   }
 
