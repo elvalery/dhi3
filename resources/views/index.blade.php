@@ -35,14 +35,21 @@
                 <div class="d-flex justify-content-center">
                     <form id="modal_callback_form" class="form_modal_callback px-0 py-0" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
                         <h2 class="fira__regular title_size__md text-center">Request a Call</h2>
-                        <p class="fira__light text_size__md text-center c__black">Leave your contacts and we will orient you at the price of our services within 25 minutes</p>
+                        <p class="fira__light text_size__md text-center c__black">Leave your contacts and we will orient you at the price of our services</p>
                         <div class="text-center my-2">
                             <label for="modal_callback_user_choise" class="form_label fira__regular text_size__md text-left mx-0" >Call me</label>
                             <select name="description" id="modal_callback_user_choise" class="form_select fira__light text_size__md border brc__metal brc_h__yellow mx-0 py-1 px-2">
                                 <option class="form_option text_size__md" value="Call me as soon as possible">as soon as possible</option>
-                                <option class="form_option text_size__md" value="Call me tomorrow">tomorrow</option>
+                                <option class="form_option text_size__md modal_callback_tomorrow" value="Call me tomorrow">tomorrow</option>
                             </select>
-                            <!--<input type="text" id="modal_callback_user_choise" class="form_input border brc__black px-3 py-1" value="+38 " placeholder="()" style="width: 45%;">-->
+                        </div>
+                        <div class="text-right my-2" id="modal_callback_user_time_block" style="display: none">
+                            <label for="modal_callback_user_time" class="form_label fira__regular text_size__md mx-0 text-left" >at</label>
+                            <select name="time" id="modal_callback_user_time" class="form_select fira__light text_size__md border brc__metal brc_h__yellow py-1 px-2">
+                                @foreach($callback_time as $time)
+                                    <option class="form_option text_size__md" value="{{ $time }}">{{ $time }}</option>
+                                @endforeach
+                            </select>
                         </div>
                         <div class="text-center my-2">
                             <input type="text" name="name" class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="Your name">

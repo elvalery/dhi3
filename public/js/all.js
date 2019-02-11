@@ -27,6 +27,16 @@ function portfolioTabs() {
 	});
 }
 
+function modal_callback_time_show() {
+	$("#modal_callback_user_time_block").show();
+	$("#modal_callback .modal_callback_content").addClass('modal_callback_content_w_time');
+}
+
+function modal_callback_time_hide() {
+	$("#modal_callback_user_time_block").hide();
+	$("#modal_callback .modal_callback_content").removeClass('modal_callback_content_w_time');
+}
+
 $(document).ready(function() {
 	let workid = null;
 	
@@ -101,6 +111,8 @@ $(document).ready(function() {
 	$('#calculation_form, #callback_form, #bid_form, #modal_callback_form').submit(function (e) {
 		e.preventDefault();
 		
+		const form_id = this.id;
+		
 		$.ajax({
 			type: 'post',
 			url: '/contacts',
@@ -109,6 +121,9 @@ $(document).ready(function() {
 			processData: false,
 			contentType: false,
 			complete: function () {
+				if (form_id === 'modal_callback_form') {
+					$('#modal_callback').hide();
+				}
 				$('#modal_ty_page').show();
 			}
 		});
@@ -128,6 +143,14 @@ $(document).ready(function() {
 		
 		self.location.href = $(this).attr('href');
 		$("#modal_menu").hide();
+	});
+	
+	$("#modal_callback_user_choise").change(function (e) {
+		if ($('option:selected', this).hasClass('modal_callback_tomorrow')) {
+			modal_callback_time_show();
+		} else {
+			modal_callback_time_hide();
+		}
 	});
 });
 
@@ -189,7 +212,9 @@ $(document).ready(function(){
 		window.location.href = "#services";
 	});
 	
-	$(".callback_modal_btn").click(function(){$("#modal_callback").show()})
+	$(".callback_modal_btn").click(function(){
+		$("#modal_callback").show()
+	});
 });
 
 /* video playing */

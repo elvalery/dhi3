@@ -12642,6 +12642,10 @@ label.form_input::after {
   border-radius: 10px;
 }
 
+.modal_callback_content_w_time .modal_callback_user_time_block {
+  display: block;
+}
+
 @media only screen and (max-width: 600px) {
   .worker__tech-list_header {
     margin-left: 0;
@@ -12740,5 +12744,39 @@ label.form_input::after {
   
   .tabs-name.portfolio > div {
     width: 46%;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  .modal_callback_content_w_time #modal_callback_user_time {
+    margin-right: 0;
+    width:100%;
+    min-width: 160px;;
+    max-width: 320px;
+  }
+  
+  .modal_callback_content_w_time #modal_callback_user_time_block {
+    text-align: center!important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .modal_callback_content_w_time {
+    max-height: 400px;
+  }
+  
+  .modal_callback_content_w_time #modal_callback_user_time {
+    margin-right: 1.9rem;
+    width:100px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+  
+  .modal_callback_content_w_time #modal_callback_user_time_block label {
+    text-align: right!important;
+  }
+  
+  .modal_callback_content_w_time #modal_callback_user_time_block {
+    text-align: right!important;
   }
 }

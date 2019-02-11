@@ -13,13 +13,23 @@ use App\Mail\ContactRequest;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 
+use Carbon\Carbon;
+
 class IndexController extends Controller {
   public function index() {
     $categories = Category::orderBy('order_id')->get();
     $works = Work::orderBy('order_id')->get();
     $services = DHIService::orderBy('order_id')->get();
 
-    return view('index', compact('categories', 'works', 'services'));
+    $callback_time = [];
+    $date = new Carbon('tomorrow 9 am');
+    $datefinal = new Carbon('tomorrow 9 pm');
+    while ($date <= $datefinal) {
+      $callback_time[] = $date->format('h a');
+      $date->addHour();
+    }
+
+    return view('index', compact('categories', 'works', 'services', 'callback_time'));
   }
 
   public function contacts(StoreContacts $request) {
@@ -29,15 +39,19 @@ class IndexController extends Controller {
       $path = $request->file->store('form', 'public');
       $contact->file = url('storage/'. $path);
       $contact->path = storage_path($path);
-      $contact->save();
     }
 
     if ($request->has("action")) {
       foreach ($request->get('action') as $action) {
         $contact->actions()->attach(\App\Action::find($action));
       }
-      $contact->save();
     }
+
+    if ($request->has("time") && $contact->description == 'Call me tomorrow') {
+      $contact->description = $contact->description . ' at ' . $request->get("time");
+    }
+
+    $contact->save();
 
     Mail::to(config('mail.to'))
       ->cc(config('mail.cc'))
