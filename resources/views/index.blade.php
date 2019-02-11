@@ -104,7 +104,7 @@
             <li class="nav-item"><a href="#inforgraphic" class="nav-link open__regular text_size__md px-0 py-2 mx-3 c__white c_h__white border-bottom brc__transparent">Benefits</a></li>
             <li class="nav-item"><a href="#services" class="nav-link open__regular text_size__md px-0 py-2 mx-3 c__white c_h__white border-bottom brc__transparent">Services</a></li>
             <li class="nav-item"><a href="#works" class="nav-link open__regular text_size__md px-0 py-2 mx-3 c__white c_h__white border-bottom brc__transparent">Portfolio</a></li>
-            <li class="nav-item"><a href="#guarantees" class="nav-link open__regular text_size__md px-0 py-2 mx-3 c__white c_h__white border-bottom brc__transparent">Guarantees</a></li>
+            <li class="nav-item"><a href="#guarantees" class="nav-link open__regular text_size__md px-0 py-2 mx-3 c__white c_h__white border-bottom brc__transparent">Warranties</a></li>
             <li class="nav-item"><a href="#product_cart"  class="nav-link open__regular text_size__md px-0 py-2 mx-3 c__white c_h__white border-bottom brc__transparent">Team</a></li>
             <li class="nav-item"><a href="#download" class="nav-link open__regular text_size__md px-0 py-2 mx-3 c__white c_h__white border-bottom brc__transparent">Downloads</a></li>
             <li class="nav-item"><a href="#software" class="nav-link open__regular text_size__md px-0 py-2 mx-3 c__white c_h__white border-bottom brc__transparent">BIM & Technologies</a></li>
@@ -130,7 +130,7 @@
                 <li class="nav-item"><a href="#inforgraphic" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Benefits</a></li>
                 <li class="nav-item"><a href="#services" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Services</a></li>
                 <li class="nav-item"><a href="#works" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Portfolio</a></li>
-                <li class="nav-item"><a href="#guarantees" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Guarantees</a></li>
+                <li class="nav-item"><a href="#guarantees" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Warranties</a></li>
                 <li class="nav-item"><a href="#product_cart" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Team</a></li>
                 <li class="nav-item"><a href="#download" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Downloads</a></li>
                 <li class="nav-item"><a href="#software" class="nav-link open__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">BIM & Technologies</a></li>
@@ -177,10 +177,10 @@
                     </div>
                 </div>
                 <h1 class="montserrat__bold title_size__md c__white first-screen-h1" style="text-align: center;">
-                    We are ready & set outsource team of professionals in architectural design that allows you instantly expand the workforce and increase your margin to up to <b class="c__yellow">100<span class="text_size__xl">%</span></b>
+                    We Are a Successful Tight-knit Outsource Team of Professionals in Architectural Design That Allows You to Boost the Productivity Instantly and Increase Your Potential up to <b class="c__yellow">100<span class="text_size__xl">%</span></b>
                 </h1>
                 <div class="my-5" style="text-align: center;">
-                    <a href="#calculation" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-3" style="text-transform: uppercase;">REQUEST QUOTE</a>
+                    <a href="#calculation" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-3" style="text-transform: uppercase;">REQUEST A QUOTE</a>
                 </div>
             </div>
         </div>
@@ -190,18 +190,18 @@
 <section id="inforgraphic" class="container-fluid py-5">
     <div class="container wow fadeInUp">
         <div class="col-12 pb-3">
-            <h1 class="montserrat__bold title_size__xl text-center no-capitalize">Just Compare <br/> The Staff and Operating Costs</h1>
+            <h1 class="montserrat__bold title_size__xl text-center no-capitalize">Just Compare <br/> Staff And Operating Expenses</h1>
         </div>
         <!-- <img src="img/infographic.png" alt="" class="img-fluid"> -->
         <div class="tabs-name infographic">
             <div class="active" data-slide="0">The Netherlands</div>
-            <div data-slide="1">United Kingdom</div>
-            <div data-slide="2">United States</div>
+            <div data-slide="1">The United Kingdom</div>
+            <div data-slide="2">The United States</div>
             <div data-slide="3">Germany</div>
             <div data-slide="4">Switzerland</div>
             <div data-slide="5">Denmark</div>
             <div data-slide="6">Austria</div>
-            <div data-slide="7">HongKong</div>
+            <div data-slide="7">Hong Kong</div>
             <div data-slide="8">Singapore</div>
             <div data-slide="9">Israel</div>
             <div data-slide="10">Italy</div>
@@ -255,37 +255,37 @@
             <div class="col-lg-4 col-sm-5">
                 <div class="benefits-item">
                     <h3>01</h3>
-                    <h4>Higher margin</h4>
-                    <p>Majority of the core design team – high skilled experienced professionals – based in your office.</p>
-                    <p>Majority of technical personnel – skilled and experienced graduates and professionals – outsourced at the rates x2 less than your local salary rates.</p>
+                    <h4 class="no-capitalize">Higher Potential</h4>
+                    <p>The majority of core design teams – highly-skilled experienced professionals – is based in your office.</p>
+                    <p>The majority of technical personnel – skillful and qualified graduates and specialists – is outsourced at twice lower salary rates than your local ones.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-5">
                 <div class="benefits-item">
                     <h3>02</h3>
-                    <h4>Less operational expenses</h4>
-                    <p>Less number of needed office space, desktops, equipment, software & hardware, less HR and Finance departments workload.</p>
+                    <h4 class="no-capitalize">Lower Operational Expenses</h4>
+                    <p>Smaller quantity of office space, desktops, equipment, software & hardware is needed, as well as less workload for HR and Finance departments.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-5">
                 <div class="benefits-item">
                     <h3>03</h3>
-                    <h4>Keeps your head office core team of an optimum size</h4>
-                    <p>Immediate outsource team mobilization allows to keep the head office team of a predictable constant size.</p>
+                    <h4 class="no-capitalize">Maintaining the Optimal Size of Your Head Office Core Team</h4>
+                    <p>Immediate outsource team mobilization allows you to stick to the predictable permanent size of your head office team.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-5">
                 <div class="benefits-item">
                     <h3>04</h3>
-                    <h4>More valuable service for your CIS clients</h4>
-                    <p>Assurance in the appropriate design solutions in accordance to local market needs and regulation requirements when work in CIS area.</p>
+                    <h4 class="no-capitalize">More Valuable Service for Your CIS Clients</h4>
+                    <p>Providing the appropriate design solutions in accordance with the local market needs and regulation requirements while working in the CIS area.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-5">
                 <div class="benefits-item">
                     <h3>05</h3>
-                    <h4>Less expenses on the further design package adaptation for your CIS clients</h4>
-                    <p>Cost saving on business trips and additional expenses on one hand and assurance for the client that the initial design concept is preserved through to delivery. Which is beneficial in terms of the higher probability to win competition.</p>
+                    <h4 class="no-capitalize">Lower Expenses on the Further Design Package Adaptation for Your CIS Clients</h4>
+                    <p>Two benefits regarding the higher probability of winning the competition: on the one hand, cost saving on business trips and additional expenses; on the other hand, the warranty of the initial design concept preservation up to the delivery stage.</p>
                 </div>
             </div>
         </div>
@@ -320,7 +320,7 @@
                 <div class="service__content">
                     <div class="pb-sm-2 font-weight-bold">Design Package development under supervision of your Project Architect
                         (software to comply with the one used in the head office)</div>
-                    <p>Highly Experienced and educated CAD drafter that suit your needs. The architect will develop drawings on your assignments and will introduce changes following remarks. You will have opportunities to closely follow the process of work and introduce changes directly with the architect.</p>
+                    <p>Our highly experienced and educated CAD Drafter will suit your needs. Our Architect will develop drawings following your assignments and will introduce changes according to your remarks. You will have an opportunity to follow the process of work closely and introduce immediate changes together with Architect.</p>
                     <h4 class="open__semibold title_size__md">Software:</h4>
                     <ul>
                         <li>AutodeskRevit</li>
@@ -347,7 +347,7 @@
                     <h3 class="block_title open__semibold text_size__md text-center c__white w-100">{{ $service->title }}</h3>
                 </div>
                 @endforeach
-                <a href="#contacts" class="service_button">get quote</a>
+                <a href="#contacts" class="service_button">Get a Quote</a>
             </div>
         </div>
     </div>
@@ -363,17 +363,17 @@
         <div class="row">
             <div class="col-sm-12 col-lg-4">
                 <div class="my-3">
-                    <a href="#contacts" class="button border-0 rounded open__semibold text_size__xl text-warning c__black bgc__black bgc_h__black px-4 py-3" style="display:table;margin:0 auto;min-width:100%;text-align:center;padding:25px 0 !important; font-weight: bold">Request BIM model</a>
+                    <a href="#contacts" class="button border-0 rounded open__semibold text_size__xl text-warning c__black bgc__black bgc_h__black px-4 py-3" style="display:table;margin:0 auto;min-width:100%;text-align:center;padding:25px 0 !important; font-weight: bold">Request a BIM Model</a>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-4">
                 <div class="my-3">
-                    <a href="#contacts" class="button border-0 rounded open__semibold text_size__xl c__black bgc__black text-warning bgc_h__black px-4 py-3" style="display:table;margin:0 auto;min-width:100%;text-align:center;padding:25px 0 !important; font-weight: bold">Request drawing sample</a>
+                    <a href="#contacts" class="button border-0 rounded open__semibold text_size__xl c__black bgc__black text-warning bgc_h__black px-4 py-3" style="display:table;margin:0 auto;min-width:100%;text-align:center;padding:25px 0 !important; font-weight: bold">Request a Drawing Sample</a>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-4">
                 <div class="my-3">
-                    <a href="#" class="button border-0 rounded open__semibold text_size__xl c__black text-warning bgc__black bgc_h__black px-4 py-3" style="display:table;margin:0 auto;min-width:100%;text-align:center;padding:25px 0 !important; font-weight: bold">Download competency statement</a>
+                    <a href="#" class="button border-0 rounded open__semibold text_size__xl c__black text-warning bgc__black bgc_h__black px-4 py-3" style="display:table;margin:0 auto;min-width:100%;text-align:center;padding:25px 0 !important; font-weight: bold">Download a Competency Statement</a>
                 </div>
             </div>
         </div>
@@ -383,13 +383,13 @@
 <section id="bid" class="container-fluid py-5">
     <div class="container">
         <div class="col-12 pb-0 pb-lg-5 wow fadeInUp">
-            <h1 class="montserrat__bold title_size__xl text-center no-capitalize">We Will Make a Free Test Assignment For You</h1>
+            <h1 class="montserrat__bold title_size__xl text-center no-capitalize">We will Do a Free Test Assignment for You</h1>
         </div>
         <div class="col-12 wow fadeInUp">
             <div class="d-flex justify-content-center border brc__black">
                 <form id="bid_form" class="form_bid px-5 py-4" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
                     <h2 class="montserrat__semibold title_size__md text-center no-capitalize">Leave a Request</h2>
-                    <p class="open__light text_size__md text-center c__black">and we will make your<br />test assignment FOR FREE</p>
+                    <p class="open__light text_size__md text-center c__black">and we will do your<br />test assignment FOR FREE</p>
                     <div class="text-center my-3">
                         <input type="text" name="name" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="Your name">
                     </div>
@@ -400,11 +400,11 @@
                     <div class="text-center my-0 service-choice-wrapper">
                         <div class="service-choice">
                             <input type="checkbox" name="action[]" value="1" id="bid_user_service_bim-model">
-                            <label for="bid_user_service_bim-model" class="open__light">request BIM model</label>
+                            <label for="bid_user_service_bim-model" class="open__light">request a BIM model</label>
                         </div>
                         <div class="service-choice">
                             <input type="checkbox" name="action[]" value="4" id="bid_user_service_portfolio">
-                            <label for="bid_user_service_portfolio" class="open__light">request drawing sample</label>
+                            <label for="bid_user_service_portfolio" class="open__light">request a drawing sample</label>
                         </div>
                         <div class="service-choice">
                             <input type="checkbox" name="action[]"  value="2" id="bid_user_service_email">
@@ -416,20 +416,20 @@
                         </div>
                         <div class="service-choice">
                             <input type="checkbox" name="action[]"  value="3" id="bid_user_service_quot">
-                            <label for="bid_user_service_quot" class="open__light">get quote</label>
+                            <label for="bid_user_service_quot" class="open__light">get a quote</label>
                         </div>
                     </div>
                     <div class="text-center mt-2 mb-0">
                         <input type="file" id="bid_user_file" name="file" onchange='uploadFile(this)'>
-                        <label for="bid_user_file" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1 text-left">upload test assignment</label>
+                        <label for="bid_user_file" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1 text-left">Upload a test assignment</label>
                     </div>
                     <div class="text-center mt-0">
                         <label for="bid_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number</label><br />
                         <input type="text" id="bid_user_phone" name="phone" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="+__ (___) ___ __ __">
                     </div>
                     <div class="text-center mt-0">
-                        <label for="bid_user_email" class="form_label open__semibold text_size__md c__metal text-left mb-0">Email</label><br />
-                        <input type="text" id="bid_user_email" name="email" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="Your email">
+                        <label for="bid_user_email" class="form_label open__semibold text_size__md c__metal text-left mb-0">E-mail</label><br />
+                        <input type="text" id="bid_user_email" name="email" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1" placeholder="Your e-mail">
                     </div>
                     <div class="text-center my-3">
                         <input type="hidden" name="type" value="{{ App\Contact::TYPE_TEST }}" />
@@ -477,7 +477,7 @@
     <div class="container wow fadeInUp">
         <div class="row">
             <div class="col">
-                <h1 class="montserrat__bold title_size__xl text-center pb-0 pb-lg-3">Guarantees</h1>
+                <h1 class="montserrat__bold title_size__xl text-center pb-0 pb-lg-3">Warranties</h1>
             </div>
         </div>
         <div class="row flex-wrap">
@@ -485,14 +485,14 @@
                 <div class="benefits-item">
                     <h3>01</h3>
                     <h4>Financial Bonds</h4>
-                    <p>For certain kinds of contract terms, services types, design scale and programmatic conditions, we are able to provide Performance Bond or Advance Payment Bond to ensure the job delivery.</p>
+                    <p>For certain kinds of contract terms, service types, design contents and program conditions, we are able to provide Performance Bond or Advance Payment Bond to ensure the job delivery.</p>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="benefits-item">
                     <h3>02</h3>
                     <h4>Professional Indemnity Insurance</h4>
-                    <p>We are able to provide PI insurance of an appropriate level in accordance to the certain project, its possible risks and types of service provided.</p>
+                    <p>We are able to provide PI insurance of an appropriate level in accordance with the certain project, its possible risks and types of service provided.</p>
                 </div>
             </div>
             <div class="col-lg-6">
