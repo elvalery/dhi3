@@ -555,7 +555,7 @@
 <section id="product_cart" class="container-fluid py-5">
     <div class="container">
         <div class="col-12 pb-0 pb-lg-5 wow fadeInUp">
-            <h1 class="montserrat__bold title_size__xl text-center no-capitalize">All Nefcessary Specialists and Software in One Office</h1>
+            <h1 class="montserrat__bold title_size__xl text-center no-capitalize">All Necessary Specialists and Software in One Office</h1>
         </div>
         <div class="team__titles">
             <div class="worker__title worker__1 worker_btn" data-id="1">CAD Drafter</div>
