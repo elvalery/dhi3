@@ -4,18 +4,20 @@
 function openModal() {
 	getElementById('modal_page').style.display='block';
 }
+
 function portfolioTabs() {
-	$("ul.tabs_buttons").on("click", "li:not(.bgc__active)", function() {
-		$('.wall_tab.slick-initialized').slick('unslick');
-		$('.wall_tab__active').slick({
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: true,
-			nextArrow: '<span class="slick-next">></span>',
+	$("ul.tabs_buttons, .tabs-name.portfolio").on("click", "li:not(.bgc__active), div:not(.active)",
+		function() {
+			$('.wall_tab.slick-initialized').slick('unslick');
+			$('.wall_tab__active').slick({
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+				nextArrow: '<span class="slick-next">></span>',
 			prevArrow: '<span class="slick-prev"><</span>'
+			});
 		});
-	});
 	
 	$('.wall_tab__active').slick({
 		infinite: true,
@@ -45,6 +47,14 @@ $(document).ready(function() {
 			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 		}
 	});
+	
+	$(".tabs-name.portfolio")
+		.on("click","div:not(.active)",function(){
+			$(this).addClass("active").siblings()
+				.removeClass("active").closest("div.wall-tabs")
+				.find("div.wall_tab").removeClass("wall_tab__active")
+				.eq($(this).index()).addClass("wall_tab__active").fadeIn("slow")});
+	
 	
 	$('.inforgraphic-slider').slick({
 		infinite: true,
