@@ -35,7 +35,7 @@
                 <div class="d-flex justify-content-center">
                     <form id="modal_callback_form" class="form_modal_callback px-0 py-0" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
                         <h2 class="fira__regular title_size__md text-center">Request a Call</h2>
-                        <p class="fira__light text_size__md text-center c__black">Leave your contacts and we will orient you at the price of our services</p>
+                        <p class="fira__light text_size__md text-center c__black">Leave your contact details and we will guide you through the price of our services within 25 minutes</p>
                         <div class="text-center my-2">
                             <label for="modal_callback_user_choise" class="form_label fira__regular text_size__md text-left mx-0" >Call me</label>
                             <select name="description" id="modal_callback_user_choise" class="form_select fira__light text_size__md border brc__metal brc_h__yellow mx-0 py-1 px-2">
@@ -58,7 +58,7 @@
                             <input type="text" id="modal_callback_user_phone" name="phone" required class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="+__ (___) ___ __ __">
                         </div>
                         <div class="text-center my-2">
-                            <input type="email" name="email" id="modal_callback__user_email" class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="Your email">
+                            <input type="email" name="email" id="modal_callback__user_email" class="form_input fira__light text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="Your e-mail">
                         </div>
                         <div class="text-center my-3">
                             <input type="hidden" name="type" value="{{ App\Contact::TYPE_CALL }}" />
@@ -120,7 +120,7 @@
                     <img src="img/logotype.png" alt="" class="img-fluid">
                 </a>
                 <div class="top_contacts col-sm-auto d-lg-none">
-                    <a href="#" onclick="return false" class="callback_modal_btn button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-1 contact-button ">Request Call</a>
+                    <a href="#" onclick="return false" class="callback_modal_btn button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-1 contact-button ">Request a Call</a>
                     <a href="#contacts" class="button border-0 open__semibold text_size__md px-4 py-1 contact-top contact-button ">Contact Us</a>
                 </div>
             </div>
@@ -499,18 +499,18 @@
                 <div class="benefits-item">
                     <h3>03</h3>
                     <h4>Control</h4>
-                    <p>We utilize Microsoft 365 for Task Management and Reporting purposes so your representative can be part of the process and have online tool for control and reporting requests from the resources involved.</p>
-                    <p>Having access to BIM cloud services you will be able not only view the model but also see the online design process with the possibility to extract instant report with the data of the project progress and the actual amount of time each team member has spent on work.</p>
-                    <p>For outstaffing employees for non-BIM services, we provide software that allows you to track working time and visualize the work process by random screen capturing.</p>
+                    <p>We use Microsoft 365 for Task Management and Reporting purposes, so your representative can be a part of the process and have an online tool for control and reporting requests from the resources involved.</p>
+                    <p>Having access to BIM cloud services you will be able not only to view the model but also to see the online design process with the possibility to extract an instant report with the data of the project progress and the actual amount of time each team member has spent on work.</p>
+                    <p>For outstaffing employees of non-BIM services, we provide software that allows you to track working time and visualize the work process by random screen capturing.</p>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="benefits-item">
                     <h3>04</h3>
                     <h4>Payments Policy & Representative office in CEE</h4>
-                    <p>We work on a post payment basis to ensure that the job is done in the first place.</p>
-                    <p class="dfn">We also practice to do a test job free of charge in order to show our competency, express our interest in cooperation and willingness to work.</p>
-                    <p>Having our representative in The Netherlands and taking the fact that we will become registered company within two months, you will interact with the company registered and having its bank account in CEE area operating under European jurisdiction.</p>
+                    <p>We work on a post-payment basis to ensure that the job is done in the first place.</p>
+                    <p class="dfn">We also practice doing a test job free of charge in order to show our competency, express our interest in cooperation and willingness to work.</p>
+                    <p>Having our representative in the Netherlands and taking into account the fact that we will become a registered company within two months, you will interact with the authorized company having its bank account in the CEE area and operating under European jurisdiction.</p>
                 </div>
             </div>
         </div>
@@ -522,12 +522,12 @@
         <div class="col-12">
             <div class="d-flex justify-content-center border brc__black">
                 <form id="calculation_form" class="form_calculation px-5 py-4" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
-                    <h2 class="montserrat__semibold title_size__md text-center no-capitalize">Cost Calculation</h2>
+                    <h2 class="montserrat__semibold title_size__md text-center no-capitalize">Calculate the Cost</h2>
                     <p class="open__light text_size__md text-center c__black">
-                        Leave your contacts <br /> and we will orient you at the price of our services <br /> within 25 minutes
+                        Leave your contact details <br /> and we will guide you through the price of our services<br /> within 25 minutes
                     </p>
                     <div class="text-center my-2">
-                        <label for="calculation_user_name" class="form_label open__semibold c__metal text_size__md text-left mb-0">Enter name</label><br />
+                        <label for="calculation_user_name" class="form_label open__semibold c__metal text_size__md text-left mb-0">Enter Your Name</label><br />
                         <input required type="text" name="name" id="calculation_user_name" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1">
                     </div>
                     <div class="text-center my-2">
@@ -536,7 +536,7 @@
                     </div>
                     <div class="text-center mt-3 mb-0">
                         <input type="file" id="calculation_user_file" name="file" onchange="uploadFile(this)">
-                        <label for="calculation_user_file" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1 text-left">upload test assignment</label>
+                        <label for="calculation_user_file" class="form_input open__light text_size__md c__metal border brc__metal brc_h__yellow px-3 py-1 text-left">Upload a test assignment</label>
                     </div>
                     <div class="text-center mt-0 mb-3">
                         <label for="calculation_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number for clarification of details</label><br />
@@ -559,7 +559,7 @@
         </div>
         <div class="team__titles">
             <div class="worker__title worker__1 worker_btn" data-id="1">CAD Drafter</div>
-            <div class="worker__title worker__2 worker_btn" data-id="2">Modeler</div>
+            <div class="worker__title worker__2 worker_btn" data-id="2">Modeller</div>
             <div class="worker__title worker__3 worker_btn" data-id="3">Architectural Designer</div>
             <div class="worker__title worker__4 worker_btn" data-id="4">Graduate Architect</div>
             <div class="worker__title worker__5 worker_btn" data-id="5">Visualizer</div>
@@ -600,7 +600,7 @@
             </div>
             <div class="team__mobile">
                 <div class="worker__mobile worker__1 worker__mobile_mr worker_btn" data-id="1">CAD Drafter</div>
-                <div class="worker__mobile worker__2 worker__mobile_ml worker_btn" data-id="2">Modeler</div>
+                <div class="worker__mobile worker__2 worker__mobile_ml worker_btn" data-id="2">Modeller</div>
                 <div class="worker__mobile worker__3 worker__mobile_mr worker_btn" data-id="3">Architectural Designer</div>
                 <div class="worker__mobile worker__4 worker__mobile_ml worker_btn" data-id="4">Graduate Architect</div>
                 <div class="worker__mobile worker__5 worker__mobile_mr worker_btn" data-id="5">Visualizer</div>
@@ -622,8 +622,8 @@
                         <li class="worker__tech-list_item text_size__md">3Ds max</li>
                         <li class="worker__tech-list_item text_size__md">Adobe Photoshop</li>
                     </ul>
-                    <p class="description_text">In compliance with your requirements the architectural designer will take part in the development of the project or its part under the guidance of your Project Architect both during the stage of concept and during the stage of working drawings.</p>
-                    <a href="#" class="worker-description__link open__bold text_size__md">View examples of work</a>
+                    <p class="description_text">In compliance with your requirements, our Architectural Designer will take part in the development of the project or its part under the guidance of your Project Architect both during the concept stage and the stage of working drawings.</p>
+                    <a href="#" class="worker-description__link open__bold text_size__md">See the examples of work</a>
                 </div>
             </div>
         </div>
@@ -645,9 +645,9 @@
             </div>
             <div class="d-flex flex-column align-items-center justify-content-center my-4">
                 <div class="mx-4 order-2 order-md-1 param__modeling">
-                    <h4 class="h4 open__bold title_size__md param__modeling_h">Parametric Modeling</h4>
+                    <h4 class="h4 open__bold title_size__md param__modeling_h">Parametric Modelling</h4>
                     <img src="img/param_modeling.jpg" alt="" class="param__modeling_img" />
-                    <p class="txt text_size__md">Creation of complex surfaces, patterns, forms for interior and architecture design.</p>
+                    <p class="txt text_size__md">Creation of complex surfaces, patterns, forms for interior design and architecture.</p>
                     <p class="txt text_size__md">Analysis and automatic modelling of the illumination cone, automatic illustrative calculation of insolation for any area and real estate development.</p>
                     <p class="txt text_size__md">Automatic change of room layouts and furniture placement due to the changing the contour of external walls, the shift of communication lines.</p>
                     <p class="txt text_size__md">Analysis of the territory, vehicular flow and foot traffic, restrictions on insolation and automated obtainment of the maximum possible building volume.</p>
@@ -668,7 +668,7 @@
                             <p class="mb-0">Adobe package</p>
                         </div>
                         <div class="software">
-                            <h5 class="software__h open__bold">3D Modeling, Rendering and Animation</h5>
+                            <h5 class="software__h open__bold">3D Modelling, Rendering And Animation</h5>
                             <p class="mb-0">3DMax + Vray / Corona</p>
                             <p class="mb-0">Rhino + Grasshopper</p>
                             <p class="mb-0">Google SketchUP + Vray</p>
@@ -697,11 +697,11 @@
                     <div class="text-center my-0 service-choice-wrapper">
                         <div class="service-choice">
                             <input type="checkbox" name="action[]" value="1" id="callback_user_service_bim-model">
-                            <label for="callback_user_service_bim-model" class="open__light">request BIM model</label>
+                            <label for="callback_user_service_bim-model" class="open__light">request a BIM model</label>
                         </div>
                         <div class="service-choice">
                             <input type="checkbox" name="action[]" value="4" id="callback_user_service_portfolio">
-                            <label for="callback_user_service_portfolio" class="open__light">request drawing sample</label>
+                            <label for="callback_user_service_portfolio" class="open__light">request a drawing sample</label>
                         </div>
                         <div class="service-choice">
                             <input type="checkbox" name="action[]" value="2" id="callback_user_service_email">
@@ -713,20 +713,20 @@
                         </div>
                         <div class="service-choice">
                             <input type="checkbox" name="action[]" value="3" id="callback_user_service_quot">
-                            <label for="callback_user_service_quot" class="open__light">get quote</label>
+                            <label for="callback_user_service_quot" class="open__light">get a quote</label>
                         </div>
                     </div>
                     
                     <div class="text-center my-0">
                         <input type="file" id="callback_user_file" name="file" onchange="uploadFile(this)">
-                        <label for="callback_user_file" class="form_input open__light c__black border brc__metal brc_h__yellow text_size__md  bgc__transparent px-3 py-1 mt-2 text-left border-radius-5" style="max-width:100%;">upload test assignment</label>
+                        <label for="callback_user_file" class="form_input open__light c__black border brc__metal brc_h__yellow text_size__md  bgc__transparent px-3 py-1 mt-2 text-left border-radius-5" style="max-width:100%;">Upload a test assignment</label>
                     </div>
                     <div class="text-center mt-0 mb-3">
                         <label for="callback_user_phone" class="form_label open__semibold c__black text_size__md text-left mb-0">Contact phone number<br />
                             <input type="phone" required id="callback_user_phone" class="form_input open__light c__black border brc__metal brc_h__yellow bgc__transparent px-3 py-1 border-radius-5" name="phone" placeholder="+__ (___) ___ __ __">
                         </label>
                         <label for="callback_user_email" class="form_label open__semibold c__black text_size__md text-left mt-2 mb-0">* E-mail<br />
-                            <input type="email" name="email" required id="callback_user_email" class="form_input open__light c__black text_size__md border brc__metal brc_h__yellow bgc__transparent px-3 py-1 border-radius-5" placeholder="Enter your E-mail">
+                            <input type="email" name="email" required id="callback_user_email" class="form_input open__light c__black text_size__md border brc__metal brc_h__yellow bgc__transparent px-3 py-1 border-radius-5" placeholder="Enter your e-mail">
                         </label>
                     </div>
                     <div class="text-center my-2">
@@ -735,7 +735,7 @@
                     <div class="text-right d-flex justify-content-center my-3">
                         <div class="form_textarea">
                             <input type="hidden" name="type" value="{{ App\Contact::TYPE_ORDER }}" />
-                            <button type="submit" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-3 px-sm-5 py-3" style="text-transform: uppercase; font-weight: bold;">GET QUOTE</button>
+                            <button type="submit" class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-3 px-sm-5 py-3" style="text-transform: uppercase; font-weight: bold;">Get an offer</button>
                         </div>
                     </div>
                 </form>
@@ -754,7 +754,7 @@
             <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-between adress-wrapper">
                 <div class="contact_block pb-0 pb-md-3 pb-md-0">
                     <p class="txt open__light text_size__lg font-weight-bold">Ukraine</p>
-                    <p class="txt open__light text_size__md">18V Mykhailvska St., office 106, Kyiv</p>
+                    <p class="txt open__light text_size__md">18V Velyka Mykhailvska St., office 106, Kyiv</p>
                     <p class="txt open__light text_size__md">+38 (097) 908 26 78</p>
                 </div>
                 <div class="contact_block pb-0 pb-md-3 pb-md-0">
@@ -786,21 +786,10 @@
                     </a>
                 </div>
             </div>
-            <!-- <div class="col-12 col-lg-auto">
-              <ul class="nav d-flex flex-column flex-lg-row justify-content-center align-items-center" style="min-height: 100px;">
-                <li class="nav-item"><a href="#inforgraphic" class="nav-link fira__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Почему мы</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link fira__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Услуги</a></li>
-                <li class="nav-item"><a href="#works" class="nav-link fira__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Портфолио</a></li>
-                <li class="nav-item"><a href="#guarantees" class="nav-link fira__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Гарантии</a></li>
-                <li class="nav-item"><a href="#product_cart" class="nav-link fira__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Специалисты</a></li>
-                <li class="nav-item"><a href="#software" class="nav-link fira__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Технологии</a></li>
-                <li class="nav-item"><a href="#contacts" class="nav-link fira__regular text_size__md px-lg-1 px-xl-3 c__white c_h__white border-bottom brc__transparent">Контакты</a></li>
-              </ul>
-            </div> -->
             <div class="col-12 col-lg-auto">
                 <div class="d-flex justify-content-center justify-content-lg-start align-items-center" style="height: 100px;">
                     <div class="top_contacts">
-                        <a href="#" onclick="return false" class="callback_modal_btn button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-1 contact-button">Request Call</a>
+                        <a href="#" onclick="return false" class="callback_modal_btn button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-1 contact-button">Request a Call</a>
                         <a href="#contacts" class="button border-0 open__semibold text_size__md px-4 py-1 contact-top contact-button">Contact Us</a>
                     </div>
                 </div>
@@ -808,7 +797,7 @@
             <div class="col-12">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <p class="open__regular text_size__sm c__white py-1 my-0">Copyright © 2017 DHI-Outsource. All rights reserved</p>
-                    <p class="open__regular py-1 my-0"><a href="#" class="nav-link open__regular text_size__sm c__white c_h__yellow my-0 py-0" style="text-decoration: underline;">privacy policy</a></p>
+                    <p class="open__regular py-1 my-0"><a href="#" class="nav-link open__regular text_size__sm c__white c_h__yellow my-0 py-0" style="text-decoration: underline;">Privacy Policy</a></p>
                 </div>
             </div>
         </div>
