@@ -5,9 +5,6 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Work extends Model {
-  public function getShortNameAttribute() {
-    if (empty($this->short_name)) return $this->name;
-  }
 
   public function categories() {
     return $this->belongsToMany(

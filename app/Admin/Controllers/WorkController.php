@@ -156,8 +156,7 @@ class WorkController extends Controller {
 
     $form
       ->multipleSelect('services', trans('Service'))
-      ->options(\App\DHIService::all()->pluck('title', 'id'))
-      ->rules('required');
+      ->options(\App\DHIService::all()->pluck('title', 'id'));
 
 
     $form->text('name', trans('Название'))->rules('required|max:250');
@@ -168,7 +167,6 @@ class WorkController extends Controller {
       ->uniqueName();
 
     $form->image('small_image', trans('Картинка для ссылок'))
-      ->rules('required')
       ->uniqueName();
 
     $form->hasMany('photos', function (Form\NestedForm $form) {
