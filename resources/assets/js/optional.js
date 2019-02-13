@@ -210,7 +210,7 @@ $(document).ready(function(){
 
 	$('.service_btn').click(function() {
 		$('.service-description-wrapper')
-			.load('html/service' + $(this).attr('data-service') + '.html?' + Date.now(),
+			.load('service/' + $(this).attr('data-service') + '?' + Date.now(),
 				function (){
 					service_back();
 				});

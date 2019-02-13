@@ -110,12 +110,14 @@ class WorkController extends Controller {
     $show->id('Id');
     $show->order_id(trans('Порядок'));
     $show->name(trans('Название'));
+    $show->short_name(trans('Краткое название'));
     $show->description(trans('Описание'));
     $show->categories(trans('Категория'))
       ->as(function ($categories) {
         return $categories->pluck('name');
       })->label();
     $show->cover(trans('Маленькая картинка'))->image();
+    $show->small_image(trans('Картинка для ссылок'))->image();
     $show->photos(trans('Большая картинка'))->as(function ($photos) {
       $retVal = '';
       foreach ($photos as $image) {
@@ -152,9 +154,20 @@ class WorkController extends Controller {
       ->options(\App\Category::all()->pluck('name', 'id'))
       ->rules('required');
 
+    $form
+      ->multipleSelect('services', trans('Service'))
+      ->options(\App\DHIService::all()->pluck('title', 'id'))
+      ->rules('required');
+
+
     $form->text('name', trans('Название'))->rules('required|max:250');
+    $form->text('short_name', trans('Краткое название'))->rules('required|max:250');
     $form->editor('description', trans('Описание'))->default(null);
     $form->image('cover', trans('Маленькая картинка'))
+      ->rules('required')
+      ->uniqueName();
+
+    $form->image('small_image', trans('Картинка для ссылок'))
       ->rules('required')
       ->uniqueName();
 

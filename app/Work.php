@@ -5,9 +5,18 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Work extends Model {
+  public function getShortNameAttribute() {
+    if (empty($this->short_name)) return $this->name;
+  }
+
   public function categories() {
     return $this->belongsToMany(
       Category::class, 'work_category');
+  }
+
+  public function services() {
+    return $this->belongsToMany(
+      DHIService::class, 'dhi_service_work', 'work_id', 'dhiservice_id');
   }
 
   public function photos() {

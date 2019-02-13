@@ -70,4 +70,12 @@ class IndexController extends Controller {
   public function html($file) {
     return response()->file(public_path('/html/' . $file));
   }
+
+  public function service($id) {
+    $service = DHIService::find($id);
+
+    $content = file_get_contents(public_path('/html/service' . $id . '.html'));
+
+    return response()->view('service',compact('service', 'content'));
+  }
 }
