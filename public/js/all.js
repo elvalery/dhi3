@@ -166,40 +166,31 @@ $(document).ready(function() {
 			modal_callback_time_hide();
 		}
 	});
-});
 
-
-$(".service-choice__button").on('click', function(){
-	$(".service-choice-wrapper").slideToggle('medium', function() {
-		if ($(this).is(':visible'))
-			$(this).css('display','flex');
+	$(".service-choice__button").on('click', function(){
+		$(".service-choice-wrapper").slideToggle('medium', function() {
+			if ($(this).is(':visible'))
+				$(this).css('display','flex');
+		});
 	});
-});
 // portfolio mobile
-function portfolioMobile(){
-	var window_size = window.matchMedia('(max-width: 540px)');
-	if(window_size.matches){
+	function portfolioMobile(){
+		var window_size = window.matchMedia('(max-width: 540px)');
+		if(window_size.matches){
 		$('.portfolio__lg').css('display','none');
 		$('.portfolio__mobile').css('display','block');
-		//$('#works').load('portfolio_mobile.html');
-		//portfolioTabs();
+			//$('#works').load('portfolio_mobile.html');
+			//portfolioTabs();
+		}
 	}
-}
-portfolioMobile();
+	portfolioMobile();
 
-// team choice
-
-$(document).ready(function(){
 	$('.worker_btn').click(function() {
 		$('.worker-description__wrapper').load('html/worker' + $(this).attr('data-id') + '.html?' + Date.now());
 		$('.active__worker').removeClass('active__worker');
 		$(this).children().addClass('active__worker');
 	});
-});
 
-// service choice
-
-$(document).ready(function(){
 	$('.service__block').click(function(){
 		$('.services__all').slideToggle();
 		$('.wall_services').slideToggle();
