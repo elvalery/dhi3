@@ -225,6 +225,16 @@ $(document).ready(function(){
 	$(".callback_modal_btn").click(function(){
 		$("#modal_callback").show()
 	});
+	
+	function locationHashChanged( e ) {
+		console.log( location.hash );
+		console.log( e.oldURL, e.newURL );
+		if ( location.hash === "#pageX" ) {
+			pageX();
+		}
+	}
+	
+	window.onhashchange = locationHashChanged;
 });
 
 /* video playing */
