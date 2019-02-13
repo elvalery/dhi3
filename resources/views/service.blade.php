@@ -8,7 +8,7 @@
   @if($service->works)
   <div class="service__portfolio">
     @foreach($service->works as $work)
-      <a href="#" class="service__portfolio_item service__portfolio_1" style="background-image: url({{ $work->small_image }})">
+      <a href="#" class="service__portfolio_item service__portfolio_1" style="background-image: url({{ asset('storage/' . $work->small_image }})">
       <p>{{ $work->short_name }}</p>
     </a>
     @endforeach
