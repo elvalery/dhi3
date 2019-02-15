@@ -116,8 +116,11 @@
     <div class="row d-flex justify-content-center mx-0 px-0">
         <div class="col-10 col-lg-auto">
             <div class="d-flex justify-content-lg-start justify-content-sm-between align-items-center" style="height: 100px;">
-                <a href="#banner">
+                <a href="#banner" class="d-none d-sm-inline-block">
                     <img src="img/logotype.png" alt="" class="img-fluid">
+                </a>
+                <a href="#banner" class="d-inline-block d-sm-none">
+                    <img src="img/logo_mobile.png" alt="" class="img-fluid" style="max-height: 100px">
                 </a>
                 <div class="top_contacts col-sm-auto d-lg-none">
                     <a href="#" onclick="return false" class="callback_modal_btn button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-1 contact-button ">Request a Call</a>
