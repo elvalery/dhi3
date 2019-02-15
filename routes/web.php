@@ -15,5 +15,6 @@ Route::get('/', 'IndexController@index');
 Route::get('/works/{work}', 'IndexController@work');
 Route::get('/html/{file}', 'IndexController@html');
 Route::get('/service/{id}', 'IndexController@service');
+Route::get('/team/{id}', 'IndexController@team');
 Route::post('/contacts', 'IndexController@contacts')->name('contacts');
 

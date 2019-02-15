@@ -181,9 +181,23 @@ $(document).ready(function() {
 		}
 	}
 	portfolioMobile();
-
+	
+	$('.worker_btn[data-id=3]').click();
+	
 	$('.worker_btn').click(function() {
-		$('.worker-description__wrapper').load('html/worker' + $(this).attr('data-id') + '.html?' + Date.now());
+		//$('.worker-loader').load('team/' + $(this).attr('data-id') + '?' + Date.now());
+		const url = 'team/' + $(this).attr('data-id') + '?' + Date.now();
+		
+		$.ajax({
+			type: 'get',
+			url: url,
+			success: function(data) {
+				if (data.length < 2) return;
+				$('.worker-description__wrapper').html(data.description);
+				$('.worker-portfolio').html(data.portfolio);
+			}
+		});
+		
 		$('.active__worker').removeClass('active__worker');
 		$(this).children().addClass('active__worker');
 	});

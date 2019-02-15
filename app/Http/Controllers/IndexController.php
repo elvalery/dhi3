@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Category;
 use App\Contact;
 use App\Work;
+use App\Worker;
 use App\DHIService;
 use App\Http\Requests\StoreContacts;
 use App\Mail\ContactRequest;
@@ -77,5 +78,16 @@ class IndexController extends Controller {
     $content = file_get_contents(public_path('/html/service' . $id . '.html'));
 
     return response()->view('service',compact('service', 'content'));
+  }
+
+  public function team($id) {
+    $worker = Worker::find($id);
+
+    $content = file_get_contents(public_path('/html/worker' . $id . '.html'));
+
+    return response()->json([
+      'description' => $content,
+      'portfolio' => view('worker',compact('worker'))->render(),
+    ]);
   }
 }

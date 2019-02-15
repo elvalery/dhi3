@@ -16,6 +16,11 @@ class Work extends Model {
       DHIService::class, 'dhi_service_work', 'work_id', 'dhiservice_id');
   }
 
+  public function workers() {
+    return $this->belongsToMany(
+      Worker::class, 'work_worker', 'work_id', 'worker_id');
+  }
+
   public function photos() {
     return $this->hasMany(WorkPhoto::class)->orderBy('order_id');
   }

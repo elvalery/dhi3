@@ -615,18 +615,18 @@
                     <p class="open__bold text_size__lg">5+ years experience</p>
                     <ul class="worker__tech-list">
                         <li class="worker__tech-list_header">Software: </li>
-                        <li class="worker__tech-list_item text_size__md">Autodesk Revit</li>
-                        <li class="worker__tech-list_item text_size__md">Autodesk AutoCAD (AutoCAD Architecture)</li>
-                        <li class="worker__tech-list_item text_size__md">Graphisoft Archicad + Graphisoft BIMx</li>
-                        <li class="worker__tech-list_item text_size__md">VectorWorks</li>
-                        <li class="worker__tech-list_item text_size__md">3Ds max</li>
-                        <li class="worker__tech-list_item text_size__md">Adobe Photoshop</li>
+                        <li class="worker__tech-list_item">Autodesk Revit</li>
+                        <li class="worker__tech-list_item">Autodesk AutoCAD (AutoCAD Architecture)</li>
+                        <li class="worker__tech-list_item">Graphisoft Archicad + Graphisoft BIMx</li>
+                        <li class="worker__tech-list_item">VectorWorks</li>
+                        <li class="worker__tech-list_item">3Ds max</li>
+                        <li class="worker__tech-list_item">Adobe Photoshop</li>
                     </ul>
                     <p class="description_text">In compliance with your requirements, our Architectural Designer will take part in the development of the project or its part under the guidance of your Project Architect both during the concept stage and the stage of working drawings.</p>
-                    <a href="#" class="worker-description__link open__bold text_size__md">See the examples of work</a>
                 </div>
             </div>
         </div>
+        <div class="worker-portfolio"></div>
     </div>
 </section>
 

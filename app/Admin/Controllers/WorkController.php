@@ -158,6 +158,9 @@ class WorkController extends Controller {
       ->multipleSelect('services', trans('Service'))
       ->options(\App\DHIService::all()->pluck('title', 'id'));
 
+    $form
+      ->multipleSelect('workers', trans('Team'))
+      ->options(\App\Worker::all()->pluck('name', 'id'));
 
     $form->text('name', trans('Название'))->rules('required|max:250');
     $form->text('short_name', trans('Краткое название'))->rules('required|max:250');
