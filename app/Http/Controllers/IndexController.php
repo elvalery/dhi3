@@ -21,6 +21,7 @@ class IndexController extends Controller {
     $categories = Category::orderBy('order_id')->get();
     $works = Work::orderBy('order_id')->get();
     $services = DHIService::orderBy('order_id')->get();
+    $active_worker = Worker::find(3);
 
     $callback_time = [];
     $date = new Carbon('tomorrow 9 am');
@@ -30,7 +31,7 @@ class IndexController extends Controller {
       $date->addHour();
     }
 
-    return view('index', compact('categories', 'works', 'services', 'callback_time'));
+    return view('index', compact('categories', 'works', 'services', 'callback_time', 'active_worker'));
   }
 
   public function contacts(StoreContacts $request) {

@@ -629,7 +629,19 @@
                 </div>
             </div>
         </div>
-        <div class="worker-portfolio"></div>
+        <div class="worker-portfolio">
+            @if ($active_worker->works)
+                <div class="worker__portfolio">
+                    @foreach($active_worker->works as $work)
+                        @if($work->small_image)
+                            <a href="/#works-{{ $work->id }}" class="worker__portfolio_item worker__portfolio_1" style="background-image: url({{ asset('storage/' . $work->small_image )}})">
+                                <p>{{ $work->short_name }}</p>
+                            </a>
+                        @endif
+                    @endforeach
+                </div>
+            @endif
+        </div>
     </div>
 </section>
 

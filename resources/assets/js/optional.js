@@ -182,8 +182,6 @@ $(document).ready(function() {
 	}
 	portfolioMobile();
 	
-	$('.worker_btn[data-id=3]').click();
-	
 	$('.worker_btn').click(function() {
 		//$('.worker-loader').load('team/' + $(this).attr('data-id') + '?' + Date.now());
 		const url = 'team/' + $(this).attr('data-id') + '?' + Date.now();
@@ -201,7 +199,7 @@ $(document).ready(function() {
 		$('.active__worker').removeClass('active__worker');
 		$(this).children().addClass('active__worker');
 	});
-
+	
 	$('.service__block').click(function(){
 		$('.services__all').slideToggle();
 		$('.wall_services').slideToggle();
