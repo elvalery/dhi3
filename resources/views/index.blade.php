@@ -769,7 +769,7 @@
             <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-between adress-wrapper">
                 <div class="contact_block pb-0 pb-md-3 pb-md-0">
                     <p class="txt open__light text_size__lg font-weight-bold">Ukraine</p>
-                    <p class="txt open__light text_size__md">18V Velyka Mykhailvska St., office 106, Kyiv</p>
+                    <p class="txt open__light text_size__md">18V Mykhailvska St., office 106, Kyiv</p>
                     <p class="txt open__light text_size__md">+38 (097) 908 26 78</p>
                 </div>
                 <div class="contact_block pb-0 pb-md-3 pb-md-0">
