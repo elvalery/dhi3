@@ -35,7 +35,7 @@
                 <div class="d-flex justify-content-center">
                     <form id="modal_callback_form" class="form_modal_callback px-0 py-0" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
                         <h2 class="fira__regular title_size__md text-center">Request a Call</h2>
-                        <p class="fira__light text_size__md text-center c__black">Leave your contact details and we will guide you through the price of our services within 25 minutes</p>
+                        <p class="fira__light text_size__md text-center c__black">Leave your contact details and we will guide you through the price of our services</p>
                         <div class="text-center my-2">
                             <label for="modal_callback_user_choise" class="form_label fira__regular text_size__md text-left mx-0" >Call me</label>
                             <select name="description" id="modal_callback_user_choise" class="form_select fira__light text_size__md border brc__metal brc_h__yellow mx-0 py-1 px-2">
@@ -527,7 +527,7 @@
                 <form id="calculation_form" class="form_calculation px-5 py-4" method="POST" action="{{ route('contacts') }}" enctype="multipart/form-data">
                     <h2 class="montserrat__semibold title_size__md text-center no-capitalize">Calculate the Cost</h2>
                     <p class="open__light text_size__md text-center c__black">
-                        Leave your contact details <br /> and we will guide you through the price of our services<br /> within 25 minutes
+                        Leave your contact details <br /> and we will guide you through the price of our services
                     </p>
                     <div class="text-center my-2">
                         <label for="calculation_user_name" class="form_label open__semibold c__metal text_size__md text-left mb-0">Enter Your Name</label><br />
