@@ -12624,10 +12624,10 @@ label.form_input::after {
 }
 
 .modal__slick_item > div {
-  height: 65vh;
+  max-height: 65vh;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
 }
 
 .modal__slick_text p{
