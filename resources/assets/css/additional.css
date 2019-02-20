@@ -351,6 +351,10 @@
   background-position: center center;
 }
 
+.portfolio__item {
+  background-size: auto;
+}
+
 @media only screen and (max-width: 600px) {
   .worker__tech-list_header {
     margin-left: 0;
