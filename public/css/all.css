@@ -12624,7 +12624,7 @@ label.form_input::after {
 }
 
 .modal__slick_item > div {
-  max-height: 65vh;
+  height: 65vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
