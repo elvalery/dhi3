@@ -73,7 +73,7 @@
 
 <section id="modal_page" class="container-fluid modal_page modal__page_close_area">
     <div class="container">
-        <div class="modal_page_content animated fadeInUp" >
+        <div class="modal_page_content" >
             <a href="#" onclick="return false" id="close_page" class="modal__page_close" style="outline:none;"></a>
             <div id="modal_page_content"></div>
         </div>

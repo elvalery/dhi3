@@ -302,6 +302,10 @@
   background-size: auto;
 }
 
+.modal__slick_text {
+  border-radius: 0 0 10px 10px;
+}
+
 .modal__slick_text p{
   margin-bottom: 8px;
 }
@@ -312,6 +316,19 @@
 
 .modal_page_content {
   border-radius: 10px;
+
+  height: auto;
+  max-height: initial;
+
+  left:50%;
+  top: 50%;
+  right: initial;
+  bottom: initial;
+  
+  width: auto;
+  
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 .modal_callback_content_w_time .modal_callback_user_time_block {
