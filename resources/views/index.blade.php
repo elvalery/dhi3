@@ -17,6 +17,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <link rel="stylesheet" href="{{ mix('css/slick.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/fancy.css') }}">
     <link href="{{ mix('css/all.css') }}" rel="stylesheet" />
     <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
     
@@ -72,12 +73,7 @@
 </section>
 
 <section id="modal_page" class="container-fluid modal_page modal__page_close_area">
-    <div class="container">
-        <div class="modal_page_content" >
-            <a href="#" onclick="return false" id="close_page" class="modal__page_close" style="outline:none;"></a>
-            <div id="modal_page_content"></div>
-        </div>
-    </div>
+  <div id="modal_page_content"></div>
 </section>
 
 <section id="modal_ty_page" class="container-fluid modal_ty_page">
@@ -822,5 +818,6 @@
 <script src="{{ mix('js/all.js') }}"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 <script src="{{ mix('js/slick.js') }}"></script>
+<script src="{{ mix('js/fancy.js') }}"></script>
 </body>
 </html>

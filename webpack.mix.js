@@ -19,6 +19,9 @@ mix
   .scripts([
     'resources/assets/js/slick/slick.min.js',
   ], 'public/js/slick.js')
+  .scripts([
+    'resources/assets/js/fancybox/jquery.fancybox.min.js',
+  ], 'public/js/fancy.js')
   .styles([
     'resources/assets/css/main.css',
     'resources/assets/css/optional.css',
@@ -27,6 +30,9 @@ mix
   .styles([
     'resources/assets/js/slick/slick.css',
   ], 'public/css/slick.css')
+  .styles([
+    'resources/assets/js/fancybox/jquery.fancybox.min.css',
+  ], 'public/css/fancy.css')
   .version()
   .copyDirectory('resources/assets/img', 'public/img')
   .copyDirectory('resources/assets/fonts', 'public/fonts')
