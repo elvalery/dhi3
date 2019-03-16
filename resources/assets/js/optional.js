@@ -137,13 +137,28 @@ $(document).ready(function() {
 				top, // scroll so that the element is at the top of the view
 				behavior: 'smooth' // smooth scroll
 			});
-			
+		
 			$('.modal__open_button[data-id=' + hash[1] + ']')[0].click();
+		}
+	}
+	
+	function checkMenuHash() {
+  	const menu_hash = [];
+  	$('#header .nav-item a').map(function () {
+			menu_hash.push($(this).attr('href'));
+		});
+		if (window.location.hash && menu_hash.indexOf(window.location.hash) !== -1) {
+			const top = $(window.location.hash).offset().top;
+			window.scrollTo({
+				top, // scroll so that the element is at the top of the view
+				behavior: 'smooth' // smooth scroll
+			});
 		}
 	}
 	
 	if(window.location.hash) {
 		checkWorksHash();
+		checkMenuHash();
 	}
 	
 	portfolioTabs();
@@ -186,8 +201,16 @@ $(document).ready(function() {
 	$('.modal_menu_content .nav-link').click(function (e) {
 		e.preventDefault();
 		
+		history.pushState($(this).html(), $(this).html(), $(this).attr('href'));
 		self.location.href = $(this).attr('href');
 		$("#modal_menu").hide();
+	});
+	
+	$('#header .nav-item a').click(function (e) {
+		e.preventDefault();
+		
+		history.pushState($(this).html(), $(this).html(), $(this).attr('href'));
+		self.location.href = $(this).attr('href');
 	});
 	
 	$("#modal_callback_user_choise").change(function (e) {
