@@ -539,7 +539,7 @@
                     </div>
                     <div class="text-center mt-0 mb-3">
                         <label for="calculation_user_phone" class="form_label open__semibold text_size__md c__metal text-left mb-0">Contact phone number for clarification of details</label><br />
-                        <input required type="text" name="phone" id="calculation_user_phone" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="+__ (___) ___ __ __">
+                        <input type="text" name="phone" id="calculation_user_phone" class="form_input open__light c__metal text_size__md border brc__metal brc_h__yellow px-3 py-1" placeholder="+__ (___) ___ __ __">
                     </div>
                     <div class="text-center my-3">
                         <input type="hidden" name="type" value="{{ App\Contact::TYPE_QUOTE }}" />
