@@ -11615,7 +11615,7 @@ label.form_input::after {
 	background-image: url("../img/team.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: top center;
 }
 .worker-description__wrapper{
 	width: 25%;
