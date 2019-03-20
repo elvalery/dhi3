@@ -554,7 +554,7 @@
   padding: 0 !important;
 }
 .fancybox-container .fancybox-caption {
-  padding: 10px 0 10px 50vw;
+  padding: 10px 0 10px 2vw;
   border-top: none;
   background: rgba(30, 30, 30, 0.75);
   text-align: left;

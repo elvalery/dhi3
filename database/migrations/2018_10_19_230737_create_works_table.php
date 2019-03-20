@@ -17,7 +17,7 @@ class CreateWorksTable extends Migration
     Schema::create('works', function (Blueprint $table) {
       $table->increments('id');
       $table->string('name');
-      $table->string('description')->ngit ullable();
+      $table->string('description')->nullable();
       $table->string('cover');
       $table->string('image');
       $table->smallInteger('order_id');
