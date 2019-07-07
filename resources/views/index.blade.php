@@ -28,6 +28,16 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
     
     <title>@section('title')Design Hub International@show</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120286534-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-120286534-1');
+    </script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
