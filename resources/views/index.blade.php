@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <title>@section('title')Outsource Architectural Design Services: CAD Drafters, BIM Modelers, CGI Artists@show</title>
     
     <!-- Useful meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Successful Outsource Team Of Professionals In Architectural Design That Allows You To Reduce Your Operational Expenses Instantly. Increase Your Profit now!">
+    <meta name="keywords" content="outsource architectural services, CAD drafting, BIM modeling, CGI services, rendering services, 3D animation services, architectural visualization services">
     <meta name="robots" content="index, follow, noodp">
     <meta name="googlebot" content="index, follow">
     <meta name="google" content="notranslate">
@@ -29,8 +31,6 @@
   <!-- End Google Tag Manager -->
 
     <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    
-    <title>@section('title')Design Hub International@show</title>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
