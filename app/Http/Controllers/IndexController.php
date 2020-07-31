@@ -54,10 +54,15 @@ class IndexController extends Controller {
     }
 
     $contact->save();
-
-    Mail::to(config('mail.to'))
-      ->cc(config('mail.cc'))
-      ->send(new ContactRequest($contact));
+  
+    $mail_to = config('mail.to');
+    if (!is_array($mail_to)) {
+      $mail_to = [$mail_to];
+    }
+  
+    foreach ($mail_to as $address) {
+      Mail::to($address)->send(new ContactRequest($contact));
+    }
 
     return response()->json($contact);
   }
