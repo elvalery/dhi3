@@ -60,7 +60,7 @@ return [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
-
+    
     /*
     |--------------------------------------------------------------------------
     | E-Mail Encryption Protocol
@@ -121,6 +121,6 @@ return [
         ],
     ],
 
-  'to' => env('MAIL_TO', ''),
+  'to' => [env('MAIL_TO'), 'mariya@woohoo.marketing', 'y.andrey@gmail.com'],
   'cc' => env('MAIL_CC', '')
 ];
