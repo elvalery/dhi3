@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <title>@section('title')Outsource Architectural Design Services: CAD Drafters, BIM Modelers, CGI Artists@show</title>
-    
-    <!-- Useful meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Successful Outsource Team Of Professionals In Architectural Design That Allows You To Reduce Your Operational Expenses Instantly. Increase Your Profit now!">
-    <meta name="keywords" content="outsource architectural services, CAD drafting, BIM modeling, CGI services, rendering services, 3D animation services, architectural visualization services">
-    <meta name="robots" content="index, follow, noodp">
-    <meta name="googlebot" content="index, follow">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
-    <meta http-equiv="Cache-Control" content="public">
-    <meta http-equiv="Expires" content="Wed, 22 Mar 3205 00:20:05 GMT">
-    
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    
-    <link rel="stylesheet" href="{{ mix('css/slick.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/fancy.css') }}">
-    <link href="{{ mix('css/all.css') }}" rel="stylesheet" />
+  <title>@section('title')Outsource Architectural Design Services: CAD Drafters, BIM Modelers, CGI Artists@show</title>
+
+  <link rel="icon" href="/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png">
+
+  <!-- Useful meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+        content="Successful Outsource Team Of Professionals In Architectural Design That Allows You To Reduce Your Operational Expenses Instantly. Increase Your Profit now!">
+  <meta name="keywords"
+        content="outsource architectural services, CAD drafting, BIM modeling, CGI services, rendering services, 3D animation services, architectural visualization services">
+  <meta name="robots" content="index, follow, noodp">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google" content="notranslate">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Cache-Control" content="public">
+  <meta http-equiv="Expires" content="Wed, 22 Mar 3205 00:20:05 GMT">
+
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+
+  <link rel="stylesheet" href="{{ mix('css/slick.css') }}">
+  <link rel="stylesheet" href="{{ mix('css/fancy.css') }}">
+  <link href="{{ mix('css/all.css') }}" rel="stylesheet"/>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TJVB8M8');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []
+      w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js',
+      })
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''
+      j.async = true
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+      f.parentNode.insertBefore(j, f)
+    })(window, document, 'script', 'dataLayer', 'GTM-TJVB8M8')</script>
   <!-- End Google Tag Manager -->
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
