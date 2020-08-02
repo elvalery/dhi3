@@ -147,11 +147,38 @@ $(document).ready(function() {
 	
 	function checkMenuHash() {
   	const menu_hash = [];
+    const services_hash = [
+      '#cad-drafting-service',
+      '#3d-modelling-and-bim-service',
+      '#cgi-and-3d-animation-service',
+      '#graphic-design-service',
+      '#remote-desktop-service',
+      '#hand-drawn-sketch-service',
+      '#design-adaptation-service',
+      '#on-site-supervision-service'
+    ]
+
+    let hash = window.location.hash
+
+    if (services_hash.indexOf(hash) !== -1) {
+      let index = services_hash.findIndex(item => item === hash)
+
+      if (index !== -1) {
+        window.setTimeout(() => {
+          $(`[data-service="${index + 1}"]`)[0].click()
+        }, 100)
+      }
+
+      hash = '#services'
+    }
+
   	$('#header .nav-item a').map(function () {
 			menu_hash.push($(this).attr('href'));
 		});
-		if (window.location.hash && menu_hash.indexOf(window.location.hash) !== -1) {
-			const top = $(window.location.hash).offset().top;
+
+		if (window.location.hash && menu_hash.indexOf(hash) !== -1) {
+			const top = $(hash).offset().top;
+
 			window.scrollTo({
 				top, // scroll so that the element is at the top of the view
 				behavior: 'smooth' // smooth scroll
