@@ -26,6 +26,15 @@ class Contact extends Model {
    * @var array
    */
   protected $fillable = ['name', 'email', 'phone', 'type', 'description'];
+  
+  /**
+   * The model's default values for attributes.
+   *
+   * @var array
+   */
+  protected $attributes = [
+    'phone' => '',
+  ];
 
   protected static function boot()
   {
