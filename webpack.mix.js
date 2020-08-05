@@ -34,6 +34,7 @@ mix
     'resources/assets/js/fancybox/jquery.fancybox.min.css',
   ], 'public/css/fancy.css')
   .version()
+  .copyDirectory('resources/assets/files', 'public/files')
   .copyDirectory('resources/assets/img', 'public/img')
   .copyDirectory('resources/assets/fonts', 'public/fonts')
   .copyDirectory('resources/assets/html', 'public/html');
