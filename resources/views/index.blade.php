@@ -397,7 +397,7 @@
             </div>
             <div class="col-sm-12 col-lg-4">
                 <div class="my-3">
-                    <a href="/public/files/DHI_Outsourcing_Services_LOI_Generic.pdf" class="button border-0 rounded open__semibold text_size__xl c__black text-warning bgc__black bgc_h__black px-4 py-3" style="display:table;margin:0 auto;min-width:100%;text-align:center;padding:25px 0 !important; font-weight: bold">Download a Competency Statement</a>
+                    <a href="/files/DHI_Outsourcing_Services_LOI_Generic.pdf" download target="_blank" class="button border-0 rounded open__semibold text_size__xl c__black text-warning bgc__black bgc_h__black px-4 py-3" style="display:table;margin:0 auto;min-width:100%;text-align:center;padding:25px 0 !important; font-weight: bold">Download a Competency Statement</a>
                 </div>
             </div>
         </div>
