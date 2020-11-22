@@ -10979,22 +10979,22 @@ a.button:hover {
 .brick-xl .block .button {
     display: none
 }
-#software {
-    background-image: url(../img/callback_bg.png);
-    background-repeat: repeat-x;
-    background-size: auto 625px;
-    background-position: 0 100%;
-}
-@media screen and (max-width:768px) {
-    #software {
-        background-size: 200% 625px;
-    }
-}
-@media screen and (max-width:425px) {
-    #software {
-        background-size: 400% 625px;
-    }
-}
+/*#software {*/
+/*    background-image: url(../img/callback_bg.png);*/
+/*    background-repeat: repeat-x;*/
+/*    background-size: auto 625px;*/
+/*    background-position: 0 100%;*/
+/*}*/
+/*@media screen and (max-width:768px) {*/
+/*    #software {*/
+/*        background-size: 200% 625px;*/
+/*    }*/
+/*}*/
+/*@media screen and (max-width:425px) {*/
+/*    #software {*/
+/*        background-size: 400% 625px;*/
+/*    }*/
+/*}*/
 .form_bid {
     max-width: 540px;
     width: 100%;
@@ -11100,9 +11100,12 @@ a.button:hover {
     }
 }
 @media screen and (min-width:992px) {
-    .form_label {
-        max-width: 310px
-    }
+  .form_label {
+    max-width: 230px
+  }
+  .form_label.form_label_phone {
+    max-width: 160px
+  }
 }
 .form_input {
     width: 100%
@@ -11496,17 +11499,17 @@ label.form_input::after {
     transform: translateY(-9em);
   }  
 }
-#contacts{
-	height: 610px;
-}
+/*#contacts{*/
+/*	height: 610px;*/
+/*}*/
 .top_contacts{
 	display: flex;
 	align-items: center;
 }
 .contact-top{
-	margin-left: 10px;
+	margin-right: 10px;
 	color: #14161D;
-    background: #ddd;
+  background: #ddd;
 }
 .contact-top:hover{
 	background-color: #000;
@@ -11569,12 +11572,6 @@ label.form_input::after {
 .benefits-item p:last-child {
 	margin-bottom: 0;
 }
-.soc-link {
-	-webkit-filter: grayscale(100%);
-}
-.soc-link:hover {
-	-webkit-filter: grayscale(0);
-}
 .service-choice-wrapper{
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -11630,7 +11627,8 @@ label.form_input::after {
 	color: #000;
 }
 .worker__tech-list{
-	padding: 20px 0 20px 10%;
+  margin-bottom: 10px;
+	padding: 10px 0 10px 10%;
 	border-top: 2px solid #828282;
 	border-bottom: 2px solid #828282;
 }
@@ -11638,6 +11636,7 @@ label.form_input::after {
 	list-style: none;
 }
 .description_text{
+  margin-bottom: 10px !important;
 	border-bottom: 2px solid #828282;
 	padding-bottom: 5px;
 }
@@ -11999,7 +11998,7 @@ label.form_input::after {
 		height: 700px;
 	}
 }
-@media (min-width: 1500px and max-width: 1900px){
+@media (min-width: 1500px) and (max-width: 1900px){
 	.bim__video_wrapper{
 		height: 600px;
 	}
@@ -12012,8 +12011,8 @@ label.form_input::after {
 		flex-direction: column;
 	}
 	.contact-top{
-		margin-left: 0;
-		margin-top: 10px;
+		margin-right: 0;
+		margin-bottom: 10px;
 	}
 }
 @media (max-width: 1200px){
@@ -12127,9 +12126,6 @@ label.form_input::after {
 @media (max-width: 768px){
 	.modal_page_content{
 		max-height: 55%;
-	}
-	#contacts{
-		height: 620px;
 	}
 	#callback_form{
 		padding-top: 0!important;
@@ -12450,9 +12446,9 @@ label.form_input::after {
   display: flex!important;
 }
 
-#software {
-  background-image: url(../img/callback_bg.png?240119);
-}
+/*#software {*/
+/*  background-image: url(../img/callback_bg.png?240119);*/
+/*}*/
 
 .service__bg {
   background-size: cover;
@@ -12743,9 +12739,9 @@ label.form_input::after {
   .worker__tech-list_item {
     padding-right: 35px;
   }
-  .worker-description__wrapper .description_text {
-    padding-right: 35px;
-  }
+  /*.worker-description__wrapper .description_text {*/
+  /*  padding-right: 35px;*/
+  /*}*/
 }
 
 @media (max-width: 992px) {

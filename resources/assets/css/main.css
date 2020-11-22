@@ -10979,22 +10979,22 @@ a.button:hover {
 .brick-xl .block .button {
     display: none
 }
-#software {
-    background-image: url(../img/callback_bg.png);
-    background-repeat: repeat-x;
-    background-size: auto 625px;
-    background-position: 0 100%;
-}
-@media screen and (max-width:768px) {
-    #software {
-        background-size: 200% 625px;
-    }
-}
-@media screen and (max-width:425px) {
-    #software {
-        background-size: 400% 625px;
-    }
-}
+/*#software {*/
+/*    background-image: url(../img/callback_bg.png);*/
+/*    background-repeat: repeat-x;*/
+/*    background-size: auto 625px;*/
+/*    background-position: 0 100%;*/
+/*}*/
+/*@media screen and (max-width:768px) {*/
+/*    #software {*/
+/*        background-size: 200% 625px;*/
+/*    }*/
+/*}*/
+/*@media screen and (max-width:425px) {*/
+/*    #software {*/
+/*        background-size: 400% 625px;*/
+/*    }*/
+/*}*/
 .form_bid {
     max-width: 540px;
     width: 100%;
@@ -11100,9 +11100,12 @@ a.button:hover {
     }
 }
 @media screen and (min-width:992px) {
-    .form_label {
-        max-width: 310px
-    }
+  .form_label {
+    max-width: 230px
+  }
+  .form_label.form_label_phone {
+    max-width: 160px
+  }
 }
 .form_input {
     width: 100%

@@ -121,9 +121,9 @@
   display: flex!important;
 }
 
-#software {
-  background-image: url(../img/callback_bg.png?240119);
-}
+/*#software {*/
+/*  background-image: url(../img/callback_bg.png?240119);*/
+/*}*/
 
 .service__bg {
   background-size: cover;
@@ -414,9 +414,9 @@
   .worker__tech-list_item {
     padding-right: 35px;
   }
-  .worker-description__wrapper .description_text {
-    padding-right: 35px;
-  }
+  /*.worker-description__wrapper .description_text {*/
+  /*  padding-right: 35px;*/
+  /*}*/
 }
 
 @media (max-width: 992px) {
