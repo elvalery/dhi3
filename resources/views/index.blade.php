@@ -285,19 +285,19 @@
     </video>
     <div class="container d-flex align-items-center" style="height: 100%;">
       <div class="col-12 text-left text-lg-center wow fadeInUp">
-        <h1 class="montserrat__bold first-screen-h1 title_size__lg c__white text-center my-5">
-          REDUCE YOUR OPERATIONAL EXPENSES BY HIRING AN OUTSOURCED TEAM OF <span class="c__yellow">ARCHITECTS</span>
-          {{--                  <div class="word-switcher__wrapper">--}}
-          {{--                        <ul class="word-switcher">--}}
-          {{--                            <li>ARCHITECTS</li>--}}
-          {{--                            <li>DRAFTERS</li>--}}
-          {{--                            <li>MODELLERS</li>--}}
-          {{--                            <li>CGI ARTISTS</li>--}}
-          {{--                            <li>GRAPHIC DESIGNERS</li>--}}
-          {{--                            <li>BIM MANAGERS</li>--}}
-          {{--                            <li>ARCHITECTS</li>--}}
-          {{--                        </ul>--}}
-          {{--                    </div>--}}
+        <h1 class="montserrat__bold first-screen-h title_size__lg c__white text-center my-5" style="line-height: 1.5;">
+          REDUCE YOUR OPERATIONAL EXPENSES BY HIRING AN OUTSOURCED TEAM OF
+          <div class="word-switcher__wrapper">
+            <ul class="word-switcher">
+              <li>ARCHITECTS</li>
+              <li>DRAFTERS</li>
+              <li>MODELLERS</li>
+              <li>CGI ARTISTS</li>
+              <li>GRAPHIC DESIGNERS</li>
+              <li>BIM MANAGERS</li>
+              <li>ARCHITECTS</li>
+            </ul>
+          </div>
         </h1>
         <div class="my-5" style="text-align: center;">
           <a href="#contacts"
@@ -668,7 +668,7 @@
   </div>
 </section>
 
-<section id="software" class="container-fluid" style="">
+<section id="software" class="container-fluid pb-5">
   <div class="container">
     <div class="col-12 pb-0 pb-lg-3 wow fadeInUp">
       <h1 class="montserrat__bold title_size__xl text-center">Software & BIM Competency Statement</h1>
@@ -725,8 +725,12 @@
         <img src="img/stripe.jpg" alt=""/>
       </div>
     </div>
+  </div>
+</section>
 
-    <div id="contacts" class="col-12 wow fadeInUp">
+<section id="contacts" class="container-fluid pt-2">
+  <div class="container">
+    <div class="col-12 wow fadeInUp">
       <div class="d-flex justify-content-center">
         <form id="callback_form" class="form_callback px-0 px-sm-5 py-4" method="POST" action="{{ route('contacts') }}"
               enctype="multipart/form-data">
@@ -977,12 +981,7 @@
   <div class="container py-5">
     <div class="col-12 pb-0 pb-md-5 wow fadeInUp">
       <div class="row align-items-center">
-        <div class="d-none d-md-block col-4">
-          <a href="#banner">
-            <img src="img/logotype.png" alt="" class="img-fluid">
-          </a>
-        </div>
-        <div class="col-md-4">
+        <div class="col-12">
           <h1 class="h1 montserrat__bold title_size__xl text-center mb-4 mb-md-0">
             Contacts
           </h1>
@@ -993,7 +992,7 @@
       <div class="row flex-column-reverse flex-md-row">
         <div class="col-md-4">
           <div class="contact_block text-center text-md-left pb-0 pb-md-3 pb-md-0">
-            <div class="d-md-none mt-4 mb-3">
+            <div class="mt-4 mt-md-0 mb-3">
               <a href="#banner">
                 <img src="img/logotype.png" alt="" class="img-fluid">
               </a>
@@ -1001,7 +1000,7 @@
             <p class="open__regular text_size__sm c__white mt-0 mb-4">
               © DHI-Outsource, {{ date('Y') }}. All Rights Reserved.
             </p>
-            <a href="https://www.facebook.com/Design-Hub-International-941115632665039/" class="soc-link mr-1" target="_blank">
+            <a href="https://www.facebook.com/dhi.outsource" class="soc-link mr-1" target="_blank">
               <img src="img/facebook.png" alt="">
             </a>
             <a href="https://www.linkedin.com/showcase/dhi-outsource" class="soc-link mx-1" target="_blank">
