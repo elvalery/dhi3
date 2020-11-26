@@ -286,7 +286,7 @@
     <div class="container d-flex align-items-center" style="height: 100%;">
       <div class="col-12 text-left text-lg-center wow fadeInUp">
         <h1 class="montserrat__bold first-screen-h title_size__lg c__white text-center my-5" style="line-height: 1.5;">
-          REDUCE YOUR OPERATIONAL EXPENSES BY HIRING AN OUTSOURCED TEAM OF
+          REDUCE YOUR OPERATIONAL EXPENSES <br> BY HIRING AN OUTSOURCED TEAM OF
           <div class="word-switcher__wrapper">
             <ul class="word-switcher">
               <li>ARCHITECTS</li>
@@ -728,7 +728,7 @@
   </div>
 </section>
 
-<section id="contacts" class="container-fluid pt-2">
+<section id="contacts" class="container-fluid pt-2 pb-5">
   <div class="container">
     <div class="col-12 wow fadeInUp">
       <div class="d-flex justify-content-center">
@@ -809,9 +809,6 @@
           </div>
         </form>
       </div>
-    </div>
-    <div style="font-size: 12px; text-align: right">
-      Photograph by <a href="https://www.bloomberg.com/company/london/" target="_blank">Bloomberg</a>
     </div>
   </div>
 </section>
@@ -1011,16 +1008,22 @@
         <div class="col-md-8">
           <div class="row">
             <div class="col-md-6">
-              <div class="contact_block text-center pb-0 pb-md-3 pb-md-0">
-                <p class="txt open__light text_size__lg font-weight-bold">The Netherlands</p>
-                <p class="txt open__light text_size__md">Drievriendenstraat 4b, Rotterdam, 3014 JR</p>
-                <p class="txt open__light text_size__md">+31 616 91 89 88</p>
+              <div class="contact_block pb-0 pb-md-3 pb-md-0 text-center text-md-left">
+                <p class="txt open__light text_size__lg font-weight-bold">NETHERLANDS</p>
+                <p class="txt open__light text_size__md">Rotterdam | 3014 JR | Drievriendenstraat 4b</p>
+                <p class="txt open__light text_size__md">
+                  <a href="mailto:info@dhi-outsource.com" class="c__white" target="_blank">info@dhi-outsource.com</a>
+                </p>
+                <p class="txt open__light text_size__md">+31 6 21 10 02 09</p>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="contact_block text-center pb-0 pb-md-3 pb-md-0">
-                <p class="txt open__light text_size__lg font-weight-bold">Ukraine</p>
-                <p class="txt open__light text_size__md">18V Mykhailvska St., office 106, Kyiv</p>
+              <div class="contact_block pb-0 pb-md-3 pb-md-0 text-center text-md-left">
+                <p class="txt open__light text_size__lg font-weight-bold">UKRAINE</p>
+                <p class="txt open__light text_size__md">Kyiv | 01001 | 18V Mykhailivska St. | Office 106</p>
+                <p class="txt open__light text_size__md">
+                  <a href="mailto:info@dhi-outsource.com" class="c__white" target="_blank">info@dhi-outsource.com</a>
+                </p>
                 <p class="txt open__light text_size__md">+38 (097) 908 26 78</p>
               </div>
             </div>
