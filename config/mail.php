@@ -121,6 +121,6 @@ return [
         ],
     ],
 
-  'to' => [env('MAIL_TO'), 'mariya@woohoo.marketing', 'y.andrey@gmail.com', 'diana.olenko@dhi-architecture.com'],
+  'to' => [env('MAIL_TO'), 'mariya@woohoo.marketing', 'y.andrey@gmail.com', 'diana.olenko@dhi-architecture.com', 'info@dhi-outsource.com'],
   'cc' => env('MAIL_CC', '')
 ];
