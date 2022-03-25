@@ -10506,7 +10506,57 @@ a.button:focus,
 a.button:hover {
     color: #000
 }
-#video-bg {
+.banner-slider {
+  position: relative;
+  padding-top: 60px;
+}
+.banner-slider::before,
+.banner-slider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+.banner-slider::before {
+  top: 0;
+  background-color: #015bbb
+}
+.banner-slider::after {
+  top: 30px;
+  background-color: #fed502
+}
+.banner-slider .slick-arrow {
+  z-index: 1;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  font-size: 0;
+  background-size: 24px 48px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+  outline: none;
+}
+.banner-slider .slick-arrow:hover {
+  background-color: transparent;
+}
+.banner-slider .slick-arrow.slick-prev {
+  left: 0;
+  background-image: url('../img/arr_prev.svg');
+}
+.banner-slider .slick-arrow.slick-next {
+  right: 0;
+  background-image: url('../img/arr_next.svg');
+}
+.video-bg {
     position: absolute;
     top: 100px;
     right: 0;
@@ -10518,7 +10568,7 @@ a.button:hover {
     background: #000;
     background-size: cover
 }
-#video-bg>video {
+.video-bg>video {
     position: absolute;
     top: 100px;
     left: 0;
@@ -10528,8 +10578,11 @@ a.button:hover {
     height: auto;
     opacity: .5
 }
+.video-bg h1 {
+  padding: 0 30px;
+}
 @supports (object-fit:cover) {
-    #video-bg>video {
+    .video-bg>video {
         top: 0;
         left: 0;
         width: 100%;

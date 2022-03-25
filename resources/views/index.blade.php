@@ -278,31 +278,48 @@
   </div>
 </header>
 
-<section id="banner" class="jumbotron jumbotron-fluid banner mb-0 " style="height: 600px; margin-top: 100px;">
-  <div id="video-bg">
-    <video width="100%" height="auto" preload="auto" autoplay loop muted>
-      <source src="img/banner-video.mp4" type="video/mp4"/>
-    </video>
-    <div class="container d-flex align-items-center" style="height: 100%;">
-      <div class="col-12 text-left text-lg-center wow fadeInUp">
-        <h1 class="montserrat__bold first-screen-h title_size__lg c__white text-center my-5" style="line-height: 1.5;">
-          REDUCE YOUR OPERATIONAL EXPENSES <br> BY HIRING AN OUTSOURCED TEAM OF
-          <div class="word-switcher__wrapper">
-            <ul class="word-switcher">
-              <li>ARCHITECTS</li>
-              <li>DRAFTERS</li>
-              <li>MODELLERS</li>
-              <li>CGI ARTISTS</li>
-              <li>GRAPHIC DESIGNERS</li>
-              <li>BIM MANAGERS</li>
-              <li>ARCHITECTS</li>
-            </ul>
+<section id="banner" class="banner mb-0 " style="height: 660px; margin-top: 100px;">
+  <div class="banner-slider">
+    <div class="video-bg">
+      <video width="100%" height="auto" preload="auto" autoplay loop muted>
+        <source src="img/banner-video-2.mp4" type="video/mp4" />
+        <source src="img/banner-video-2.ogg" type="video/ogg" />
+        <source src="img/banner-video-2.webm" type="video/webm" />
+      </video>
+      <div class="container d-flex align-items-center" style="height: 100%;">
+        <div class="col-12 text-left text-lg-center wow fadeInUp">
+          <h1 class="montserrat__bold first-screen-h title_size__lg c__white text-center my-5" style="line-height: 1.5;">
+            SUPPORT UKRAINE AND LET US HELP YOUR BUSINESS. <br>
+            HIRE AN OUTSOURCED TEAM OF
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="video-bg">
+      <video width="100%" height="auto" preload="auto" autoplay loop muted>
+        <source src="img/banner-video.mp4" type="video/mp4" />
+      </video>
+      <div class="container d-flex align-items-center" style="height: 100%;">
+        <div class="col-12 text-left text-lg-center wow fadeInUp">
+          <h1 class="montserrat__bold first-screen-h title_size__lg c__white text-center my-5" style="line-height: 1.5;">
+            REDUCE YOUR OPERATIONAL EXPENSES <br> BY HIRING AN OUTSOURCED TEAM OF
+            <div class="word-switcher__wrapper">
+              <ul class="word-switcher">
+                <li>ARCHITECTS</li>
+                <li>DRAFTERS</li>
+                <li>MODELLERS</li>
+                <li>CGI ARTISTS</li>
+                <li>GRAPHIC DESIGNERS</li>
+                <li>BIM MANAGERS</li>
+                <li>ARCHITECTS</li>
+              </ul>
+            </div>
+          </h1>
+          <div class="my-5" style="text-align: center;">
+            <a href="#contacts"
+               class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-3"
+               style="text-transform: uppercase;">REQUEST A QUOTE</a>
           </div>
-        </h1>
-        <div class="my-5" style="text-align: center;">
-          <a href="#contacts"
-             class="button border-0 open__semibold text_size__md c__black bgc__yellow bgc_h__yellow px-4 py-3"
-             style="text-transform: uppercase;">REQUEST A QUOTE</a>
         </div>
       </div>
     </div>

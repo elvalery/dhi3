@@ -54,7 +54,14 @@ $(document).ready(function() {
 				.removeClass("active").closest("div.wall-tabs")
 				.find("div.wall_tab").removeClass("wall_tab__active")
 				.eq($(this).index()).addClass("wall_tab__active").fadeIn("slow")});
-	
+
+  $('.banner-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true
+  });
 	
 	$('.inforgraphic-slider').slick({
 		infinite: true,
