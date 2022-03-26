@@ -60,7 +60,9 @@ $(document).ready(function() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    fade: true
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 10000,
   });
 	
 	$('.inforgraphic-slider').slick({
