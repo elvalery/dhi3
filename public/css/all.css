@@ -10568,7 +10568,8 @@ a.button:hover {
     background: #000;
     background-size: cover
 }
-.video-bg>video {
+.video-bg > video,
+.video-bg > .banner-slider__image {
     position: absolute;
     top: 100px;
     left: 0;
@@ -10577,6 +10578,14 @@ a.button:hover {
     width: auto;
     height: auto;
     opacity: .5
+}
+.video-bg > .banner-slider__image {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .video-bg h1 {
   padding: 0 30px;
