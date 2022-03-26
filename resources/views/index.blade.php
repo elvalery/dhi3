@@ -347,7 +347,8 @@
       <div class="container d-flex align-items-center" style="height: 100%;">
         <div class="col-12 text-left text-lg-center wow fadeInUp">
           <h1 class="montserrat__bold first-screen-h title_size__lg c__white text-center my-5" style="line-height: 1.5;">
-            REDUCE YOUR OPERATIONAL EXPENSES <br> BY HIRING AN OUTSOURCED TEAM OF
+            SUPPORT UKRAINE AND LET US HELP YOUR BUSINESS. <br>
+            HIRE AN OUTSOURCED TEAM OF
             <div class="word-switcher__wrapper">
               <ul class="word-switcher">
                 <li>ARCHITECTS</li>
@@ -373,7 +374,8 @@
       <div class="container d-flex align-items-center" style="height: 100%;">
         <div class="col-12 text-left text-lg-center wow fadeInUp">
           <h1 class="montserrat__bold first-screen-h title_size__lg c__white text-center my-5" style="line-height: 1.5;">
-            REDUCE YOUR OPERATIONAL EXPENSES <br> BY HIRING AN OUTSOURCED TEAM OF
+            SUPPORT UKRAINE AND LET US HELP YOUR BUSINESS. <br>
+            HIRE AN OUTSOURCED TEAM OF
             <div class="word-switcher__wrapper">
               <ul class="word-switcher">
                 <li>ARCHITECTS</li>
